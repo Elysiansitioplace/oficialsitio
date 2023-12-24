@@ -1,0 +1,103 @@
+.menu,.contato{
+    display: none;
+}
+#logo{
+    left:210px;
+    top:70px;
+}
+.css-slideshow,.quadrado{
+    display:none;
+}
+#mediascreen1{
+    position: relative;
+    left:-75px;
+    top:-30px;
+}
+#proximidadesitio{
+    width:300px;
+}
+#mediascreen2{
+    position:relative;
+    top:-380px;
+    left:-75px;
+    
+}
+.telefones{
+    position:relative;
+    top:380px;
+    left:20px;
+}
+#mediascreen3{
+    position: relative;
+    top:-380px;
+    left:-70px;
+}
+.facebook{
+    position:relative;
+    top:400px;
+    left:20px;  
+}
+#media1{
+    position: relative;
+    top:250px;
+    left:-100px;
+}
+#infores{
+    position: relative;
+    top:-240px;
+    left:120px;
+    font-size:14px;
+    width:700px;
+}
+#natal{
+    display: flex;
+    position: relative;
+    top:-280px;
+    left:45px;
+    font-size:10px;
+    width:180px;
+}
+#local1{
+    position:relative;
+    
+    display: flex;
+    position: relative;
+    top:200px;
+    left:40px;
+    font-size:14px;
+    width:220px;
+
+}
+.container{
+    position: relative;
+    top:-510px;
+    height:250px;
+    width:250px;
+    left:-235px;
+}
+#veja{
+    position:relative;
+    font-size:25px;
+    top:-500px;
+}
+#nossas,#fotos{
+    font-size:25px; 
+}
+#media2{
+    display:none;
+}
+#texto{
+    position: relative;
+    top:-50px;
+}
+#texto{
+    position: relative;
+    top:-630px;
+    left:15px;
+    font-size:14px;
+    width:300px;
+}
+.descricoes{
+    position: relative;
+        
+}

@@ -1,0 +1,444 @@
+    body,html{
+            padding: 0px;
+            margin:0px;
+            width:100%;
+           
+           overflow-x: hidden;
+    }
+    #whatsfixo{
+        position: fixed;
+        left:300px;
+        top:500px;
+        height:70px;
+        width:70px;
+    }
+    .menu,.contato{
+        display: none;
+    }
+    #logo{
+        display:none;
+    }
+    .css-slideshow,.quadrado{
+        display:none;
+    }
+    #mediascreen1{
+        position: relative;
+        left:-85px;
+        top:-90px;
+    }
+    #nomesitio{
+        font-size:45px;
+    }
+    #morales{
+        font-size: 45px;
+    }
+    #proximidadesitio{
+        width:400px;
+        text-align: center;
+        left:70px;
+        top:80px;
+    }
+    #mediascreen2{
+        position:relative;
+        top:-400px;
+        left:-65px;
+        
+    }
+    .telefones{
+        position:relative;
+        top:325px;
+        left:190px;
+    }
+    #mediascreen3{
+        position: relative;
+        top:-420px;
+        left: -65px;
+       
+    }
+    #cel,#tel,#insta,#face{
+    font-size: 18px;    
+    }
+    .facebook{
+        position:relative;
+        top:348px;
+        left:190px; 
+    
+    }
+    #media1{
+        display:none;
+    }
+    #infores{
+        display:none;
+    }
+    #natal{
+        display: flex;
+        position:absolute;
+        top:-20px;
+        left:50px;
+        font-size:19px;
+        padding:15px;
+    }
+    #localimagem{
+        transform: translateY(-5px) scale(0.7);
+    }
+    #local1{
+        position:relative;
+        display: flex;
+        position: relative;
+        top:120px;
+        left:18px;
+        font-size:19px;
+        width:315px;
+        padding:15px;
+    }
+    .container{
+        position: relative;
+        top:-510px;
+        height:450px;
+        width:350px;
+        left:-5px;
+    }
+    #wifi,#cama,#chuveiro{
+        position: relative;
+        height: 50px;
+        width: 50px;
+    }
+    #media2{
+        display:flex;
+        position: relative;
+        left:-740px;
+        top:340px;
+    }
+    
+    #texto{
+        position: relative;
+        top:-530px;
+        left:20px;
+        font-size:18px;
+        width:350px;
+        text-align: center;
+    }
+    .fundo{
+        display: none;
+    }
+    .descricoes{
+        position: relative;
+        top:50px;
+        left:0px;
+        width:700px;
+            
+    }
+    .desc1{
+        position: relative;
+        top:70px;
+        left:-30px;
+
+    }
+    #arq{
+        position: relative;
+        font-size: 28px;
+        width: 150px;
+    }
+    #possuimedia{
+        position: relative;
+        font-size: 20px;
+        left:50px;
+    }
+    #temos{
+        position: relative;
+        font-size: 18px;
+        width:370px;
+
+    }
+    .des2,#lazer,#temos2{
+        display: none;
+
+    }
+    .textomorales{
+        position: relative;
+        font-size:22px;
+        left:-240px;
+        top:40px;
+    }
+    #textoamb{
+     position: relative;
+     left:235px;
+     width:400px;
+     text-align: center;
+     font-size: 20px;
+    }
+    #rsmorales{
+        position: absolute;
+        text-align: center;
+        left:140px;
+        font-size: 20px;
+    }
+ 
+    .folderpiscina{
+        position:relative;
+        left:-100px;
+    }
+    #tipodepiscina{
+        position: relative;
+        top:-500px;
+        left:70px;
+    }
+    #profundidade{
+        position: relative;
+        top:-500px;
+        left:270px;
+
+    }
+    #inforarea1{
+        position: relative;
+        top:-170px;
+        left:80px;
+        font-size:18px;
+        text-align: justify;
+    }
+    .container1{
+        position: relative;
+        left:90px;
+        top:-150px;
+        height:550px;
+        width:350px;
+    }
+
+    .foldercampos{
+        position:relative;
+        left:-100px;
+        top:-500px;
+    }
+    #tipodecampos{
+        position: relative;
+        top:-430px;
+        left:70px;
+     
+        
+    }
+    #area{
+        position: relative;
+        top:-430px;
+        left:270px;
+
+    }
+    #inforarea2{
+        position: relative;
+        top:-120px;
+        left:80px;
+        font-size:18px;
+        text-align: justify;
+    }
+    .container2{
+        position: relative;
+        left:90px;
+        top:-90px;
+        height:550px;
+        width:350px;
+    }
+    
+    .foldercasa{
+        position:relative;
+        left:-100px;
+        top:-500px;
+    }
+    #tipodecasa{
+        position: relative;
+        top:-350px;
+        left:70px;
+        
+    }
+    #jogo{
+        position: relative;
+        top:-350px;
+        left:270px;
+
+    }
+    #inforarea3{
+        position: relative;
+        top:-20px;
+        left:80px;
+        font-size:18px;
+        text-align: justify;
+    }
+    .container3{
+        position: relative;
+        left:90px;
+        top:-10px;
+        height:550px;
+        width:350px;
+    }
+    .folderarquitetura{
+        position:relative;
+        left:-100px;
+        top:-500px;
+    }
+    #tipoarquitetura{
+        position: relative;
+        top:-450px;
+        left:70px;
+    }
+    #urbanismo{
+        position: relative;
+        top:-450px;
+        left:270px;
+
+    }
+    #inforarea4{
+        position: relative;
+        top:-110px;
+        left:80px;
+        font-size:18px;
+        text-align: justify;
+    }
+
+    .container4{
+        position: relative;
+        left:90px;
+        top:-90px;
+        height:550px;
+        width:350px;
+    }
+    #fundonatal{
+        position: relative;
+        top:-100px;
+    }
+    #imgnatal{
+        position: relative;
+        left:-20px;
+        top:40px;
+    }
+    #chamada1{
+        position: relative;
+        left:10px;
+        top: 35px;
+        font-size: 23px;
+    }
+    #pergunta{
+        display:none;
+    }
+    #sim{
+        display:none;
+    }
+    #nao{
+        display:none;
+
+    }
+    #comentario{
+        position: relative;
+        left:25px;
+        top:-500px;
+        font-size: 23px;
+    }
+    #fale{
+        
+        position: relative;
+        left:5px;
+        top:-360px;
+        font-size: 23px;
+    }
+    #mapafinal{
+        position: relative;
+        top:-100px;
+        height:3600px;
+    }
+    iframe{
+        position: relative;
+        left:65px;
+        top:45px;
+        height:300px;
+        width:300px
+        }
+        #media3{
+            position: relative;
+            left:-60px;
+            top:-90px;
+            font-size: 18px;
+        }
+        #endereçolocal1{
+            position:absolute;
+            top:286px;
+        }
+        
+        #endereçolocal2{
+            position:absolute;
+            top:346px;
+        }
+        
+        #endereçolocal3{
+            position:absolute;
+            top:406px;
+        }
+        .referencias{
+            position:relative;
+            font-size: 18px;
+            left:0px;
+            top:680px;
+            padding:5px;
+        }
+ 
+        #media5{
+            position: relative;
+            left:-25px;
+            top:-70px;
+        }
+
+        #local2{
+            font-size: 20px;
+            position: relative;
+            left:50px;
+            width:300px;
+            top:40px;
+ 
+        }
+        #atibaia{
+            position: relative;
+            top:340px;
+            left:-30px;
+        }
+        #opc1{
+            position: relative;
+            top:400px;
+            left:-60px;
+        }
+        
+        #opc2{
+            position: relative;
+            top:600px;
+            left:-60px;
+        }
+        #opc3{
+            position: relative;
+            top:800px;
+            left:-60px;
+        }
+        #opc4{
+            position: relative;
+            top:1000px;
+            left:-60px;
+        }
+        
+        #fundofinal{
+            position: relative;
+            top:1400px;
+            
+        }
+       .fundowhatssap{
+        position: relative;
+        top:40px;
+        left:-45px;   
+       }
+        #fundogram{
+            position:relative;
+            top:150px;
+            left:105px;
+        }
+        #fundoinsta{
+            position:relative;
+            top:140px;
+            left:105px;
+        }
+      
+     
+     
+    

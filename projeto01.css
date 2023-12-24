@@ -1,0 +1,1561 @@
+body{
+    padding: 0px;
+    margin:0px ;
+    height: 100%;
+    width:100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html{
+     margin:0px;
+     padding:0px;
+
+}
+  
+
+#natal{
+  display: none;
+  background-color: red;
+  color:white;
+  border-radius:20px;
+  padding:20px;
+}
+#natal:hover{
+  background-color: white;
+  color:red;
+  border:20px;
+  border:2px solid red;
+
+}
+#compre{
+  position:relative;
+  top:0;
+  left:0;
+  background-color: green;
+  font-size:25px;
+  color:white;
+  border-radius:20px;
+  padding:10px;
+  display: none;
+}
+#compre:hover{
+  background-color: white;
+  border-radius:20px;
+  color:green;
+  border:2px solid green;
+  transition:2s;
+}
+
+header{
+    position: absolute;
+    text-decoration: none;
+}
+#whatsfixo{
+  position: fixed;
+  height:70px;
+  width:70px;
+  left:50px;
+  top:600px;
+}
+.quadrado{
+    position:relative;
+    background-color: #a6ccfa;
+    left:878px;
+    top: -120px;
+    width: 543px;
+    height: 550px;
+
+}
+
+.menu{
+    position:relative;
+    text-align: center;
+    word-spacing: 80px;
+    left:200px;
+    top: -25px;
+    font-size:20px;
+    max-height: 100%;
+
+}
+.menu:hover > :not(:hover){
+    opacity: .4;
+    transform: scale(0.9);
+
+    
+    }
+
+a{
+    text-decoration: none;
+    color: black;
+}
+#logo{
+    position:absolute;
+    height:40px;
+    width: 50px;
+    top:-40px;
+    left:60px;
+}
+#logo:hover{
+    opacity: .4;
+    transform: scale(0.9);
+}
+
+.contato{
+    position:absolute;
+    background-color: #175ED4;
+    color: white;
+    border-radius: 20px;
+    border: solid;
+    padding: 5px;
+    left:200px;
+    top:60px;
+    padding:9px;
+    font-size: 19px;
+}
+.contato:hover{
+    background-color: white;
+    color:#175ED4;
+}
+
+.css-slideshow{
+    position:absolute;
+    width:350px;
+    height:350px;
+    margin: 5em auto .5em auto;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-size:35px;
+    top:-55px;
+    left:300px;
+  
+  }
+
+  /*fundo do carrossel*/
+  .css-slideshow figure{
+    margin: 0;
+    width:600px;
+    height:350px;
+    background: #ffffff;
+    position: absolute;
+    padding:6px;
+    left:400px;
+    top:50px;
+  }
+  .imgcarro{
+    position:relative;
+    height:350px;
+    width: 600px;
+}
+  .css-slideshow img{
+    box-shadow: 0 0 2px #666;
+  }
+  .css-slideshow figcaption{
+    position: absolute;
+    top: 0px;
+    color: #fff;
+    background: rgba(0,0,0, .3);
+    font-size: .8em;
+    padding: 8px 12px;
+    opacity: 0;
+    transition: opacity .5s;
+  }
+  .css-slideshow:hover figure figcaption{
+    transition: opacity .5s;
+    opacity: 1;
+  }
+ 
+  figure:nth-child(1) {
+    animation: xfade 48s 35s infinite;
+  }
+  figure:nth-child(2) {
+    animation: xfade 48s 30s infinite;
+  }
+  figure:nth-child(3) {
+    animation: xfade 48s 25s infinite;
+  }
+  figure:nth-child(4) {
+    animation: xfade 48s 20s infinite;
+  }
+  figure:nth-child(5) {
+    animation: xfade 48s 15s infinite;
+  }
+  figure:nth-child(6) {
+    animation: xfade 48s 10s infinite;
+  }
+  figure:nth-child(7) {
+    animation: xfade 48s 5s infinite;
+  }
+  figure:nth-child(8) {
+    animation: xfade 48s 0s infinite;
+  }
+  
+  @keyframes xfade{
+    0%{
+      opacity: 1;
+    }
+    10.5% {
+      opacity: 1;
+    }
+    12.5%{
+      opacity: 0;
+    }
+    98% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+#nomesitio{
+    position: relative;
+    top:100px;
+    font-size: 60px;
+    left: 100px;
+    width: 500px;
+    
+}
+
+#morales{
+    color: #a6ccfa;
+    font-size: 60px;
+}
+
+#proximidadesitio{
+    position: relative;
+    font-size: 35px;
+    top:52px;
+    left: 100px;
+    width: 500px;
+    
+}
+
+#piqueri{
+    font-size: 35px;
+    border-bottom:solid 2px ;
+    border-bottom-color: #a6ccfa;
+    color: #a6ccfa;
+}
+
+#cel{
+    position: relative;
+    top: 86px;
+    left: 80px;
+    padding: 0px;
+    height:25px;
+}
+#cel:hover{
+  color:#598ad9;
+}
+.whatssap{
+  position:absolute;
+  top:327px;
+  left:20px;
+  font-size:17px;
+
+}
+.whatssap:hover{
+  transition: .2s;
+  transform:scale(1.1);
+}
+#whats{
+  position: relative;
+  top:90px;
+  left:76px;
+  padding: 0px;
+  width:18px;
+  height:18px;
+}
+
+.telefones{
+  position:absolute;
+  top:327px;
+  left:280px; 
+  font-size:17px;
+}
+.telefones:hover{
+ 
+  transition: .2s;
+  transform:scale(1.1);
+}
+#tel{
+  position: relative;
+    top: 85px;
+    left: 79px;
+    padding: 0px;
+    height:25px;
+}
+#tel:hover{
+  color:#598ad9;
+}
+#telefone{
+  position: relative;
+  top:90px;
+  left:76px;
+  padding: 0px;
+  width:18px;
+  height:18px;
+}
+.instagram{
+  position:absolute;
+  top:407px;
+  left:20px;
+  font-size:17px;
+}
+.instagram:hover{
+  
+  transition: .2s;
+  transform:scale(1.1);
+}
+#gram{
+  position: relative;
+  top:90px;
+  left:76px;
+  padding: 0px;
+  width:18px;
+  height:18px;
+}
+#insta{
+    position: relative;
+    top:86px;
+    left: 77px;
+    padding: 0px;
+    width: 100px;
+}
+#insta:hover{
+  color:#598ad9;
+}
+.facebook{
+  position:absolute;
+  top:350px;
+  left:280px;
+  font-size:17px;
+}
+.facebook:hover{
+
+  transition: .2s;
+  transform:scale(1.1);
+}
+#book{
+  position: relative;
+    top: 145px;
+    left:75px;
+    padding: 0px;
+    height:20px;
+}
+#face{
+    position: relative;
+    top:139px;
+    left:81px;
+    padding: 0px;
+    width: 100px;
+}
+#face:hover{
+  color:#598ad9;
+}
+#localimagem{
+  position: relative;
+  width:20px;
+  height:23px;
+  top:5px;
+  left:-2px;
+}
+#local1{
+  position:relative;
+  font-size:20px;
+  top:230px;
+  left:180px;
+  border-radius:20px;
+  background-color: #175ED4;
+  padding:15px;
+  color:white;
+}
+#local1:hover{
+  background-color: white;
+  color:#175ED4;
+  border:2px solid #175ED4;
+  transition: 0.2s;
+
+}
+section{
+    position: relative;
+    top:500px;
+
+}
+#nossas{
+    color: #a6ccfa;
+    font-size: 45px;
+}
+
+#fotos{
+    color: #a6ccfa;
+    font-size: 45px;
+}
+
+#veja{
+    position: relative;
+    top: -145px;
+    left: 150px;
+    font-size: 45px;
+    width: 300px;
+}
+
+#infores{
+    position: relative;
+    font-size: 25px;
+    left: 750px;
+    top: -280px;
+    width: 450px;
+}
+.container {
+    position: relative;
+    margin: 200px auto;
+    width: 600px;
+    height: 300px;
+    display: flex;
+    gap: 5px;
+    overflow: auto;
+    top: -400px;
+    left:-310px;
+    padding:2px;
+  }
+  .container:hover{
+    box-shadow: 5px 15px 20px #333;
+    color:#175ED4;
+    text-decoration: dashed;
+    transform: scale(1.05);
+    transition: .6s;
+    border-radius:20px;
+  }
+  
+  .container::-webkit-scrollbar {
+    height: 10px; 
+  }
+  
+  .container::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+  }
+  
+  .container::-webkit-scrollbar-thumb {
+    background-color: #175ED4;
+    border-radius: 2px;
+    height:20px;
+    width: 20px;
+  }
+
+
+#wifi{
+    position: relative;
+    height: 80px;
+    width: 100px;
+    top: -900px;
+    left: 750px;
+}
+
+#cama{
+    position: relative;
+    height: 80px;
+    width: 100px;
+    top: -900px;
+    left: 850px;
+}
+
+#chuveiro{
+    position: relative;
+    height: 80px;
+    width: 100px;
+    top: -900px;
+    left: 950px;
+}
+#texto{
+    position: absolute;
+    top: 220px;
+    left:750px;
+    font-size:17px;
+}
+/*FOLDER 3*/
+.descricoes{
+    position: relative;
+    background-color: #a6ccfa;
+    height: 600px;
+    top: -50px;
+}
+
+.fundo{
+    position: relative;
+    background-color:#a6ccfa;
+    width: 50px;
+    height: 400px;
+    left: 650px;
+    top: 100px;
+}
+
+.ponto{
+    position: relative;
+    font-size: 150px;
+    top: -100px;
+    left: 5px;
+    color: #175ED4;
+
+}
+
+.ponto2{
+    position: relative;
+    font-size: 150px;
+    top: 70px;
+    left: 5px;
+    color: #175ED4;
+
+}
+
+.traço{
+    position: relative;
+    color: #175ED4;
+    font-size: 320px;
+    top: -375px;
+    left: -50px;
+
+}
+
+.desc1{
+    position: relative;
+    height: 150px;
+    width: 450px;
+    top: -350px;
+    left: 80px;
+}
+
+#arq{
+    position: relative;
+    background-color: #175ED4;
+    padding: 5px;
+    width: 180px;
+    color: white;
+    left: 150px;
+    border-radius:10px;
+    text-align: center;
+}
+
+#temos{
+    position: relative;
+    top: 20px;
+    font-size: 20px;
+}
+
+.desc2{
+    position: relative;
+    height: 150px;
+    width: 450px;
+    top: -515px;
+    left:750px;
+}
+
+#lazer{
+    position: relative;
+    background-color: #175ED4;
+    padding: 5px;
+    width: 130px;
+    color: white;
+    left: 150px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#temos2{
+    position: relative;
+    top: 20px;
+    font-size: 20px;
+}
+
+
+#textoamb{
+    position: relative;
+    left: 550px;
+    top: -480px;
+    width: 100%;
+    height: 100%;
+}
+
+#rsmorales{
+    position: relative;
+    left:-298px;
+    color: white;
+    background-color: #175ED4;
+    border-radius: 10px;
+    padding:8px;
+    top:40px;
+        
+}
+#rsmorales:hover{
+    background-color: white;
+    color:#175ED4;
+    border:2px solid #175ED4;
+    transition: 0.2s;
+}
+.textomorales{
+    position:absolute;
+    top:-40px;
+    font-size:17px;
+}
+/*//////////////////////////FOLDER PISCINA///////////////////////////////////*/
+.ssell{
+    position: inherit;
+    height:1200px;
+    width: 600px;
+}
+.folderpiscina{
+    position: absolute;
+    top:-300px;
+}
+.container1 {
+    position: relative;
+    margin: 200px auto;
+    width: 750px;
+    height: 570px;
+    display: flex;
+    gap:3px;
+    overflow: auto;
+    top:-200px;
+    left:600px;
+    padding:2px;
+    background-color: #b0c1dd;
+   
+  }
+  .container1 :hover{
+
+    box-shadow: 5px 15px 20px #175ED4;
+    color:#175ED4;
+    text-decoration: dashed;
+    transition: .8s;  
+  }
+  .container1:hover > :not(:hover){
+    opacity: .7; 
+    }  
+  .container1 ::-webkit-scrollbar {
+    height: 10px; 
+  }
+  
+  .container1 ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #175ED4;
+  }
+  
+  .container1 ::-webkit-scrollbar-thumb {
+    background-color: #175ED4;
+    border-radius: 2px;
+    height:20px;
+    width: 20px;
+  }
+  /*Ajuste do texto PISCINA superior*/
+  #piscina{
+    position: relative;
+    left:100px;
+    top:-35px;
+    height:0px;
+    width:0px;
+    font-size:35px;
+  }
+  #piscina:hover{
+    position:relative;
+    color:#598ad9;
+    transition: .6s;
+    transform:scale(1.1);   
+  }
+  /*Icone piscina*/
+  #tipodepiscina{
+    position: relative;
+    left:120px;
+    top:-970px;
+  }
+  #tipodepiscina:hover{
+    transition: .6s;
+    transform: scale(1.05);
+    position: relative;
+  }
+  #iconpiscina{
+    position:absolute;
+    height:60px;
+    width:60px;
+    top:180px;
+    left:100px;
+  }
+  #textopiscina{
+    position:absolute;
+    top:240px;
+    left:90px;
+    text-align: center;
+  }  
+  /*Icone de Profundidade*/
+    #profundidade{
+        position: relative;
+        left:340px;
+        top:-970px;
+      }
+      #profundidade:hover{
+        transition: .6s;
+        transform: scale(1.05);
+        position: relative;
+      }
+      #iconprofundidade{
+        position:absolute;
+        height:50px;
+        width:70px;
+        top:190px;
+        left:90px;
+      }
+   
+      #textoprofundidade{
+        position:absolute;
+        top:240px;
+        left:70px;
+        text-align: center;
+      } 
+
+
+  /*Texto informátivo da Piscina*/
+  #inforarea1{
+    position:relative;
+    top:-585px;
+    left:98px;
+    font-size:16px;
+  }
+  /*//////////////////////////////////////////////FOLDER CAMPOS////////*/
+  .foldercampos{
+    position: absolute;
+    top:258px;    
+}
+.container2 {
+    position: relative;
+    margin: 200px auto;
+    width: 750px;
+    height: 570px;
+    display: flex;
+    gap:3px;
+    overflow: auto;
+    top:-200px;
+    left:600px;
+    padding:2px;
+    background-color: #b0c1dd;
+  }
+  .container2 :hover{
+
+    box-shadow: 5px 15px 20px #175ED4;
+    color:#175ED4;
+    text-decoration: dashed;
+    transition: .8s;  
+  }
+  .container2:hover > :not(:hover){
+    opacity: .7; 
+    }  
+  .container2 ::-webkit-scrollbar {
+    height: 10px; 
+  }
+  
+  .container2 ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #175ED4;
+  }
+  
+  .container2 ::-webkit-scrollbar-thumb {
+    background-color: #175ED4;
+    border-radius: 2px;
+    height:20px;
+    width: 20px;
+  }
+  /*Ajuste do texto CAMPOS superior*/
+  #campos{
+    position: relative;
+    left:100px;
+    top:150px;
+    height:150px;
+    width:300px;
+    font-size:35px;
+  }
+  #campos:hover{
+
+    color:#175ED4;
+    position:relative;
+    color:#598ad9;
+    transition: .3s;
+    transform:scale(1.0); 
+  }
+  /*Icone campos*/
+  #tipodecampos{
+    position: relative;
+    left:130px;
+    top:-930px;
+  }
+  #tipodecampos:hover{
+    transition: .6s;
+    transform: scale(1.05);
+    position: relative;
+  }
+  #iconcampos{
+    position:absolute;
+    height:50px;
+    width:70px;
+    top:180px;
+    left:90px;
+  }
+  #textocampos{
+    position:absolute;
+    top:223px;
+    left:101px;
+    
+  }  
+  /*Icone de Profundidade*/
+    #area{
+        position: relative;
+        left:340px;
+        top:-944px;
+      }
+      #area:hover{
+        transition: .6s;
+        transform: scale(1.05);
+        position: relative;
+      }
+      #iconarea{
+        position:absolute;
+        height:50px;
+        width:70px;
+        top:190px;
+        left:90px;
+      }
+   
+      #textoarea{
+        position:absolute;
+        top:240px;
+        left:54px;
+        text-align: center;
+      } 
+
+  /*Texto informátivo da Piscina*/
+  #inforarea2{
+    position:relative;
+    top:-580px;
+    left:100px;
+    font-size: 16px;
+  }
+  /*/////////////////FOLDER CASA///////////*/
+  .foldercasa{
+    position: absolute;
+    top:1050px;    
+}
+.container3 {
+    position: relative;
+    margin: 200px auto;
+    width: 750px;
+    height: 570px;
+    display: flex;
+    gap:3px;
+    overflow: auto;
+    top:-200px;
+    left:600px;
+    padding:2px;
+    background-color: #b0c1dd;
+  }
+  .container3 :hover{
+    color:#175ED4;
+    text-decoration: dashed;
+    transition: .8s;  
+  }
+  .container3:hover > :not(:hover){
+    opacity: .7; 
+    }  
+  .container3 ::-webkit-scrollbar {
+    height: 10px; 
+  }
+  
+  .container3 ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #175ED4;
+  }
+  
+  .container3 ::-webkit-scrollbar-thumb {
+    background-color: #175ED4;
+    border-radius: 2px;
+    height:20px;
+    width: 20px;
+  }
+  /*Ajuste do texto CAMPOS superior*/
+  #casa{
+    position: relative;
+    left:100px;
+    top:10px;
+    height:0px;
+    width:0px;
+    font-size:35px;
+  }
+  #casa:hover{
+    position:relative;
+    height:0px;
+    width:0px;
+    color:#175ED4;
+    border-bottom:solid 2px #175ED4;
+    position:relative;
+    color:#598ad9;
+    transition: .6s;
+    transform:scale(1.1); 
+  }
+  /*Icone campos*/
+  #tipodecasa{
+    position: relative;
+    left:130px;
+    top:-930px;
+  }
+  #tipodecasa:hover{
+    transition: .6s;
+    transform: scale(1.05);
+    position: relative;
+  }
+  #iconcasa{
+    position:absolute;
+    height:60px;
+    width:60px;
+    top:180px;
+    left:100px;
+  }
+  #textocasa{
+    position:absolute;
+    top:240px;
+    left:85px;
+    text-align: center;
+  }  
+  /*Icone de Profundidade*/
+    #jogo{
+        position: relative;
+        left:340px;
+        top:-939px;
+      }
+      #jogo:hover{
+        transition: .6s;
+        transform: scale(1.05);
+        position: relative;
+      }
+      #iconjogo{
+        position:absolute;
+        height:70px;
+        width:70px;
+        top:190px;
+        left:90px;
+      }
+   
+      #textojogo{
+        position:absolute;
+        top:250px;
+        left:95px;
+        text-align: center;
+      } 
+
+  /*Texto informátivo da Piscina*/
+  #inforarea3{
+    position:relative;
+    top:-550px;
+    left:100px;
+  }
+
+  /*/////////////////FOLDER ARQUITETURA///////////*/
+
+.folderarquitetura{
+    position: absolute;
+    top:1706px;    
+}
+.container4 {
+    position: relative;
+    margin: 200px auto;
+    width: 750px;
+    height: 570px;
+    display: flex;
+    gap:3px;
+    overflow: auto;
+    top:-200px;
+    left:600px;
+    padding:2px;
+    background-color: #b0c1dd;
+  }
+  .container4 :hover{
+
+    box-shadow: 5px 15px 20px #175ED4;
+    color:#175ED4;
+    text-decoration: dashed;
+    transition: .8s;  
+  }
+  .container4:hover > :not(:hover){
+    opacity: .7; 
+    }  
+  .container4 ::-webkit-scrollbar {
+    height: 10px; 
+  }
+  
+  .container4 ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #175ED4;
+  }
+  
+  .container4 ::-webkit-scrollbar-thumb {
+    background-color: #175ED4;
+    border-radius: 2px;
+    height:20px;
+    width: 20px;
+  }
+  /*Ajuste do texto CAMPOS superior*/
+  #arquitetura{
+    position: relative;
+    left:130px;
+    top:5px;
+    height:50px;
+    width:px;
+    font-size:35px;
+    color:black;
+  }
+  #arquitetura:hover{
+    position:relative;
+    color:#598ad9;
+    position:relative;
+    transition: .6s;
+    transform:scale(1.1);
+    height:10px;
+  }
+  /*Icone campos*/
+  #tipoarquitetura{
+    position: relative;
+    left:120px;
+    top:-930px;
+    color:black;
+  }
+  #tipoarquitetura:hover{
+    transition: .6s;
+    transform: scale(1.05);
+    position: relative;
+  }
+  #iconarquitetura{
+    position:absolute;
+    height:63px;
+    width:55px;
+    top:180px;
+    left:108px;
+  }
+  #textoarquitetura{
+    position:absolute;
+    top:240px;
+    left:75px;
+    text-align: center;
+  }  
+  /*Icone de Profundidade*/
+    #urbanismo{
+        position: relative;
+        left:340px;
+        top:-930px;
+        color:black;
+      }
+      #urbanismo:hover{
+        transition: .6s;
+        transform: scale(1.05);
+        position: relative;
+      }
+      #iconurbanismo{
+        position:absolute;
+        height:60px;
+        width:70px;
+        top:188px;
+        left:90px;
+      }
+   
+      #textourbanismo{
+        position:absolute;
+        top:245px;
+        left:95px;
+        text-align: center;
+      } 
+
+  /*FOLDER NATAL*/
+  #fundonatal{
+    position: relative;
+    background: rgb(158,13,13);
+background-image: radial-gradient(circle, rgba(158,13,13,1) 1%, rgba(207,90,90,1) 55%, rgba(255,0,0,1) 100%);
+    top:2900px;  
+    height:780px;
+    width:100%;
+  }
+  #chamada1{
+    position: relative;
+    top:-580px;
+    left:750px;
+    color:white;
+    background-color: rgb(167, 32, 32);
+    border-radius: 20px;
+    border:2px solid white;
+    text-align: center;
+    width:20%;
+    padding:10px;
+    font-size:28px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #chamada1:hover{
+    background-color: white;
+    border:2px solid red;
+    color:red;
+    transition: 2s;
+  }
+  #imgnatal{
+    position: relative;
+    height:650px;
+    width:450px;
+    filter:drop-shadow(10px 5px 0 re );
+    left:-400px;
+    top:100px;
+  }
+  #imgnatal:hover{
+    filter:drop-shadow(10px 5px 0 re );
+}
+  #pergunta{
+    position:absolute;
+    top:160px;
+    left:700px;
+    font-size: 22px;
+    background-color: #712424;
+    width:520px;
+    padding:10px;
+    border-radius:20px;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+  #sim{
+    position:absolute;
+    top:285px;
+    left:750px;
+    font-size: 22px;
+    background-color: #712424;
+    width:80px;
+    padding:20px;
+    border-radius:20px;
+    color:white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #sim:hover{
+    background-color: white;
+    color:#712424;
+    border: 4px solid #712424;
+    transition: 3s;
+  }
+
+  #nao{
+    position:absolute;
+    top:285px;
+    left:980px;
+    text-align: center;
+    font-size: 22px;
+    background-color: #712424;
+    width:100px;
+    padding:20px;
+    border-radius:20px;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  #nao:hover{
+    background-color: white;
+    color:#712424;
+    border: 4px solid #712424;
+    transition: 3s;
+  }
+  #inforarea4{
+    position:relative;
+    top:-550px;
+    left:100px;
+    color:black;
+  }
+  #comentario{
+    position:relative;
+    top:-250px;
+    left:760px;
+    text-align: center;
+    font-size: 18px;
+    background-color: #712424;
+    width:300px;
+    padding:20px;
+    border-radius:20px;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #fale{
+    position:absolute;
+    top:605px;
+    left:750px;
+    font-size: 22px;
+    background-color:#fff;
+    width:350px;
+    padding:20px;
+    border-radius:20px;
+    color:#712424;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border:4px solid #712424;
+  
+  }
+  #fale:hover{
+    background-color:#712424;
+    color:white;
+    border: 4px solid #fff;
+    transition: 3s;
+  }
+  #mapafinal{
+    position: relative;
+    top:2900px;
+    height:2400px;
+    width: 100%;
+    background-color: #175ED4;
+  }
+iframe{
+    position:absolute;
+    top:150px;
+    left:700px;
+    border:10px solid #175ED4;
+    background-color: #333;
+    border-radius: 30px;
+  }
+  #estilolocal{
+    position: absolute;
+    color:rgb(255, 255, 255);
+    font-size: 35px;
+    top:100px;
+    left:100px;
+  }
+  #endereçolocal{
+    position:absolute;
+    top:200px;
+    left:150px;
+    font-size: 20px;
+    color:white;
+  }
+  #endereçolocal1{
+    position:absolute;
+    top:250px;
+    left:150px;
+    font-size: 20px;
+    color:white;
+  }
+  #endereçolocal2{
+    position:absolute;
+    top:300px;
+    left:150px;
+    font-size: 20px;
+    color:white;
+  } #endereçolocal3{
+    position:absolute;
+    top:350px;
+    left:150px;
+    font-size: 20px;
+    color:white;
+  }
+#local2{
+  position:absolute;
+  font-size:20px;
+  top:630px;
+  left:850px;
+  text-align: center;
+  border-radius:20px;
+  background-color: white;
+  padding:10px;
+  color:#175ED4;
+}
+#local2:hover{
+  background-color: #175ED4;
+  color:white;
+  border:2px solid white;
+  transition: 0.2s;
+
+}
+.referencias{
+  position: absolute;
+  top:450px;
+  left:100px;
+  font-size: 18px;
+  color:white;
+  background-color: #12356e;
+  padding:10px;
+  border-radius:20px;
+}
+
+#espaços{
+  position: absolute;
+  font-size:35px;
+  top:800px;
+  left:100px;
+  color:white;
+}
+#atibaia{
+   position: absolute;
+   left:450px;
+   width:220px;
+   background-color: #12356e;
+   padding:10px;
+   border-radius: 20px;
+   text-align: center;
+}
+#atibaia:hover{
+  box-shadow: 5px 15px 20px #333;
+  color:#175ED4;
+  background-color: white;
+  text-decoration: dashed;
+  transition: .6s;
+}
+#opc1{
+  position: absolute;
+  width:310px;
+  height:300px;
+  background-color: white;
+  top:200px;
+  left:100px; 
+  font-size:20px;
+  color:white;
+}
+
+#opc1:hover{
+  box-shadow: 5px 15px 20px #333;
+  color:#175ED4;
+  text-decoration: dashed;
+  transform: scale(1.05);
+  transition: .6s;
+
+}
+#texto1{
+  position: relative;
+  top:35px;
+  left:2px;
+  color:black;
+  font-size: 15px;
+}
+
+#icone1{
+  position: absolute;
+  font-size:22px;
+  color:white;
+  background-color: #12356e;
+  top:-22px;
+  padding:15px;
+  width:280px;
+  text-align: center;
+}
+#icon1{
+  position: relative;
+  width:310px;
+  height:150px;
+  top:50px;
+}
+#aproximidade1{
+  position: absolute;
+  font-size:22px;
+  color:white;
+  background-color: #12356e;
+  top:222px;
+  padding:15px;
+  width:280px;
+  text-align: center;
+  
+}
+#opc2{
+  position: absolute;
+  width: 300px;
+  height:300px;
+  background-color: white;
+  top:200px;
+  left:700px;
+}
+
+#icone2{
+  position: absolute;
+  font-size:22px;
+  color:white;
+  background-color: #12356e;
+  top:-22px;
+  padding:15px;
+  width:272px;
+  text-align: center;
+}
+#texto2{
+  position: relative;
+  top:30px;
+  left:2px;
+  color:black;
+  font-size: 15px;
+}
+#icon2{
+  position: relative;
+  width:300px;
+  height:150px;
+  top:50px;
+}
+#aproximidade2{
+  position: absolute;
+  font-size:22px;
+  color:white;
+  background-color: #12356e;
+  top:222px;
+  padding:15px;
+  width:272px;
+  text-align: center;
+  
+}
+#opc2:hover{
+  box-shadow: 5px 15px 20px #333;
+  color:#175ED4;
+  text-decoration: dashed;
+  transform: scale(1.05);
+  transition: .6s;
+  border-radius:20px;
+}
+#opc3{
+  position: absolute;
+  width: 300px;
+  height:300px;
+  background-color: white;
+  top:600px;
+  left:100px;
+  
+}
+#icon3{
+  position: relative;
+  width:300px;
+  height:150px;
+  top:50px;
+}
+#icone3{
+  position: absolute;
+  font-size:22px;
+  color:white;
+  background-color: #12356e;
+  top:-22px;
+  padding:15px;
+  width:272px;
+  text-align: center;
+}
+#texto3{
+  position: relative;
+  top:30px;
+  left:2px;
+  color:black;
+  font-size: 15px;
+}
+#aproximidade3{
+  position: absolute;
+  font-size:22px;
+  color:white;
+  background-color: #12356e;
+  top:222px;
+  padding:15px;
+  width:272px;
+  text-align: center;
+  
+}
+#opc3:hover{
+  box-shadow: 5px 15px 20px #333;
+  color:#175ED4;
+  text-decoration: dashed;
+  transform: scale(1.05);
+  transition: .6s;
+  
+}
+
+#opc4{
+  position: absolute;
+  width: 300px;
+  height:300px;
+  background-color: white;
+  top:600px;
+  left:700px;
+  
+}
+#icone4{
+  position: absolute;
+  font-size:22px;
+  color:white;
+  background-color: #12356e;
+  top:-22px;
+  padding:15px;
+  width:272px;
+  text-align: center;
+}
+#icon4{
+  position: relative;
+  width:300px;
+  height:150px;
+  top:50px;
+}
+#texto4{
+  position: relative;
+  top:30px;
+  left:2px;
+  color:black;
+  font-size: 15px;
+}
+#aproximidade4{
+  position: absolute;
+  font-size:22px;
+  color:white;
+  background-color: #12356e;
+  top:222px;
+  padding:15px;
+  width:272px;
+  text-align: center;
+  
+}
+#opc4:hover{
+  box-shadow: 5px 15px 20px #333;
+  color:#175ED4;
+  text-decoration: dashed;
+  transform: scale(1.05);
+  transition: .6s;
+  border-radius:20px;
+}
+
+#fundowhats{
+  position: relative;
+  height:40px;
+  width:40px;
+  top:285px;
+  left:150px;
+}
+#fundocel{
+  position: relative;
+  top:270px;
+  left:150px;
+  font-size:25px;
+  color:#ffffff;
+}
+#fundogram{
+  position: relative;
+  height:40px;
+  width:40px;
+  top:240px;
+  left:600px;
+}
+#fundoinsta{
+  position: relative;
+  top:227px;
+  left:604px;
+  font-size:25px;
+  color:#ffffff;
+}
+#fundobook{
+  position: relative;
+  height:40px;
+  width:40px;
+  top:1440px;
+  left:998px;
+}
+#fundoface{
+  position: relative;
+  top:1427px;
+  left:1004px;
+  font-size:25px;
+  color:#ffffff;
+}
+#fundofinal{
+  position: absolute;
+  background-image:linear-gradient(to top,#12356e 80%,#175ed4 );
+  width:1422px;
+  height:465px;
+  top:1150px;
+  left:-100px;
+  color:red;
+}
+
+
+
