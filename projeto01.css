@@ -10,7 +10,9 @@ html{
      padding:0px;
 
 }
-  
+  #mobilenovo{
+    display:none;
+  }
 
 #natal{
   display: none;
@@ -1061,147 +1063,40 @@ section{
         left:95px;
         text-align: center;
       } 
+      #inforarea4{
+        position:relative;
+        top:-550px;
+        left:100px;
+      }
 
   /*FOLDER NATAL*/
   #fundonatal{
     position: relative;
-    background: rgb(158,13,13);
-background-image: radial-gradient(circle, rgba(158,13,13,1) 1%, rgba(207,90,90,1) 55%, rgba(255,0,0,1) 100%);
-    top:2900px;  
+    top:3050px;      
+  }
+  video{
+    position: relative;
+    top:3000px;
+    left:90px;
     height:780px;
-    width:100%;
+    width:1200px;
   }
-  #chamada1{
-    position: relative;
-    top:-580px;
-    left:750px;
-    color:white;
-    background-color: rgb(167, 32, 32);
-    border-radius: 20px;
-    border:2px solid white;
-    text-align: center;
-    width:20%;
-    padding:10px;
-    font-size:28px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  #chamada1:hover{
-    background-color: white;
-    border:2px solid red;
-    color:red;
-    transition: 2s;
-  }
-  #imgnatal{
-    position: relative;
-    height:650px;
-    width:450px;
-    filter:drop-shadow(10px 5px 0 re );
-    left:-400px;
-    top:100px;
-  }
-  #imgnatal:hover{
-    filter:drop-shadow(10px 5px 0 re );
-}
-  #pergunta{
-    position:absolute;
-    top:160px;
-    left:700px;
-    font-size: 22px;
-    background-color: #712424;
-    width:520px;
-    padding:10px;
-    border-radius:20px;
-    color:white;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-  }
-  #sim{
-    position:absolute;
-    top:285px;
-    left:750px;
-    font-size: 22px;
-    background-color: #712424;
-    width:80px;
-    padding:20px;
-    border-radius:20px;
-    color:white;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  #sim:hover{
-    background-color: white;
-    color:#712424;
-    border: 4px solid #712424;
-    transition: 3s;
+  #novo{
+    display: none;
   }
 
-  #nao{
-    position:absolute;
-    top:285px;
-    left:980px;
-    text-align: center;
-    font-size: 22px;
-    background-color: #712424;
-    width:100px;
-    padding:20px;
-    border-radius:20px;
-    color:white;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  #nao:hover{
-    background-color: white;
-    color:#712424;
-    border: 4px solid #712424;
-    transition: 3s;
-  }
-  #inforarea4{
-    position:relative;
-    top:-550px;
-    left:100px;
-    color:black;
-  }
-  #comentario{
-    position:relative;
-    top:-250px;
-    left:760px;
-    text-align: center;
-    font-size: 18px;
-    background-color: #712424;
-    width:300px;
-    padding:20px;
-    border-radius:20px;
-    color:white;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  #fale{
-    position:absolute;
-    top:605px;
-    left:750px;
-    font-size: 22px;
-    background-color:#fff;
-    width:350px;
-    padding:20px;
-    border-radius:20px;
-    color:#712424;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    border:4px solid #712424;
-  
-  }
-  #fale:hover{
-    background-color:#712424;
-    color:white;
-    border: 4px solid #fff;
-    transition: 3s;
-  }
+
   #mapafinal{
     position: relative;
-    top:2900px;
+    transform: translateY(-380px) ;
     height:2400px;
-    width: 100%;
+ 
     background-color: #175ED4;
   }
+  #mobilenovo{
+    transform: translateX(150px) translateY(-340px) scaleX(5) scaleY(1);
+  }
+
 iframe{
     position:absolute;
     top:150px;

@@ -302,41 +302,25 @@
     #fundonatal{
         position: relative;
         top:-100px;
+        left:1px;
+        width:200px;
     }
-    #imgnatal{
+    #mobilenovo{
         position: relative;
-        left:-20px;
-        top:40px;
+        top:-20px;
+        left:0px;
+        width:100px;
+        height:500px;
+        display: flex;
     }
-    #chamada1{
+    video{
         position: relative;
-        left:10px;
-        top: 35px;
-        font-size: 23px;
+        top:-280px;
+        left:1px;
+        width:500px;
+        height:700px;
     }
-    #pergunta{
-        display:none;
-    }
-    #sim{
-        display:none;
-    }
-    #nao{
-        display:none;
 
-    }
-    #comentario{
-        position: relative;
-        left:25px;
-        top:-500px;
-        font-size: 23px;
-    }
-    #fale{
-        
-        position: relative;
-        left:5px;
-        top:-360px;
-        font-size: 23px;
-    }
     #mapafinal{
         position: relative;
         top:-100px;
