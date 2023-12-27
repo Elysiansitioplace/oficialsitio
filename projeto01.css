@@ -58,6 +58,10 @@ header{
   left:50px;
   top:600px;
 }
+#fixowhats1{
+  display: none;
+  overflow: hidden;
+}
 .quadrado{
     position:relative;
     background-color: #a6ccfa;
@@ -81,8 +85,6 @@ header{
 .menu:hover > :not(:hover){
     opacity: .4;
     transform: scale(0.9);
-
-    
     }
 
 a{
@@ -1074,6 +1076,47 @@ section{
     position: relative;
     top:3050px;      
   }
+  #fundonatal:hover > :not(:hover){
+    opacity: .8;
+
+    }
+  #novo{
+    position:relative;
+    height:700px;
+    width:450px;
+    transform: translateX(40px);
+  }
+  #novo:hover{
+    box-shadow: 50px 15px 20px #043fbe;
+    text-decoration: dashed;
+  
+    transition: .6s;
+  }
+  #carnaval{
+    position:relative;
+    height:700px;
+    width:450px;
+    transform: translateX(40px);
+  }
+    #carnaval:hover{
+    box-shadow: 20px 15px 50px #7404be;
+    text-decoration: dashed;
+
+    transition: .6s;
+  }
+  #janeiro{
+    position:relative;
+    height:700px;
+    width:450px;
+    transform: translateX(40px);
+  }
+  #janeiro:hover{
+    box-shadow: 20px 15px 50px #004ef7;
+    text-decoration: dashed;
+
+    transition: .6s;
+  }
+
   video{
     position: relative;
     top:3000px;
@@ -1081,16 +1124,13 @@ section{
     height:780px;
     width:1200px;
   }
-  #novo{
-    display: none;
-  }
+
 
 
   #mapafinal{
     position: relative;
-    transform: translateY(-380px) ;
+    transform: translateY(2680px) ;
     height:2400px;
- 
     background-color: #175ED4;
   }
   #mobilenovo{
@@ -1126,15 +1166,10 @@ iframe{
     font-size: 20px;
     color:white;
   }
-  #endereçolocal2{
+
+  #endereçolocal3{
     position:absolute;
-    top:300px;
-    left:150px;
-    font-size: 20px;
-    color:white;
-  } #endereçolocal3{
-    position:absolute;
-    top:350px;
+    top:310px;
     left:150px;
     font-size: 20px;
     color:white;
