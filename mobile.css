@@ -314,31 +314,10 @@
         width:200px;
     }
 
-      #novo{
-        position:relative;
-        height:700px;
-        width:400px;
-        transform: translateX(5px);
-      }
-      #novo:hover{
-        box-shadow: 50px 15px 20px #043fbe;
-        text-decoration: dashed;
-      
-        transition: .6s;
-      }
-      #carnaval{
-        position:relative;
-        height:700px;
-        width:400px;
-        transform: translateX(5px);
-      }
-        #carnaval:hover{
-        box-shadow: 20px 15px 50px #7404be;
-        text-decoration: dashed;
-    
-        transition: .6s;
-      }
+ 
+
       #janeiro{
+        display: flex;
         position:relative;
         height:700px;
         width:400px;
@@ -347,8 +326,10 @@
       #janeiro:hover{
         box-shadow: 20px 15px 50px #004ef7;
         text-decoration: dashed;
-    
         transition: .6s;
+      }
+      #janeiro2{
+        display:none;
       }
 
 
