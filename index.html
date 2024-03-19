@@ -2,446 +2,1205 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sítio Elysian Place</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="logo.png">
-    <link rel="stylesheet" href="projeto01.css">
-    <link rel="stylesheet" media="screen and (max-width:768px)" href="mobile.css">
-    <link rel="stylesheet" media="screen and (max-width:330px)" href="mobile2.css">
+    <title>Sítio Elysian Place</title>
 </head>
 <body>
-    <a href="https://api.whatsapp.com/send?phone=5511942903148" ><img src="icones/whatsfixo.png" id="whatsfixo" ></a>
-    <a href="https://api.whatsapp.com/send?phone=5511942903148" ><img src="icones/whatsfixo.png" id="fixowhats1" ></a>
+    <style>
+        @media (max-width:700px){
+            body,html{
+            padding: 0px;
+            margin:0px;
+            width:100%;
+            height: 100%;
+           overflow-x: hidden;
+        }
+            #dados,#dados-unico,
+            .css-slideshow,
+            #possui,.blocoazul,.redesum,#folders,#foldersmob{
+            display: none;
+            transition: 0;
+            visibility: hidden;
+            margin: 0;
+            padding: 0;
+            }
+           header{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            transform: translateY(0px) translateX(0px);
+          
+           }
+           nav{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 55px;
+            padding: 10px;
+           }
+           #logotipo{
+            padding: 10px;
+            transform: translateX(20px);
+           }
+
+
+           .fundo-menumob{
+            display: flex;
+            position: absolute;      
+            justify-content: space-between;
+            flex-wrap: wrap;
+            height: 1000px;
+            width: 100%;
+            transform: translateY(460px) translateX(4000px);
+            background-color: #175ED4;
+            padding: 20px;
+            z-index: 4;
+            margin-left: -20px;  
+            overflow: auto;     
+            transition: 1s  ;        
+           } 
+           .ativar-menumob{
+            background-color: #08409b;
+            transform: translateX(0px) translateY(460px);
+           }
+           #fechar-menumob{
+            display: flex;
+            justify-content: left;
+            color: white;
+            font-size: 52px;
+            font-weight: bold;
+            padding: 10px;
+            width: 40%;
+            height: 55px;
+           }
+           #menu{
+            display: flex;
+            justify-content: right;
+            padding: 10px;
+            font-size: 52px;
+            font-weight: bold;
+            color: white;
+            width: 40%;
+            height: 55px;
+            position: relative;
+            overflow: hidden;
+           }
+           .fundo-listamenumob{
+            display: flex;
+            overflow-y: auto;
+            flex-direction: column;
+            width: 100%;
+            padding: 20px;
+            margin-left: -20px;
+            margin-top: -250px;
+            overflow-y: scroll;
+
+      
+        
+           }
+           #redes-menumob{
+            display: flex;
+            align-items: center;
+            justify-self: center;
+            padding: 10px;
+            font-size: 24px;
+            color: white;
+            border-bottom: 1px solid #eeeeef;
+
+           }
+           #icon-mobmenu{
+            font-size: 40px;
+            margin: 10px;
+            color: white;
+           }
+           .botao-menumob{
+            display: flex;
+            background-color: #08409b;
+            font-size: 35px;
+            align-items: center;
+            justify-content: center;
+            margin-top: 40px;
+            color: white;
+            border-radius: 50px;
+            padding: 20px;
+           }
+     
+           main{
+            width: 100%;
+            transform: translateY(-45px)
+           }
+           .fundo-titulo{
+            width: 85%;
+           }
+           #tituloprimario{
+            display:flex;
+            flex-direction: row;
+           }
+           #place{
+            margin-top: -10px;
+           }
+           #texto-principal{
+            margin-top: -120px;
+           }
+           .endereçoum{
+            display: flex;
+            margin-top: -40px;
+            margin-left: -30px;
+            font-size: 24px;
+            padding: 10px;
+            width: 90%;
+            text-align: center;
+           }
+           .fundo-seleçaoum{
+            display: flex;
+            flex-direction: column;
+            transform: translateX(-0px) translateY(-50px);
+            padding: 0px;
+            margin: 0px;
+           }
+           .fundo-textoum{
+            display: flex;
+            flex-direction: column;
+            padding: 0px;
+            margin: 0;
+            transform: translateX(0px);
+            width: 100%;
+           }
+           #titulodois{
+            display: flex;
+            width: 100%;
+            transform: translateX(0px);
+           }
+           #texto2{
+            display: flex;
+            text-align: center;
+            padding: 25px;
+            width: 90%;
+            font-size: 30px;
+            margin-top:-50px;
+            transform: translateY(0px) translateX(15px);
+           }
+
+
+
+
+
+
+
+           .container{
+            display: flex;
+            width: 90%;
+            height: 600px;
+            background-color: white;
+            transform: translateX(0px) translateY(-500px);
+           }
+           .fundo-icones{
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            transform: translateX(0px) translateY(540px);
+           }
+           #iconeprincipal{
+            font-size: 60px;
+            margin:0px;
+           }
+           .fundo-paragrafoum{
+            display: flex;
+            justify-content: center;
+            width: 95%;
+            transform: translateX(10px) translateY(-460px);
+            text-align: center;
+            padding: 10px;
+           }
+           #texto-residencia{
+            font-size: 24px;
+           }
+           .fundo-azul{
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+           }
+           .azulesquerdo, .azuldireito{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            width: 100%;
+           }
+           #tituloesquerdo{
+            width: 100%;
+           }
+           #dadosesquerdo, #dadosdireito{
+            display: flex;
+            justify-content: center;
+            transform: translateX(-20px);
+           }
+           .fundo-textobloco{
+            margin-top: -7px;
+            border: 4px solid white;
+            width: 100%;
+           }
+
+
+
+
+
+           .fundo-blocos
+           ,.fundo-eventos{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+           }
+
+
+
+           .bloco-piscina,
+           .bloco-campos,
+           .bloco-area,
+           .bloco-jardim{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+
+           }
+           .texto-piscina,
+           .texto-campos,
+           .texto-area,
+           .texto-jardim{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            list-style:none;
+
+           }
+           .fundo-icone-piscina,
+           .fundo-icone-campos,
+           .fundo-icone-area,
+           .fundo-icone-jardim{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            padding: 20px;
+            height: 120px;
+           }
+           #img-container1,.container1,
+           #img-container2,.container2,
+           #img-container3,.container3,
+           #img-container4,.container4{
+            width: 600px;
+            height: 500px;
+           }
+
+           .container5, #img-container5{
+            width: 700px;
+            height: 500px;
+           }
+
+           #texto-icone-piscina,
+           #texto-icone-campos,
+           #texto-icone-area,
+           #texto-icone-jardim{
+            display: flex;
+            justify-content: space-evenly;
+            transform: scale(0.9) translateX(0px) translateY(-40px);
+            margin:0px;
+            padding: 0px;
+            width: 100%;
+           }
+           .fundo-formulario{
+            display: flex;
+            width: 100%;
+           }
+           #frase-formulario{
+            width: 90%;
+           }
+           form{
+            width: 80%;
+           }
+           .detalhes-15anos{
+            display: flex;
+            justify-content: center;
+            width: 80%;
+            text-align: center;
+            padding: 10px;
+           }
+           .fundo-banners{
+            width: 100%;
+            display: flex;
+           }
+           #foldermob{
+            display: none;
+        
+           }
+           #folders{
+            display: none;
+           }
+           #video{
+            display: flex;
+            transform: translateX(0px) translateY(580px);
+            width: 100%;
+         
+           }
+           #mapafinal{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            background-color: #175ED4;
+            transform: translateX(0px) translateY(-1900px) ;
+            margin-top: 40px; 
+              }
+           #titulomapafinal{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            transform: translateX(0px) translateY(-100px);
+           }
+           #endereço-mapafinal{
+            display: flex;
+            width: 90%;
+            justify-content: left;
+            align-items: center;
+            transform: translateX(10px) translateY(-100px);
+           }
+           .referencias{
+            display: flex;
+            width: 90%;
+            justify-content: left;
+            transform: translateX(0px) translateY(250px);
+        }
+        #mapa, iframe{
+            display: flex;
+            width: 90%;
+            height: 400px;
+            justify-content: center;
+            transform: translateX(0px) translateY(-200px);
+        }
+        #textoreferencia{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+        .opçao{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            transform: translateX(20px) translateY(310px);
+        }
+        #local2{
+            display: flex;
+            width: 90%;
+            justify-content: center;
+            transform: translateX(0px) translateY(150px);
+        }
+        .fundofinal{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: wrap;
+            background-color: #175ED4;
+            z-index: 0;
+            transform: translateX(0px) translateY(-1700px);
+        }
+        .opçao{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            height: 2000px;
+            transform: translateX(15px) translateY(300px);
+        }
+     
+  
+
+        }
+
+        @media (max-width:600px){
+            body{
+            overflow-x: hidden;
+            padding: 0px;
+            margin:0px ;
+            width:100%;
+            height: 100%;
+            }
+            html{
+                width: 100%;
+                height: 100%;
+            }
+            #dados,#dados-unico,
+            .css-slideshow,
+            #possui,.blocoazul,.redesum{
+            display: none;
+            transition: 0;
+            visibility: hidden;
+            margin: 0;
+            padding: 0;
+            }
+           header{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+           }
+           nav{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+           }
+           #logotipo{
+            padding: 10px;
+            transform: translateX(20px);
+           }
+           #menu{
+            display: flex;
+            padding: 10px;
+            font-size: 52px;
+            font-weight: bold;
+            color: white;
+            transform: translateX(-40px);
+           }
+           main{
+            width: 100%;
+            transform: translateY(-45px)
+           }
+           .fundo-titulo{
+            width: 85%;
+           }
+           #tituloprimario{
+            display:flex;
+            flex-direction: row;
+           }
+           #place{
+            margin-top: -10px;
+           }
+           #texto-principal{
+            margin-top: -120px;
+           }
+           .endereçoum{
+            display: flex;
+            margin-top: -40px;
+            margin-left: -30px;
+            font-size: 24px;
+            padding: 10px;
+            width: 90%;
+            text-align: center;
+           }
+           .fundo-seleçaoum{
+            display: flex;
+            flex-direction: column;
+            transform: translateX(-0px) translateY(-50px);
+            padding: 0px;
+            margin: 0px;
+           }
+           .fundo-textoum{
+            display: flex;
+            flex-direction: column;
+            padding: 0px;
+            margin: 0;
+            transform: translateX(0px);
+            width: 100%;
+           }
+           #titulodois{
+            display: flex;
+            width: 100%;
+            transform: translateX(0px);
+           }
+           #texto2{
+            display: flex;
+            text-align: center;
+            padding: 15px;
+            width: 90%;
+            font-size: 25px;
+            margin-top:40px;
+            transform: translateY(540px) translateX(15px);
+           }
+
+
+
+
+
+
+
+           .container{
+            display: flex;
+            width: 90%;
+            height: 600px;
+            background-color: white;
+            transform: translateX(0px) translateY(-500px);
+           }
+           .fundo-icones{
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            transform: translateX(0px) translateY(540px);
+           }
+           #iconeprincipal{
+            font-size: 60px;
+            margin:0px;
+           }
+           .fundo-paragrafoum{
+            display: flex;
+            justify-content: center;
+            width: 95%;
+            transform: translateX(10px) translateY(-460px);
+            text-align: center;
+            padding: 10px;
+           }
+           #texto-residencia{
+            font-size: 24px;
+           }
+           .fundo-azul{
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+           }
+           .azulesquerdo, .azuldireito{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            width: 100%;
+           }
+           #tituloesquerdo{
+            width: 100%;
+           }
+           #dadosesquerdo, #dadosdireito{
+            display: flex;
+            justify-content: center;
+            transform: translateX(-20px);
+           }
+           .fundo-textobloco{
+            margin-top: -7px;
+            border: 4px solid white;
+            width: 100%;
+           }
+
+
+
+
+
+           .fundo-blocos
+           ,.fundo-eventos{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+           }
+
+
+
+           .bloco-piscina,
+           .bloco-campos,
+           .bloco-area,
+           .bloco-jardim{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+
+           }
+           .texto-piscina,
+           .texto-campos,
+           .texto-area,
+           .texto-jardim{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            list-style:none;
+
+           }
+           .fundo-icone-piscina,
+           .fundo-icone-campos,
+           .fundo-icone-area,
+           .fundo-icone-jardim{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            padding: 20px;
+            height: 120px;
+           }
+           #img-container1,.container1,
+           #img-container2,.container2,
+           #img-container3,.container3,
+           #img-container4,.container4{
+            width: 100%;
+            height: 500px;
+           }
+
+           .container5, #img-container5{
+            width: 90%;
+            height: 500px;
+           }
+
+           #texto-icone-piscina,
+           #texto-icone-campos,
+           #texto-icone-area,
+           #texto-icone-jardim{
+            display: flex;
+            justify-content: space-evenly;
+            transform: scale(0.9) translateX(0px) translateY(-40px);
+            margin:0px;
+            padding: 0px;
+            width: 100%;
+           }
+           .fundo-formulario{
+            display: flex;
+            width: 100%;
+           }
+           #frase-formulario{
+            width: 90%;
+           }
+           form{
+            width: 80%;
+           }
+           .detalhes-15anos{
+            display: flex;
+            justify-content: center;
+            width: 80%;
+            text-align: center;
+            padding: 10px;
+           }
+           .fundo-banners{
+            width: 100%;
+            display: flex;
+           }
+           #foldermob{
+            display: none;
+           
+           }
+           #folders{
+            display: none;
+           }
+           #video{
+            display: flex;
+            transform: translateX(0px) translateY(-580px);
+            width: 100%;
+           }
+           #mapafinal{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            background-color: #175ED4;
+            transform: translateX(0px) translateY(-1300px) ;
+           }
+           #titulomapafinal{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            transform: translateX(0px) translateY(-100px);
+           }
+           #endereço-mapafinal{
+            display: flex;
+            width: 90%;
+            justify-content: left;
+            align-items: center;
+            transform: translateX(10px) translateY(-100px);
+           }
+           .referencias{
+            display: flex;
+            width: 90%;
+            justify-content: left;
+            transform: translateX(0px) translateY(250px);
+        }
+        #mapa, iframe{
+            display: flex;
+            width: 90%;
+            height: 400px;
+            justify-content: center;
+            transform: translateX(0px) translateY(-200px);
+        }
+        #textoreferencia{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+        .opçao{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            transform: translateX(20px) translateY(310px);
+        }
+        #local2{
+            display: flex;
+            width: 90%;
+            justify-content: center;
+
+            transform: translateX(0px) translateY(150px);
+        }
+        .fundofinal{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: wrap;
+            background-color: #175ED4;
+
+            z-index: 0;
+            transform: translateX(0px) translateY(-1700px);
+        }
+        .opçao{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            height: 2000px;
+            transform: translateX(15px) translateY(300px);
+        }
+     
+  
+        }
+    </style>
+
+    <img src="whatsfixo.png" id="whatsfixo">
+    <div class="blocoazul"></div>
 
     <header>
-       
-        <nav class="menu">
-            <a href="#menu">Início</a>
-            <a href="#arq">Sobre</a>
-            <a href="#textoamb">Comodidades</a>
-            <a href="#estilolocal">Localização</a>
+
+        <nav class="aqui" >
+         
+            <img src="logo.png" id="logotipo">
+
+            <a href="#menu" id="dados">Início</a>
+            <a href="#tituloesquerdo" id="dados">Sobre</a>
+            <a href="#piscina-titulo" id="dados">Comodidades</a>
+            <a href="#titulo-eventos" id="dados">Eventos</a>
+            <a href="#titulomapafinal" id="dados">Localização</a>
+            <i class="fa-solid fa-bars" id="menu"></i>
+            <a href="https://api.whatsapp.com/send?phone=5511942903148" id="dados-unico">Fale Conosco</a>
+         
+            <div class="fundo-menumob">    
+                <i class="fa-solid fa-circle-xmark" id="fechar-menumob"></i>        
+                <i class="fa-solid fa-bars" ></i>
+              
+                <div class="fundo-listamenumob">
+                <p id="redes-menumob"><i class="fa-brands fa-whatsapp" id="icon-mobmenu"></i>(11) 94290-3148</p>
+                <p id="redes-menumob"><i class="fa-brands fa-facebook" id="icon-mobmenu"></i> Elysian Place</p>
+                <p id="redes-menumob"><i class="fa-brands fa-instagram" id="icon-mobmenu"></i> Elysian Place</p>
+                <p id="redes-menumob"><i class="fa-solid fa-envelope" id="icon-mobmenu"></i>placeelysian@gmail.com</p>
+                <a href="https://api.whatsapp.com/send?phone=5511942903148" class="botao-menumob">Fale Conosco</a>  
+            </div>
+                
+            </div>
+
         </nav>
-            <div class="quadrado"><a href="#fundobook" class="contato">Contatos</a></div>
-            <img src="logo.png" id="logo">
+
+        <script>
+            
+            const menu = document.querySelector('.aqui');
+            const dados = document.querySelector('nav')
+        
+            function ativarscroll(){
+            menu.classList.toggle('ativar', scrollY > 0);
+        
+            }
+            window.addEventListener('scroll', ativarscroll) ;
+        
+        </script>
 
     </header>
-    <div class="imagem1">
+
+    <main>
+        
+        <article class="fundo-titulo">
+            <p id="tituloprimario">Sítio Elysian<br><p id="place">Place</p></p>
+
+            <div class="texto-principal">
+                <p id="local">Localizado em </p>
+                <p id="local"><font color="#175ED4"> Atibaia </font></p>
+            </div>
+   
+        </article>
+
+        <article class="redesum">
+            <p id="redes"><i class="bi bi-whatsapp"></i>(11) 94290-3148</p>
+            <p id="redes"><i class="bi bi-telephone"></i>(11) 3207-7976</p>
+            <p id="redes"><i class="bi bi-instagram"></i>@sitio_elysian</p>
+            <p id="redes"><i class="bi bi-facebook"></i>Sitio Elysian Place</p>
+        </article>
+
         <div class="css-slideshow">
-        <figure>
-            <img class="imgcarro" src="decoração/4.jpg" alt="class-header-css3" width="995" height="570" class="alignnone size-full wp-image-172" />
-            <figcaption>
-                <strong>Aconchego e Garagem</strong><br>
-                Espaço dedicado para mais de 10 carros e para grande volume de pessoas.
+
+            
+            <figure>
+                <img class="imgcarro" src="https://thumbs2.imgbox.com/13/b4/66qAYcF7_t.jpeg" alt="class-header-css3" width="995" height="570" class="alignnone size-full wp-image-172" />
+                <figcaption>
+                    <strong>Aconchego e Garagem</strong><br>
+                    Espaço dedicado para mais de 10 carros e para grande volume de pessoas.
+                    </figcaption> 
+            </figure>
+    
+            
+            <figure>
+                <img class="imgcarro" src="https://thumbs2.imgbox.com/1a/11/e0e2CL5B_t.jpg" alt="class-header-semantics" width="995" height="570" class="alignnone size-full wp-image-179" />
+                <figcaption><strong>Tempo de Qualidade</strong> <br>
+                   Casa Limpa trazendo o maior conforto e segurança.
                 </figcaption> 
-        </figure>
-
-          <!--IMAGEM 1-->
-        <figure>
-            <img class="imgcarro" src="piscina/1.jpg" alt="class-header-semantics" width="995" height="570" class="alignnone size-full wp-image-179" />
-            <figcaption><strong>Tempo de Qualidade</strong> <br>
-               Casa Limpa trazendo o maior conforto e segurança.
-            </figcaption> 
-        </figure>
-
-          <!--IMAGEM 2-->
-        <figure>
-            <img class="imgcarro" src="decoração/2.jpg" alt="class-header-offline" width="995" height="570" class="alignnone size-large wp-image-178" />
-            <figcaption><strong>Qualidaede da nossa Residência</strong><br>
-             Sítio de alto nivel planejado e dedicado ao Usuário.
-            </figcaption> 
-        </figure>
-
-          <!--IMAGEM 3-->
-        <figure>
-            <img class="imgcarro" src="casa/58.jpg" alt="class-header-device" width="995" height="570" class="alignnone size-full wp-image-177" />
-            <figcaption><strong>Arquitetura</strong><br>
-                Lugar totalmente planejado para eventos,festas e lazer.  
-            </figcaption> 
-        </figure>
-
-          <!--IMAGEM 4-->
-    <figure>
-            <img class="imgcarro" src="piscina/3.jpg" alt="class-header-connectivity" width="995" height="570" class="alignnone size-large wp-image-176" /><figcaption>
-                <strong>Jardinagem</strong><br>
-                Jardim bem cuidado e florescido.
-            </figcaption> 
-        </figure>
-
-             <!--IMAGEM 5-->
-        <figure>
-            <img class="imgcarro" src="casa/3.jpg" width="995" height="570" class="alignnone size-large wp-image-175" />
-            <figcaption><strong>Casa</strong><br> 
-                Quartos,Cozinha,Banheiros e Sala limpos e planejados para um bom uso. 
-            </figcaption> 
-        </figure>
-
-             <!--IMAGEM 6-->
-        <figure>
-            <img  class="imgcarro" src="casa/57.jpg" alt="class-header-3d" width="995" height="570" class="alignnone size-large wp-image-174" />
-            <figcaption><strong>Ambientação</strong><br>
-                Ambiente com campos,jogos e lazer.
-        </figcaption> 
-        </figure>
-
-             <!--IMAGEM 7-->
-        <figure>
-            <img class="imgcarro" src="piscina/2.jpg" alt="class-header-performance" width="995" height="570" class="alignnone size-large wp-image-173" />
-            <figcaption><strong>Piscina e Jardinagem</strong><br>
-              Piscina semiolímpica de 1 á 2 metros de profundidade.
-            </figcaption> 
-        </figure>
-    </div>
-
-    <!--INFORMAÇÕES SOBRE O SITIO-->
-    <div id="mediascreen1"> <!--MEDIA SCREEN-->
-        <p id="nomesitio">Sítio Elysian <br><a id="morales">Place</a></p>
-        <p id="proximidadesitio">Localizado em <a id="piqueri">  Atibaia</a></p>
-    </div>
-       <div id="mediascreen2">
-        <div class="whatssap">
-            <img src="icones/whats.png" id="whats">
-        <a href="https://wa.me/5511947535018?text=Whatssap+do+Propriet%C3%A1rio" id="cel"> (11) 94290-3148</a>
-        </div>
-
-        <div class="telefones">
-        <img src="icones/telefone.png" id="telefone">
-        <a href="https://wa.me/5511947535018?text=Whatssap+do+Propriet%C3%A1rio" id="tel"> (11) 3207-7976</a>
-        </div>
-    </div>
+            </figure>
     
-    <div id="mediascreen3">
-        <div class="instagram">
-        <img src="icones/insta.png" id="gram">
-       <a href="https://instagram.com/sitio_elysian?igshid=NzZlODBkYWE4Ng==" id="insta">@sitio_elysian</a>
-   
-       </div>
-
-
-       <div class="facebook">
-        <img src="icones/facebook.png" id="book">
-        <a href="https://api.whatsapp.com/send?phone=5511942903148" id="face">Sitio Elysian Place</a>
-        </div>
-        </div>
-            <a href="https://api.whatsapp.com/send?phone=5511942903148" id="local1"><img src="icones/local.png" id="localimagem"> Henrique Bonini, 176 à 180 - Atibaia</a>        
-
-<!---Folder 2---->
+              <!--IMAGEM 2-->
+            <figure>
+                <img class="imgcarro" src="https://thumbs2.imgbox.com/e7/ab/QRgbZwXE_t.jpeg" alt="class-header-offline" width="995" height="570" class="alignnone size-large wp-image-178" />
+                <figcaption><strong>Qualidaede da nossa Residência</strong><br>
+                 Sítio de alto nivel planejado e dedicado ao Usuário.
+                </figcaption> 
+            </figure>
     
-<section>
-    <a href="https://api.whatsapp.com/send?phone=5511942903148" id="natal">CLIQUE E ALUGUE PARA O NATAL</a>
-    <div id="media1">
-    <p id="veja">Veja <a id="nossas">nossas</a> <a id="fotos"><br>Fotos</a></p>
-    <p id="infores">Área com 7000 mil metros ao quadrado,<br>planejado para festas,casamentos,<br>lazer familiar e eventos corporativos.</p>
-   </div>
-   
+              <!--IMAGEM 3-->
+            <figure>
+                <img class="imgcarro" src="https://thumbs2.imgbox.com/09/58/L8r3d3II_t.jpg" alt="class-header-device" width="995" height="570" class="alignnone size-full wp-image-177" />
+                <figcaption><strong>Arquitetura</strong><br>
+                    Lugar totalmente planejado para eventos,festas e lazer.  
+                </figcaption> 
+            </figure>
+    
+              <!--IMAGEM 4-->
+            <figure>
+                <img class="imgcarro" src="https://thumbs2.imgbox.com/c8/d5/ipWZCBr5_t.jpg" alt="class-header-connectivity" width="995" height="570" class="alignnone size-large wp-image-176" /><figcaption>
+                    <strong>Jardinagem</strong><br>
+                    Jardim bem cuidado e florescido.
+                </figcaption> 
+            </figure>
+    
+                 <!--IMAGEM 5-->
+            <figure>
+                <img class="imgcarro" src="https://thumbs2.imgbox.com/3e/66/LbmpCE3Z_t.jpg" width="995" height="570" class="alignnone size-large wp-image-175" />
+                <figcaption><strong>Casa</strong><br> 
+                    Quartos,Cozinha,Banheiros e Sala limpos e planejados para um bom uso. 
+                </figcaption> 
+            </figure>
+    
+                 <!--IMAGEM 6-->
+            <figure>
+                <img  class="imgcarro" src="https://thumbs2.imgbox.com/18/82/90yaX6jU_t.jpg" alt="class-header-3d" width="995" height="570" class="alignnone size-large wp-image-174" />
+                <figcaption><strong>Ambientação</strong><br>
+                    Ambiente com campos,jogos e lazer.
+            </figcaption> 
+            </figure>
+    
+                 <!--IMAGEM 7-->
+            <figure>
+                <img class="imgcarro" src="https://thumbs2.imgbox.com/c8/d5/ipWZCBr5_t.jpg" alt="class-header-performance" width="995" height="570" class="alignnone size-large wp-image-173" />
+                <figcaption><strong>Piscina e Jardinagem</strong><br>
+                  Piscina semiolímpica de 1 á 2 metros de profundidade.
+                </figcaption> 
+            </figure>
+
+        </div>
+
+        <div class="endereçoum">
+            <p id="primeiroendereço"><i class="bi bi-geo-alt-fill"></i>Henrique Bonini, 176 à 180 - Atibaia</p>
+        </div>
+
+    </main>
+
+    <section class="fundo-seleçaoum">
+        
+        <article class="fundo-textoum">
+
+            <p id="titulodois">Veja nossas Fotos</p>
+
+            <p id="texto2">Área com 7000 mil metros ao quadrado,
+                planejado para festas,casamentos,lazer<br>
+                familiar e eventos corporativos.</p>
+        </article>
+
+        <article class="fundo-icones">
+         <i class="bi bi-wifi" id="iconeprincipal"></i>
+         <i class="bi bi-door-open-fill" id="iconeprincipal"></i>
+         <i class="bi bi-car-front-fill" id="iconeprincipal"></i>
+        </article>
+
         <div class="container">
-            <img src="casa/58.jpg" id="imagemcont">
-            <img src="casa/1.jpg"  id="imagemcont1">
-            <img src="casa/5.jpg"id="imagemcont1">
-            <img src="casa/4.jpg"id="imagemcont1">
-            <img src="piscina/1.jpg"id="imagemcont1">
-            <img src="casa/12.jpg" id="imagemcont1">
-            <img src="piscina/2.jpg" id="imagemcont1">
-            <img src="casa/35.jpg" id="imagemcont1">
+            <img src="1-min.jpg"  id="imagemcont1">
+            <img src="2.jpg" id="imagemcont1">
+            <img src="3.jpg" id="imagemcont1">
+            <img src="5.jpg"id="imagemcont1">
           </div>
-          <div id="fundocompre">
-            <a href="https://api.whatsapp.com/send?phone=5511942903148" id="compre">ALUGUE O SITIO CLICANDO AQUI</a>
-          </div>
-   
- 
-  <div id="media2">
-    <img src="wifi.png" alt="" id="wifi">
-    <img src="cama.png" alt="" id="cama">
-    <img src="chuveiro.png" alt="" id="chuveiro">
- </div>
-    <p id="texto"> <font color="#598ad9">Alugamos a Residência Elysian para</font><br> Festas e contraternização de Empresas,
-        Festa de casamento, Batizado, Festa de aniversário,<br>eventos corporativos, eventos para fnais de semana,
-        para familia e até<br> para qualquer outro tipo de Festa .</p>
 
-    </div>
+        <article class="fundo-paragrafoum">
+            <p id="texto-residencia"><font color = "#175ED4">Alugamos a Residência Elysian para<br></font>
+                Festas e contraternização de Empresas, Festa de casamento, Batizado, Festa de aniversário,
+                eventos corporativos, eventos para fnais de semana, para familia e até
+                para qualquer outro tipo de Festa .
+            </p>
+        </article>
+  
+    </section>
 
-    <div class="descricoes">
-        <div class="fundo">
+    <section class="fundo-azul">
 
-            <div class="ponto">.</div>
-            <div class="ponto2">.</div>
-            <div class="traço">|</div>
-        </div>
-
-        <div class="desc1">
-            <h1 id="arq">Arquitetura</h1>
-            <h1 id="possuimedia">Possui:</h1>
-
-            <ul id="temos">
-                <li>Campo de futebol, Sala com varias seções de Jogos e uma piscina para adulto e crianças de qualquer idade, tudo para sua diversão;</li>
-                <br>
-                <li>Cozinha, geladeira, pratos e talheres de garantia, mesa de almoço e sala de estar;</li>
-                <br>
-                <li>Bairro tranquilo, movimentado e proximo ao centro;</li>
-                <br>
-                <li>Lindo campo de flores e trilhas pelo lado externo da residência.</li>
-            </ul>
-        </div>
-
-        <div class="desc2">
-            <h1 id="lazer">Lazer</h1>
-            <h1>Paz e Tranquilidade:</h1>
-
-            <ul id="temos2">
-                <li>Gramado bem cuidado, pronto e utilizado para o seu agrado;</li>
-                <br>
-                <li>Ambiente dedicado para eventos como: Festas, casamentos e diversas ocasiões;</li>
-                <br>
-                <li>Itens e utensílios utilizados para melhorar a diversão;</li>
-                <br>
-                <li>Exigimos que a residência seja entregue no prazo e em perfeitas condições.</li>
-            </ul>
-        </div>
-
-    </div>
-
-<!----Folder4-->
-
-<section>
-   <div class="textomorales">
-    <h1 id="textoamb">Conheça nossos ambientes do sítio <a href="https://api.whatsapp.com/send?phone=5511942903148" id="rsmorales">Elysian Place</a></h1>
-   </div>
-
-<!--FOLDER PISCINA-->
-    <div class="folderpiscina">
-        <ul>
-    <li id="piscina"><font color="#598ad9"> Área</font> Piscina</li>
-    </ul>
+        <article class="azulesquerdo">
+            <p id="tituloesquerdo">Arquitetura</p>
     
+            <p id="possui">Possui :</p>
+    
+                <ul id="textoesquerdo">
+                    <li id="dadosesquerdo">
+                        Campo de futebol, Sala com varias seções de Jogos e uma piscina para adulto e crianças de qualquer idade, tudo para sua diversão;
+                    </li>
+                    <li id="dadosesquerdo">
+                        Cozinha, geladeira, pratos e talheres de garantia, mesa de almoço e sala de estar;
+                    </li>
+                    <li id="dadosesquerdo">
+                        Bairro tranquilo, movimentado e proximo ao centro;
+                    </li>
+                    <li id="dadosesquerdo">
+                        Lindo campo de flores e trilhas pelo lado externo da residência.
+                    </li>
+                </ul>
+         
+        </article>
+    
+        <article class="azuldireito">
+            <p id="titulodireito"> Lazer </p>
+    
+            <p id="possui">Possui : </p>
+    
+
+            <ul id="textodireito">
+                <li id="dadosdireito">
+                    Gramado bem cuidado, pronto e utilizado para o seu agrado;
+                </li>
+                <li id="dadosdireito">
+                    Ambiente dedicado para eventos como: Festas, casamentos e diversas ocasiões;
+                </li>
+                <li id="dadosdireito">
+                    Itens e utensílios utilizados para melhorar a diversão;
+                </li>
+                <li id="dadosdireito">
+                    Exigimos que a residência seja entregue no prazo e em perfeitas condições.
+                </li>
+            </ul>
+    
+        </article>
+    
+    </section>
+
+    <article class="fundo-textobloco">
+
+        <p id="texto-bloco"> Conheça Nossos Ambientes Do Sítio Elysian Place</p>
+    
+    </article>
+
+    <section class="fundo-blocos">
+
+        <article class="bloco-piscina">
+
+        <div class="texto-piscina">
+                <li id="piscina-titulo">Piscina e Lazer</li>
+        </div>
+
+        <article class="fundo-icone-piscina">
+                <p id="texto-icone-piscina"><i class="fa-solid fa-person-swimming" id="piscina-icone"></i>Piscina Paraolímpica</p>
+                <p id="texto-icone-piscina"><i class="fa-solid fa-person-drowning" id="piscina-icone"></i>De 1 até 2 metros de produndidade</p>
+        </article>
+
         <div class="container1">
-            <img src="piscina/1.jpg"  height="550px" width="780px">
-            <img src="piscina/2.jpg" height="550px" width="780px">
-            <img src="piscina/3.jpg" height="550px" width="780px">
-            <img src="piscina/4.jpeg" height="550px" width="780px">
-            <img src="piscina/5.jpeg"  height="550px" width="780px">
-          </div>
 
-          <div id="tipodepiscina">
-            <p id="textopiscina">Piscina<br>Paraolímpica</p>
-            <img src="piscina.png" id="iconpiscina">
-        </div>
+                <img src="https://thumbs2.imgbox.com/69/41/lung5xCZ_t.jpeg"  id="img-container1">
+                <img src="https://thumbs2.imgbox.com/c8/d5/ipWZCBr5_t.jpg "  id="img-container1">
+                <img src="https://thumbs2.imgbox.com/c0/25/DAkPoIXU_t.jpg"  id="img-container1">
+                <img src="https://thumbs2.imgbox.com/1a/11/e0e2CL5B_t.jpg" id="img-container1">
+                <img src="https://thumbs2.imgbox.com/9e/04/K7keZXCe_t.jpg " id="img-container1">
+                <img src="https://thumbs2.imgbox.com/18/82/90yaX6jU_t.jpg " id="img-container1">
+                <img src="https://thumbs2.imgbox.com/c8/d5/ipWZCBr5_t.jpg  " id="img-container1">
         
-        <div id="profundidade">
-            <p id="textoprofundidade">De 1 até 2 metros<br> de produndidade</p>
-            <img src="profundidade.png" id="iconprofundidade">
         </div>
- 
-          <div id="inforarea1">
-            <ul>
-            <li>Piscina Pré Olípica sendo assecivel na faixa etária de 7 anos a diante.<br> Em volta uma linda área de lazer
-                dando a possibilidade de fazer almoço<br> podendo utilizar a Churrasqueira e o Freezer na área de alimentação,<br>
-                próximo a Piscina.<br>
-                Garantimos o conforto e Segurança com a qualidade da ambietação.
-            </li>
-            </ul>
-          </div>
-    </div>
 
-<!--FOLDER CAMPOS-->
-    <div class="foldercampos">
-        <ul>
-        <li id="campos"><font color="#598ad9">Área</font> Campos e Jogos</li>
-        </ul>
-        
+        </article>
+
+        <article class="bloco-campos">
+
+            <div class="texto-campos">
+                    <li id="campos-titulo">Churascaria e Jogos</li>
+            </div>
+    
+            <article class="fundo-icone-campos">
+                    <p id="texto-icone-campos"><i class="fa-solid fa-dice" id="campos-icone"></i>3 Jogos de Mesa e <br>Campo de Futebol</p>
+                    <p id="texto-icone-campos"><i class="fa-solid fa-utensils" id="campos-icone"></i></i></i>Churrascaria Adequada</p>
+            </article>
+    
             <div class="container2">
-                <img src="casa/57.jpg"  height="550px" width="780px">
-                <img src="casa/31.jpg" height="550px" width="780px">
-                <img src="decoração/35.jpg" height="550px" width="780px">
-                <img src="casa/61.jpg" height="550px" width="780px">
-                <img src="casa/55.JPG"  height="550px" width="780px">
-                 <img src="decoração/33.jpg"  height="550px" width="780px">
-              </div>
-    
-              <div id="tipodecampos">
-                <p id="textocampos">3 Jogos<br> de Mesa</p>
-                <img src="icones/games1.png" id="iconcampos">
+                    <img src="https://thumbs2.imgbox.com/4c/2f/mT3bjrzu_t.jpg"  id="img-container2">
+                    <img src="https://thumbs2.imgbox.com/16/7a/YmBA3Cjv_t.jpg"  id="img-container2">
+                    <img src="https://thumbs2.imgbox.com/88/64/qLBmgCQZ_t.jpg"  id="img-container2">
+                    <img src="https://thumbs2.imgbox.com/8f/f3/quCAkgQ0_t.jpg" id="img-container2">
+                    <img src="https://thumbs2.imgbox.com/7b/e5/Gt50xVDB_t.jpg" id="img-container2">
             </div>
-            
-            <div id="area">
-                <p id="textoarea">Campo com<br> 3 metros ao quadrado</p>
-                <img src="icones/futebol.png" id="iconarea">
-            </div>
-            <div id="inforarea2">
-                <ul>
-                <li> Possuimos três jogos em nosssa Residência: Mesa  de Bilhar , Mesa de <br> Pebolim e Mesa de Ping Pong.
-                <br>Todas com suas peças completas
-                 e de bom zelo.<br>
-                Na quadra temos dois Campos de Futebol com redes<br> (não distribuimos bola por motivo de furto).</li>
-                </ul>
-              </div>
-        </div>
     
-        <div class="foldercasa">
-            <ul>
-            <li id="casa"><font color="#598ad9">Área</font> Casa</li>
-            </ul>
-        
+        </article>
+
+        <article class="bloco-area">
+
+            <div class="texto-area">
+                    <li id="area-titulo">Casa e Cômodos</li>
+            </div>
+    
+            <article class="fundo-icone-area">
+                    <p id="texto-icone-area"><i class="fa-solid fa-house" id="area-icone"></i>13 Comodos, 2 andares</p>
+                    <p id="texto-icone-area"><i class="fa-brands fa-pagelines" id="area-icone"></i>Plantações e Flores</p>
+            </article>
+    
             <div class="container3">
-                <img src="casa/3.jpg"  height="550px" width="780px">
-                <img src="casa/32.jpg" height="550px" width="780px">
-                <img src="casa/12.jpg" height="550px" width="780px">
-                <img src="casa/26.jpg" height="550px" width="780px">
-                <img src="casa/60.jpg"  height="550px" width="780px">
-                <img src="casa/2.jpg" height="550px" width="780px" >
-                <img src="casa/33.jpg"  height="550px" width="780px">
-                <img src="casa/61.jpg" height="550px" width="780px" >
-                <img src="casa/35.jpg"  height="550px" width="780px">
-              </div>
+                    <img src="https://thumbs2.imgbox.com/60/24/b0VR8g7v_t.jpg"  id="img-container3">
+                    <img src="https://thumbs2.imgbox.com/22/e8/YzRTFvNH_t.jpg "  id="img-container3">
+                    <img src="https://thumbs2.imgbox.com/3e/66/LbmpCE3Z_t.jpg "  id="img-container3">
+                    <img src="https://thumbs2.imgbox.com/54/15/YrRtVYXz_t.jpg " id="img-container3">
+            </div>
     
-              <div id="tipodecasa">
-                <p id="textocasa">13 Comodos,<br> 2 andares</p>
-                <img src="icones/casa.png" id="iconcasa">
-            </div>
-            
-            <div id="jogo">
-                <p id="textojogo">Plantações<br>e Flores</p>
-                <img src="icones/planta.png" id="iconjogo">
-            </div>
-            <div id="inforarea3">
-                <ul>
-                    <li>Plantas e Flores muito bem cuidadas, é permitido regar e deixar no sol <br>as flores do Sítio.<br>
-                    Não é permitido arrancar ou espatular as Flores.</li>
-                </ul>
-            </div>
-        </div>
+        </article>
 
-        <div class="folderarquitetura">
-            <ul>
-            <li id="arquitetura"><font color="#598ad9">Área<br></font> Arquitetura e Lazer</li>
-            </ul>
-            
-                <div class="container4">
-                    <img src="decoração/1.jpg"  height="550px" width="780px">
-                    <img src="decoração/7.jpg" height="550" width="780px">
-                    <img src="decoração/3.jpg" height="550px" width="780px">
-                    <img src="decoração/11.jpeg" height="550px" width="780px">
+        <article class="bloco-jardim">
 
-                  </div>
+            <div class="texto-jardim">
+                    <li id="jardim-titulo">Casa e Cômodos</li>
+            </div>
+    
+            <article class="fundo-icone-jardim">
+                    <p id="texto-icone-jardim"><i class="fa-solid fa-broom" id="jardim-icone"></i>Manter o Ambiente Limpo</p>
+                    <p id="texto-icone-jardim"><i class="fa-solid fa-trash" id="jardim-icone"></i>De 1 até 2 metros de produndidade</p>
+            </article>
+    
+            <div class="container4">
+                    <img src="https://thumbs2.imgbox.com/52/b1/oAYf5TKy_t.jpg"  id="img-container4">
+                    <img src="https://thumbs2.imgbox.com/ce/f0/lKuuZcmo_t.jpg"  id="img-container4">
+                    <img src="https://thumbs2.imgbox.com/e7/ab/QRgbZwXE_t.jpeg" id="img-container4">
+            </div>
+    
+        </article>
+
+    </section>
+
+    <section class="fundo-formulario">
+
+        <h2 id="frase-formulario">Entre em Contato conosco para marca a sua locação no nosso Sítio</h2>
         
-                  <div id="tipoarquitetura">
-                    <p id="textoarquitetura">Manter o <br>Ambiente Limpo</p>
-                    <img src="icones/limpeza.png" id="iconarquitetura">
-                </div>
-                
-                <div id="urbanismo">
-                    <p id="textourbanismo">Não Sujar<br> o Jardim</p>
-                    <img src="icones/lixeira.png" id="iconurbanismo">
-                </div>
-                <div id="inforarea4">
-                    <ul>
-                    <li>Lindo Jardim de Flores ao redor do Sítio.<br>Peçamos por gentileza que não prejudique as folhas do Jardim</li>
-                    </ul>
-                  </div>
+        <form action="https://formsubmit.co/alvarengasantosleo25@gmail.com" method="POST" id="form">
+            <h2 id="titulo-formulario">Preencha nosso Formulário</h2>
+            <label>Nome</label>
+            <input type="text" name="Cliente" id="name" required>
+            <label>Telefone</label>
+            <input type="text" name="Telefone" id="tel" required>
+            <label>Email</label>
+            <input type="email" name="Email" id="email" required>
+            <input type="hidden" name="_subject" value="Novo Cliente!">
+            <button type="submit">Enviar</button>
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+      
+    </section>
+
+    <section class="fundo-eventos">
+
+        <h2 id="titulo-eventos">Eventos Realizados</h2>
+
+        <article class="evento15anos">
+            <p>Aniversário De 15 Anos</p>
+        </article>
+
+
+        <div class="container5">
+                <img src="https://thumbs2.imgbox.com/03/58/oCH85SZe_t.jpg"  id="img-container5">
+                <img src="62.jpg"  id="img-container5">
+                <img src="https://thumbs2.imgbox.com/8c/0f/gd7fn8fb_t.jpg" id="img-container5">
+                <img src="https://thumbs2.imgbox.com/de/e9/MzatWOa6_t.jpg" id="img-container5">
+        </div>
+
+        <article class="detalhes-15anos">
+            <p>Festa Promovida com Garçom , Churrasqueiro , Cozinheiro e toda nossa Equipe que Trabalha para fazer o seu Evento Ser Unico </p>
+        </article>
+
+        </article>
+    </section>
+
+    <section class="fundo-banners">
+        <img src="https://thumbs2.imgbox.com/07/e9/EkWyFWqX_t.jpg" id="foldermob">
+        <img src="https://thumbs2.imgbox.com/0f/82/NRTwJCva_t.jpg" id="foldermob">
+        <img src="Desktop.jpg" id="folders" >
+        <img src="Desktop2.jpg" id="folders">
+        <video src="video.mp4" id="video" controls autoplay muted></video>
+    </section>
+
+    <section id="mapafinal">        
+        <h2 id="titulomapafinal">Localização</h2>
+        <p id="endereço-mapafinal"><i class="fa-solid fa-location-dot" id="iconemapafinal"></i>Rua Henrique Bonini, 176 - Atibaia SP  12945-250</p>
+        <p id="endereço-mapafinal"><i class="fa-solid fa-phone" id="iconemapafinal"></i>(11)94763-5018</p></i></p>
+     
+        <div class="referencias">
+
+            <p id="textoreferencia">Pontos de referencias</p>
+            <ul>
+               <li>1 Kilometro de distancia do Centro de Atibaia</li>
+               <li>Mercado no bairro da Residência</li>
+               <li>Industria de Vinho no Bairro da Residência</li>
+               <li>Parque Atibaia: Famosa comemoração da Fesa do Morango</li>
+               <li>Área para passeio de jet ski e lanchas</li>
+            </ul>
+        </div>
+
+        <div id="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3669.6843609972734!2d-46.53540492456151!3d-23.108647645116722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cec0bed409de7b%3A0x4e87b697dd9ca3a8!2sR.%20Henrique%20Bonini%2C%20176%20-%20Lot.%20Loanda%2C%20Atibaia%20-%20SP%2C%2012945-250!5e0!3m2!1spt-BR!2sbr!4v1703686248602!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p id="local2"> Henrique Bonini, 176 - Atibaia</p>   
             </div>
-</section>
-<div >
-    <video src="video.mp4" controls autoplay muted></video>
-</div>
-<div id="fundonatal">
-       <img src="folders/janeiro.jpg" id="janeiro"> 
-       <img src="folders/janeiro2.jpg" alt="" id="janeiro2"> 
-</div>
 
+            <div class="opçao">
 
-<section id="mapafinal">
-   <div id="media3">
-    <p id="estilolocal">Localização</p>
-    <p id="endereçolocal"><img src="icones/local.png" height="25px" width="25px"> Rua Henrique Bonini, 176 - Atibaia SP<br><br><br><br>
-    <p id="endereçolocal1"><img src="iconeS/CEP.png" height="25px" width="25px"> 12945-250</p> <br><br><br>
-   
-    <p id="endereçolocal3"><img src="icones/telefonebranco.png" height="25px" width="25px"> (11)94763-5018</p><br><br><br>
-    </div>
+                <div id="opc1">
+                    <p id="icone1"><b>Parque Edmundo Zanoni</b></p>
+                     <img src="parque.PNG" id="icon1">
+                    <p id="texto1">Av. Horácio Netto, 1030 - Vila Loanda, Atibaia - SP, 12945-010 </p>
+                    <p id="aproximidade1">Á 1,4km da Residência</p>
+                </div>
 
-    <div class="referencias">
-     <p id="textoreferencia">Pontos de referencias</p>
-     <ul>
-        <li>1 Kilometro de distancia do Centro de Atibaia</li>
-        <li>Mercado no bairro da Residência</li>
-        <li>Industria de Vinho no Bairro da Residência</li>
-        <li>Parque Atibaia: Famosa comemoração da Fesa do Morango</li>
-        <li>Área para passeio de jet ski e lanchas</li>
-     </ul>
-    </div>
+                <div id="opc1">
+                    <p id="icone1"><b>Festas do Morango</b></p>
+                    <img src="morango.jpg" id="icon1">
+                    <p id="texto1">Av. Horácio Netto, 1030 - Vila Loanda, Atibaia - SP, 12945-010</p>
+        
+                    <p id="aproximidade1">Á 1,4km da Residência</p>
+                </div>
 
-   <div id="media5">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3669.6843609972734!2d-46.53540492456151!3d-23.108647645116722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cec0bed409de7b%3A0x4e87b697dd9ca3a8!2sR.%20Henrique%20Bonini%2C%20176%20-%20Lot.%20Loanda%2C%20Atibaia%20-%20SP%2C%2012945-250!5e0!3m2!1spt-BR!2sbr!4v1703686248602!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <p id="local2"> Henrique Bonini, 176 - Atibaia</p>   
-    </div>
-
-    <div id="espaços">
-        <p id="atibaia">Cidade Atibaia</p>
-
-
-    <div class="opçao">
-        <div id="opc1">
-            <p id="icone1"><b>Parque Edmundo Zanoni</b></p>
-             <img src="campos/parque.PNG" id="icon1">
-            <p id="texto1">Av. Horácio Netto, 1030 - Vila Loanda, Atibaia - SP, 12945-010 </p>
-
-            <p id="aproximidade1">Á 1,4km da Residência</p>
-        </div>
-        <div id="opc2">
-            <p id="icone2"><b>Festas do Morango</b></p>
-            <img src="campos/morango.jpg" id="icon2">
-            <p id="texto2">Av. Horácio Netto, 1030 - Vila Loanda, Atibaia - SP, 12945-010</p>
-
-            <p id="aproximidade2">Á 1,4km da Residência</p>
-        </div>
-        <div id="opc3">
+                <div id="opc1">
            
-            <h3 id="icone3"><b>Espaço Nardinii</b></h3>
-            <img src="campos/vinho.PNG" id="icon3">
-            <p id="texto3">Av. Amador Peçanha Franco, 635 - Jardim Ype, Atibaia - SP, 12945-000</p>
+                    <h3 id="icone1"><b>Espaço Nardinii</b></h3>
+                    <img src="vinho.PNG" id="icon1">
+                    <p id="texto1">Av. Amador Peçanha Franco, 635 - Jardim Ype, Atibaia - SP, 12945-000</p>
+        
+                    
+                    <p id="aproximidade1">Á 450m da Residência</p>
+                </div>
 
-            
-            <p id="aproximidade3">Á 450m da Residência</p>
-        </div>  
-        <div id="opc4">
-            <img src="campos/CentroAtibaia.jpg" id="icon4">
-            <h3 id="icone4"><b>Centro Atibaia</b></h3>
+                <div id="opc1">
+                    <img src="CentroAtibaia.jpg" id="icon1">
+                    <h3 id="icone1"><b>Centro Atibaia</b></h3>
+        
+                    <p id="texto1">Centro, Atibaia - SP</p>
+        
+                      
+                    <p id="aproximidade1">Á 2,6km da Residência</p>
+                </div> 
+            </div>
+    </section>
 
-            <p id="texto4">Centro, Atibaia - SP</p>
+    <footer class="fundofinal">
 
-              
-            <p id="aproximidade4">Á 2,6km da Residência</p>
-        </div>    
-    </div>
-    <div id="fundofinal">
-       
         <div class="fundowhatssap">
-            <img src="icones/whatssapbranco.png" id="fundowhats">
+            <i class="bi bi-whatsapp" id="fundowahts"></i>
         <a href="https://wa.me/5511947535018?text=Whatssap+do+Propriet%C3%A1rio" id="fundocel"> (11) 94290-3148</a>
         </div>
-    
-        
-       
-           
-        <div id="media6">       
-             <img src="icones/instabranco.png" id="fundogram">
-           <a href="https://instagram.com/sitio_elysian?igshid=NzZlODBkYWE4Ng==" id="fundoinsta">@sitio_elysian</a>
-        </div>
-           
-       
-           </div>
-           <div id="media7"> 
-            <img src="icones/facebookbranco.png" id="fundobook">
-            <a href="https://api.whatsapp.com/send?phone=5511942903148" id="fundoface">Sitio Elysian Place</a>
-            </div>
-            </div>
-            
-            
-      
-          </div>
-         
-     
-          
-         
- </section>
-<!--FOLDER CASA-->
 
+        <div class="fundowhatssap">    
+            <i class="bi bi-instagram" id="fundogram"> </i>   
+          <a href="https://instagram.com/sitio_elysian?igshid=NzZlODBkYWE4Ng==" id="fundoinsta">@sitio_elysian</a>
+       </div>
 
+       <div class="fundowhatssap"> 
+        <i class="bi bi-facebook" id="fundobook"></i>
+
+        <a href="https://api.whatsapp.com/send?phone=5511942903148" id="fundoface">Sitio Elysian Place</a>
+       </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/266015c250.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
