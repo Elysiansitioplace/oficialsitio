@@ -1,0 +1,321 @@
+#icons-setblocodoisir,#icons-setblocodoisvoltar,.sistem-blocdois{
+    display: none;
+}
+
+
+
+main{
+    background-image:url("https://i.postimg.cc/hP3nB35m/atibaia-capa-02-1536x805.jpg") ;
+    background-repeat: no-repeat;
+    background-position-y:top;
+    background-position-x:center ;
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+    background-color: #0D3371;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    animation: dur 20s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    color:white;
+    text-shadow: -5px 7px 6px rgba(13,51,113,0.73);
+    animation-delay: 2s;
+}
+
+@keyframes dur {
+    25%{
+        background-image: url("https://i.postimg.cc/26gdYTmx/oficial-fundo.jpg");
+        color:white;
+
+
+    }
+    50%{
+        background-image: url("https://i.postimg.cc/pdKMKVXQ/ip-WZCBr5-t-2.jpg");
+        color: white;
+        text-shadow: -5px 7px 6px rgba(13,51,113,0.73);
+    }
+
+    75%{
+        background-image: url("https://i.postimg.cc/bJ8cgXs7/Atibaia-01-Rogerio-Pinheiro.jpg");
+        color: white;
+        text-shadow: -5px 7px 6px rgba(13,51,113,0.73);
+
+
+    }
+
+    100%{
+        background-image: url("https://i.postimg.cc/hP3nB35m/atibaia-capa-02-1536x805.jpg");
+        color:white;
+        text-shadow: -5px 7px 6px rgba(13,51,113,0.73);
+    }
+    
+}
+
+.desk-main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 20px;
+
+}
+
+#desk-textmain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 30px;
+    text-align:center;
+
+}
+
+#desk-textmainone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 22px;
+
+}
+
+.desk-mainbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align:center;
+}
+
+#desk-comeceaqui{
+    font-size: 20px;
+    color: white;
+    background-color: #175ED4;
+    padding: 15px;
+    border-radius: 20px;
+    margin-top: -240px;
+}
+
+
+
+
+.desk-bloc{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70%;
+    height: 250px;
+    margin-top: -280px;
+}
+#fundo-carrossel{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 520px;
+    height: 220px;
+    background: rgba(115, 115, 115, 0.778);
+    border-radius: 20px;
+    padding: 10px;
+
+}
+
+.mySlides fade{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+}
+
+
+
+
+#blcladoum{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    border-radius: 20px;
+    padding: 10px;
+}
+#img-maior{
+    width: 90%;
+    height:80%;
+    border-radius: 20px;
+
+}
+#blcladodois{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 50%;
+    padding: 10px;
+}
+#titulo-blc{
+    font-size: 25px;
+}
+
+#text-blc{
+    margin-top: -10px;
+}
+
+#btn-conferirum{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    background-color: #175ED4;
+    color: white;
+    height: 8%;
+    padding: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+#btn-conferirum:hover{
+    background-color: white;
+    color: #175ED4;
+}
+
+
+.blc-menor{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 230px;
+    height: 220px;
+    background: rgba(115, 115, 115, 0.778);
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: -30px;
+}
+
+#blc-circulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -0px;
+    width: 100%;
+}
+#circ-blc,#circ-blctd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    padding: 20px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: rgba(226, 226, 226, 0.963);
+    margin-left: -15px;
+}
+
+#circ-blctd{
+    background-color: #0D3371;
+    font-size: 20px;
+}
+
+
+
+.seta-esquerda{
+    display: none;
+    justify-content: right;
+    align-items: center;
+    width: 15%;    
+    height: 100%;
+
+}
+
+.seta-direita{
+    display: none;
+    justify-content: left;
+    align-items: center;
+    width:15%;
+    height: 100%;
+} 
+
+#seta-bloc{
+    font-size: 30px;
+}
+
+
+
+.blc-final{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+    transform: translateY(40px);
+}
+
+.desk-redes{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 30%;
+    padding: 10px;
+    height: 100%;
+}
+
+#icons-redesdesk{
+    font-size:30px;
+
+}
+
+.circ-opcblock{
+    display: none;
+    justify-content: center;
+    padding: 10px;
+    width: 60%;
+}
+
+#opc-circ,#opc-circlc{
+    font-size: 4px;
+    background: rgba(226, 226, 226, 0.963);
+    border-radius: 50%;
+    padding: 10px;
+    margin-left: 5px;
+}
+#opc-circlc{
+    background: rgba(115, 115, 115, 0.778);
+}
+.desk-map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+#text-map{
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+#btn-vermaisfotos{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    font-size: 19px;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: 400;
+    background-color: #175ED4;
+    color: white;
+    margin-top: 40px;
+    transition: 2s;
+}
+
+#btn-vermaisfotos:hover{
+    background-color: white;
+    color: #175ED4;
+    border:2px solid #0D3371;
+}

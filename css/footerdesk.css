@@ -1,0 +1,89 @@
+.back-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    background-color: #0D3371;
+    z-index: 6;
+    margin-top: 50px;
+}
+
+.back-footergaleria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    background-color:#175ED4;
+    z-index: 6;
+    margin-top: 0px;
+}
+
+.resumo{
+    display: flex;
+    flex-wrap: wrap;
+    height: 60%;
+    font-size: 19px;
+    color: white;
+}
+
+#dados-resumo{
+    list-style: none;
+    width: 100%;
+    margin-top: -20px;
+    color: white;
+    font-size: 18px;
+}
+
+#dados-branco{
+    color: white;
+}
+.contato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+#titulo-contato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.fundo-mensagem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: -20px;
+}
+
+
+#text-mensagem{
+    width: 40%;
+    padding: 15px;
+    font-size: 19px;
+    border: 4px solid #175ED4;
+    background-color: white;
+
+}
+
+#btn-enviarmensagem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    font-size: 19px;
+    color: white;
+    font-weight: bold;
+    width: 10%;
+    border: 4px solid #175ED4;
+    background-color: blue;
+}

@@ -1,0 +1,269 @@
+main{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: 800px;
+    background-color: #0D3371;
+
+}
+
+.desk-divum{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width:40%;
+    height: 80%;
+    padding: 10px;
+}
+
+.desk-fundogaleria{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 20%;
+
+
+}
+#titulo-galeria{
+    width: 100%;
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+
+}
+#texto-galeria{
+    width: 100%;
+    font-size: 19px;
+    color:white;
+}
+
+
+.desk-selectiongaleria{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%; 
+    height: 70%;
+
+}
+
+#icon-selectgaleria{
+    display: flex;
+    justify-content:center;
+    font-size: 27px;
+    align-items: center;
+    width: 40%;
+    padding: 0px;
+    color: white;
+    border-radius: 20px;
+    background-color: #175ED4; 
+}
+#text-select{
+    margin-left:20px ;
+    font-size: 18px;
+
+}
+
+
+
+
+
+
+
+
+
+/*CARROSSEL*/
+.sectdois-bloc{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+
+    padding-top: 40px;
+    
+}
+.fundo-blocdois{
+    display: block;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 50%;
+}
+#blocdois-planum, 
+#blocdois-plandois, 
+#blocdois-plantres{
+    height: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 320px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+#blocdois-planum{
+    background-color:white;
+    transform: rotate(-30deg) translateY(40px) translateX(-20px);
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#blocdois-plandois{
+    background-color: #A6CCFA;
+    transform: translateY(-270px) rotate(30deg);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#blocdois-plantres{
+    background-color:#175ED4;
+    transform: translateY(-590px) ;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#img-plabloc{
+    height: 300px;
+    width: 300px;
+}
+
+/*SISTEMA DO CARROSSEL*/
+.fundo-blocdoissistema{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-wrap: wrap; 
+    width: 100%;
+    padding-top: 100px;
+}
+#icons-setblocodoisvoltar{
+    font-size: 50px;
+    color: white;
+}
+#icons-setblocodoisir{
+    font-size: 50px;
+    color: white;
+}
+#fundo-sistemtitulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 25px;
+    color: white;
+}
+#bolinha-sistema{
+    color: rgba(255, 255, 255, 0.33);
+
+}
+#bolinha-sistemabranca{
+    color: white;
+}
+
+
+
+/*SEÇAO GALERIA*/
+
+.sect-galeriaimagens{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color:#0D3371;
+    width: 100%;
+    height:800px;
+    color: white;
+}
+.sect-categoria{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 90%;
+    height: 9%;
+    background-color: #175ED4;
+    padding-left: 10px;
+}
+#categoria-galeriageral{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    background-color: #0D3371;
+    padding: 10px;
+    font-size: 20px;
+}
+#categoria-galeria{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    color: white;
+    background-color: #175ED4;
+    padding: 10px;
+    font-size: 20px;
+    border-left: 2px solid #0D3371;
+}
+
+
+
+
+.sect-informaçao{
+    display: flex;
+    width: 90%;
+    height: 60%;
+    margin-top: -250px;
+    padding: 5px;
+    border: 2px solid #175ED4;
+}
+
+#cabeçalho-informaçao{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 30%;
+    border-right: 1px solid #ffffff;
+}
+
+#icon-selectgaleriaimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 10%;
+    background-color: #175ED4;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+
+.sect-informaçoes{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%; 
+
+    margin-top: -170px;   
+}
+#list-informaçoes{
+    width: 100%;
+    margin-top: 30px;
+}
+.sect-imagens{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow-y: scroll;
+
+}
+
+#img-infor{
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+}
+
+
+
+
+
