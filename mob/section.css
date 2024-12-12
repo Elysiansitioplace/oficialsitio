@@ -1,34 +1,48 @@
-/*PRIMEIRA SEÇÃO*/
+.sistem-blocdois{
+    display: none;
+}
+
+
+/*SEÇÃO-UM*/
 .sect-um{
     display: flex;
     flex-wrap: wrap;
     height: 1360px;
-
 }
+/*seção-um - lado um*/
 .sect-blocum{
     width: 100%;
     height: 60%;
 }
 
-/*LISTA UM*/
+
+
+/*lista da seção-um*/
 .list-blocum{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 40%;
     margin: 0;
     margin-top: 20px;
     padding: 0;
-
 }
+/*titulo seção-um*/
 #titulo-blocum{
     margin: 0;
     text-align: center;
 }
 
-/*TÓPICO EM BOLINHAS*/
+
+
+/*fundo dos icones seçao-um*/
 .sect-blocdois{
-    margin-top: -60px;
+    margin-top: -0px;
 }
 
-/*TEXTO UM*/
+
+
+/*fundo dos textos seçao-um*/
 .sect-bloctres{
     text-align: justify;
     font-size: 20px;
@@ -36,7 +50,9 @@
     height: 30%;
 }
 
-/*CARROSSEL*/
+
+
+/*seção-um - lado dois*/
 .sectdois-bloc{
     display: flex;
     align-items: start;
@@ -46,11 +62,17 @@
     padding: 0;
     width: 100%;
 }
+
+
+
+/*fundo segundo carrossel*/
 .fundo-blocdois{
     transform: scale(0.9);
 }
 
-/*SISTEMA DO CARROSSEL*/
+
+
+/*fundo configuração do carrossel*/
 .fundo-blocdoissistema{
 
     padding-top: -0px;
@@ -60,19 +82,21 @@
     z-index: 4;
 }
 
-/*SEGUNDA SEÇÃO*/
+
+/*seção-dois*/
 .sect-dois{
     background-color: white;
     width: 100%;
     height: 1300px;
 }
+
+
+/*seção-dois - lado decoração*/
 .back-sectdois{
     display: flex;
     height: 100%;
 
 }
-
-/*PRIMEIRA DECORAÇÃO*/
 .decor-tipoum{
     margin-top: 60px;
 }
@@ -87,7 +111,8 @@
 }
 
 
-/*CONFIGURAÇÃO DA SEÇÃO TRES*/
+
+/*seção-dois - lado texto/formulario */
 .espaço-sectdois{
     display: flex;
     margin: 0;
@@ -97,7 +122,7 @@
     z-index: 2;
 }
 
-/*CONFIGURAÇÃO DO TEXTO*/
+/*seção-dois - lado texto */
 .fundo-textespaçodois{
     display: flex;
     justify-content: center;
@@ -115,7 +140,9 @@
     font-weight: normal;
 }
 
-/*CONFIGURAÇÃO DO FORMULARIO*/
+
+
+/*seção-dois - lado formulario */
 .fundo-formulariosectdois{
     width: 100%;
     margin-top: 210px;
@@ -126,7 +153,6 @@
     width: 100%;
     height: 100%;
 }
-
 .fundo-tituloformulario{
     display: flex;
     justify-content: center;
@@ -141,9 +167,6 @@
     text-align: center;
     margin-top: -20px;
 }
-
-
-
 /*CONFIGURAÇÃO DOS INPUT*/
 #input-nome{
     margin-top: -30px;

@@ -1,17 +1,17 @@
-.seta-esquerda,.fundo-blocdoissistema,.seta-direita,.blc-menor,.desk-redes,.desk-map{
+.seta-esquerda,.seta-direita,.blc-menor,.desk-redes,.desk-map{
     display: none;
 }
-main{
 
+
+/*CONFIG MAIN PRINCIPAL*/
+main{
     background-color: #175ED4;
 }
 
+
+/*CONFIG FRASE DE EFEITO*/
 .desk-main{
     margin-top: -40px;
-}
-
-.desk-bloc{
-    width: 100%;
 }
 #desk-textmain{
     font-size: 25px;
@@ -23,6 +23,14 @@ main{
 }
 
 
+/*CONFIG COMECE AQUI*/
+
+
+/*CONFIG CARROSSEL DE BLOCOS*/
+.desk-bloc{
+    width: 100%;
+}
+/*configuração do carrossel*/
 #fundo-carrossel{
     display: flex;
     justify-content: center;
@@ -32,21 +40,12 @@ main{
     width: 100%;
     transform: scale(0.9);
 }
+/*tamanho do slide*/
 #slidemob{
     width: 100%;
     height: 85%;
 }
-
-#blcladodois{
-    padding: 10px;
-}
-#titulo-blc{
-    margin-top: -0px;
-}
-#text-blc{
-    margin-top: -10px;
-}
-
+/*config lado imagem*/
 #blcladoum{
     display: flex;
     justify-content: center;
@@ -55,46 +54,44 @@ main{
     padding: 5px;
     margin-top: 0px;
 }
-
+#img-maior{
+    width: 100%;
+    height: 90%;
+    border-radius: 20px;
+}
+/*config lado texto*/
+#blcladodois{
+    padding: 10px;
+}
+#titulo-blc{
+    margin-top: -0px;
+}
 #text-blc{
+    margin-top: -10px;
     font-size: 20px;
 }
 
-#img-maior{
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
 
-}
+/*CONFIG CARROSSEL DE BLOCOS*/
 
 
-
-
-
-
-.blc-menor{
-    margin: 90px;
-}
+/*CONFIG CARROSSEL DE BLOCOS*/
 .blc-final{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
-
-
-
-
+/*config circulos*/
 #opc-circ,#opc-circlc{
     transform: scale(0.8);
 }
 
 
 
-.fundo-carrosseldois{
+
+.fundo-blocdoissistema{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
 }
+
+

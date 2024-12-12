@@ -19,6 +19,9 @@
 <body>
 
     <style>
+        html{
+            width: 100%;
+        }
          body{
             width: 100%;
             box-sizing: 0px;
@@ -49,10 +52,8 @@
             padding: 0px;
             margin:0px;
             width:100%;
-
            overflow-x: hidden;
-        }
-
+            }
         }
 
 
@@ -66,15 +67,15 @@
         </article>
 
         <nav class="desk-nav">
-            <a href="" id="desk-dadosnav">Inicio</a>
-            <a href="" id="desk-dadosnav">Galeria</a>
-            <a href="" id="desk-dadosnav">Eventos</a>
-            <a href="" id="desk-dadosnav">Localização</a>
+            <a href="index.html" id="desk-dadosnav">Inicio</a>
+            <a href="page/galery.html" id="desk-dadosnav">Galeria</a>
+            <a href="page/eventos.html" id="desk-dadosnav">Eventos</a>
+            <a href="page/localizaçao.html" id="desk-dadosnav">Localização</a>
         </nav>
 
         <nav class="desk-contato">
-            <a href="" id="desk-contatonavpro">Promoção</a>
-            <a href="" id="desk-contatonav">Fale Conosco</a>
+            <a href="https://api.whatsapp.com/send?phone=5511942903148" id="desk-contatonavpro">Promoção</a>
+            <a href="https://api.whatsapp.com/send?phone=5511942903148" id="desk-contatonav">Fale Conosco</a>
         </nav>
 
         <article class="desk-menumob">
@@ -112,6 +113,7 @@
 
     <main>
 
+        <!--config frase de efeito-->
         <article class="desk-main">
             <p id="desk-textmain">Um sítio que combina o melhor do lazer e do conforto,<br> 
                 para você celebrar com quem mais importa.</p>
@@ -119,10 +121,12 @@
                 <p id="desk-textmainone">Seus eventos, nosso espaço.</p>
         </article>
 
+        <!--config "comece aqui"-->
         <article class="desk-mainbtn">
-            <p id="desk-comeceaqui">Comece por aqui</p>
+            <a href="https://api.whatsapp.com/send?phone=5511942903148" id="desk-comeceaqui">Comece por aqui</a href="https://api.whatsapp.com/send?phone=5511942903148">
         </article>
 
+        <!--config carrossel de blocos-->
         <article class="desk-bloc">
 
             <div class="seta-esquerda">
@@ -133,9 +137,9 @@
 
             <div class="mySlides fade" id="slidemob">
 
-                <div id="blcladoum">
+                <div id="blcladoum"><a href="page/eventos.html">
                     <img src="https://thumbs2.imgbox.com/ff/7f/TajvbPzS_t.jpg" alt="" id="img-maior">
-                </div>
+                </a></div>
 
                 <div id="blcladodois">
                     <p id="titulo-blc">Especial de Verão!!</p>
@@ -146,11 +150,11 @@
                 
             </div> 
 
-            <div class="mySlides fade" id="slidemob">
+            <div class="mySlides fade" id="slidemob"><a href="page/eventos.html">
 
-                <div id="blcladoum">
+                <div id="blcladoum"><a href="page/eventos.html">
                     <img src="https://thumbs2.imgbox.com/9b/10/g0ZNHgb8_t.jpg" alt="" id="img-maior">
-                </div>
+                </a></div>
 
                 <div id="blcladodois">
                     <p id="titulo-blc">Oferta de Natal!!</p>
@@ -159,7 +163,7 @@
                     <a href="https://api.whatsapp.com/send?phone=5511942903148" id="btn-conferirum">Conferir Ofertas</a>
                 </div>
                 
-            </div> 
+            </a></div> 
 
             <div class="mySlides fade" id="slidemob">
 
@@ -179,15 +183,18 @@
             </article>
 
             <article class="blc-menor">
+
                 <div id="blc-circulo">
                     <p id="circ-blc"></p>
                     <p id="circ-blc"></p>
                     <p id="circ-blc"></p>
                     <p id="circ-blctd">+80</p>
                 </div>
+
                 <div id="blc-pequeno">
                     <p id="text-blc">Veja o que os nossos clientes falam de nossos Serviços, fazemos o melhor trabalho para atender suas expectativas</p>
                 </div>
+
             </article>
 
             <div class="seta-direita">
@@ -213,38 +220,35 @@
                 </div>
             </article>
 
-
-
-
         </article>
 
         <script >
             // ATIVAÇÃO DO CARROSSEL
-var slideIndexum = 0;
+        var slideIndexum = 0;
 
-showSlidesum();
+        showSlidesum();
 
-function showSlidesum() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-}
+        function showSlidesum() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
 
-  slideIndexum++;
-  if (slideIndexum > slides.length) {slideIndexum = 1}
-  slides[slideIndexum-1].style.display = "flex";
-  setTimeout(showSlidesum, 3000); // Change image every 2 seconds
-}
+          slideIndexum++;
+          if (slideIndexum > slides.length) {slideIndexum = 1}
+          slides[slideIndexum-1].style.display = "flex";
+          setTimeout(showSlidesum, 3000); // Change image every 2 seconds
+        }
  
         </script>
 
     </main>
 
     <section class="sect-um">
-
+        <!--/*seção-um - lado um*/-->
         <article class="sect-blocum">
-
+            <!--/*lista da seção-um*/-->
             <ul class="list-blocum">
                 <p id="titulo-blocum">Tudo o que você Precisa:</p>
                 <li id="dados-bloc">Campo de Futebol</li>
@@ -257,14 +261,14 @@ function showSlidesum() {
                 <li id="dados-bloc">Sala de Estar e de Almoço</li>
                 <li id="dados-bloc">Lindo Campo de Flores</li>
             </ul>
-            
+            <!--/*fundo dos icones seçao-um*/-->
             <div class="sect-blocdois">
                 <i class="fa-solid fa-bed" id="icons-blocdois"><p id="dados-icons">20</p></i>
                 <i class="fa-solid fa-car" id="icons-blocdois"><p id="dados-icons">20</p></i>
                 <i class="fa-solid fa-water-ladder" id="icons-blocdois"><p id="dados-icons">20</p></i>
                 <i class="fa-solid fa-shower" id="icons-blocdois"><p id="dados-icons">20</p></i>
             </div>
-
+            <!--/*fundo dos texto da seção-um*/-->
             <div class="sect-bloctres">
                 <p id="text-bloctres">O Sítio esta localizado próximo do Centro de Atibaia,  numa boa<br>
                     locação perto de mercados, restaurantes e ambientes movimentados.</p>
@@ -274,8 +278,10 @@ function showSlidesum() {
             
         </article>
 
+        <!-- /*seção-um - lado dois*/ -->
         <article class="sectdois-bloc">
 
+            <!--/*fundo segundo carrossel*/-->
             <div class="fundo-blocdois">
 
                 <div id="blocdois-planum" >
@@ -316,7 +322,8 @@ function showSlidesum() {
                 </script>
 
             </div>
-
+            
+            <!--/*fundo configuração do carrossel*/-->
             <div class="fundo-blocdoissistema">
 
                 <i class="bi bi-arrow-left-short" id="icons-setblocodoisir"></i>
@@ -348,8 +355,8 @@ function showSlidesum() {
 
     <section class="sect-dois">
 
-        <article class="back-sectdois">
-            
+        <!--/*seção-dois - lado decoração*/-->
+        <article class="back-sectdois">           
             <article class="decor-tipoum">
                 <div id="decorumpequeno"></div>
                 <div id="decorummedio"></div>
@@ -375,8 +382,11 @@ function showSlidesum() {
             </article>
         </article>
 
+
+        <!--/*seção-dois - lado texto/formulario */-->
         <article class="espaço-sectdois">
 
+            <!--/*seção-dois - lado texto */-->
             <div class="fundo-textespaçodois">
                 <p id="titulo-espaçodois">Seus evento, nosso Espaço...</p>
 
@@ -393,9 +403,9 @@ function showSlidesum() {
                 </p>
             </div>
 
-
+             <!--/*seção-dois - lado formulario */-->
             <div class="fundo-formulariosectdois">
-                
+                             <!--/*seção-dois - configuração do formulario */-->
                 <form action="https://formsubmit.co/your@email.com" method="POST"id="back-form" >
                     <div class="fundo-tituloformulario">
                         <p id="text-tituloformulario">Consulte o nossos Serviços!</p>

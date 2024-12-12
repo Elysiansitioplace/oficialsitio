@@ -1,15 +1,16 @@
-#icons-setblocodoisir,#icons-setblocodoisvoltar,.sistem-blocdois{
+#icons-setblocodoisir,#icons-setblocodoisvoltar{
     display: none;
 }
 
 
-
+/*CONFIG MAIN PRINCIPAL*/
 main{
     background-image:url("https://i.postimg.cc/hP3nB35m/atibaia-capa-02-1536x805.jpg") ;
     background-repeat: no-repeat;
     background-position-y:top;
     background-position-x:center ;
     background-size: cover;
+
     width: 100%;
     height: 800px;
     background-color: #0D3371;
@@ -24,13 +25,10 @@ main{
     text-shadow: -5px 7px 6px rgba(13,51,113,0.73);
     animation-delay: 2s;
 }
-
 @keyframes dur {
     25%{
         background-image: url("https://i.postimg.cc/26gdYTmx/oficial-fundo.jpg");
         color:white;
-
-
     }
     50%{
         background-image: url("https://i.postimg.cc/pdKMKVXQ/ip-WZCBr5-t-2.jpg");
@@ -42,8 +40,6 @@ main{
         background-image: url("https://i.postimg.cc/bJ8cgXs7/Atibaia-01-Rogerio-Pinheiro.jpg");
         color: white;
         text-shadow: -5px 7px 6px rgba(13,51,113,0.73);
-
-
     }
 
     100%{
@@ -54,6 +50,7 @@ main{
     
 }
 
+/*CONFIG FRASE DE EFEITO*/
 .desk-main{
     display: flex;
     justify-content: center;
@@ -63,9 +60,7 @@ main{
     font-weight: bold;
     width: 100%;
     margin-top: 20px;
-
 }
-
 #desk-textmain{
     display: flex;
     justify-content: center;
@@ -75,16 +70,15 @@ main{
     text-align:center;
 
 }
-
 #desk-textmainone{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     font-size: 22px;
-
 }
 
+/*CONFIG COMECE AQUI*/
 .desk-mainbtn{
     display: flex;
     justify-content: center;
@@ -92,19 +86,23 @@ main{
     width: 100%;
     text-align:center;
 }
-
 #desk-comeceaqui{
     font-size: 20px;
     color: white;
     background-color: #175ED4;
     padding: 15px;
     border-radius: 20px;
-    margin-top: -240px;
+    margin-top: -290px;
+    transition: 0.5s;
+}
+#desk-comeceaqui:hover{
+    background-color: white;
+    border: 2px solid #175ED4;
+    color: #0D3371;
+    font-weight: bold;
 }
 
-
-
-
+/*CONFIG CARROSSEL DE BLOCOS*/
 .desk-bloc{
     display: flex;
     justify-content:space-evenly;
@@ -114,6 +112,26 @@ main{
     height: 250px;
     margin-top: -280px;
 }
+/*seta direita e esquerda*/
+.seta-esquerda{
+    display: none;
+    justify-content: right;
+    align-items: center;
+    width: 15%;    
+    height: 100%;
+}
+.seta-direita{
+    display: none;
+    justify-content: left;
+    align-items: center;
+    width:15%;
+    height: 100%;
+} 
+/*configuração do icone da seta*/
+#seta-bloc{
+    font-size: 30px;
+}
+/*configuração do carrossel*/
 #fundo-carrossel{
     display: flex;
     justify-content: space-evenly;
@@ -123,21 +141,8 @@ main{
     background: rgba(115, 115, 115, 0.778);
     border-radius: 20px;
     padding: 10px;
-
 }
-
-.mySlides fade{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-
-}
-
-
-
-
+/*config lado imagem*/
 #blcladoum{
     display: flex;
     justify-content: center;
@@ -151,8 +156,9 @@ main{
     width: 90%;
     height:80%;
     border-radius: 20px;
-
 }
+
+/*config lado texto*/
 #blcladodois{
     display: flex;
     justify-content: space-between;
@@ -163,11 +169,9 @@ main{
 #titulo-blc{
     font-size: 25px;
 }
-
 #text-blc{
     margin-top: -10px;
 }
-
 #btn-conferirum{
     display: flex;
     justify-content: center;
@@ -180,13 +184,12 @@ main{
     border-radius: 20px;
     transition: 0.5s;
 }
-
 #btn-conferirum:hover{
     background-color: white;
     color: #175ED4;
 }
 
-
+/*config bloco menor*/
 .blc-menor{
     display: flex;
     justify-content: space-evenly;
@@ -199,7 +202,7 @@ main{
     padding: 10px;
     margin-left: -30px;
 }
-
+/*config bloco menor*/
 #blc-circulo{
     display: flex;
     justify-content: center;
@@ -219,37 +222,12 @@ main{
     background: rgba(226, 226, 226, 0.963);
     margin-left: -15px;
 }
-
 #circ-blctd{
     background-color: #0D3371;
     font-size: 20px;
 }
 
-
-
-.seta-esquerda{
-    display: none;
-    justify-content: right;
-    align-items: center;
-    width: 15%;    
-    height: 100%;
-
-}
-
-.seta-direita{
-    display: none;
-    justify-content: left;
-    align-items: center;
-    width:15%;
-    height: 100%;
-} 
-
-#seta-bloc{
-    font-size: 30px;
-}
-
-
-
+/*CONFIG CARROSSEL DE BLOCOS*/
 .blc-final{
     display: flex;
     justify-content:space-between;
@@ -257,7 +235,7 @@ main{
     width: 100%;
     transform: translateY(40px);
 }
-
+/*config redes sociais*/
 .desk-redes{
     display: flex;
     justify-content: space-evenly;
@@ -266,19 +244,17 @@ main{
     padding: 10px;
     height: 100%;
 }
-
 #icons-redesdesk{
     font-size:30px;
 
 }
-
+/*config circulos*/
 .circ-opcblock{
     display: none;
     justify-content: center;
     padding: 10px;
     width: 60%;
 }
-
 #opc-circ,#opc-circlc{
     font-size: 4px;
     background: rgba(226, 226, 226, 0.963);
@@ -289,6 +265,7 @@ main{
 #opc-circlc{
     background: rgba(115, 115, 115, 0.778);
 }
+/*config mapa*/
 .desk-map{
     display: flex;
     justify-content: center;
@@ -299,6 +276,8 @@ main{
     margin-left: 10px;
     font-size: 20px;
 }
+
+
 
 #btn-vermaisfotos{
     display: flex;
@@ -313,7 +292,6 @@ main{
     margin-top: 40px;
     transition: 2s;
 }
-
 #btn-vermaisfotos:hover{
     background-color: white;
     color: #175ED4;

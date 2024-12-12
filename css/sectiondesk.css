@@ -1,10 +1,16 @@
-/*PRIMEIRA SEÇÃO*/
+.sistem-blocdois{
+    display: none;
+}
+
+
+/*SEÇÃO-UM*/
 .sect-um{
     display: flex;
     background-color:#0D3371 ;
     width: 100%;
     height: 600px;
 }
+/*seção-um - lado um*/
 .sect-blocum{
     display: flex;
     flex-wrap: wrap;
@@ -12,7 +18,7 @@
     height: 100%;
 }
 
-/*LISTA UM*/
+/*lista da seção-um*/
 .list-blocum{
     display: flex;
     justify-content: space-evenly;
@@ -22,20 +28,20 @@
     padding: 10px;
     color: white;
     font-size: 19px;
-
 }
+/*titulo um*/
 #titulo-blocum{
     margin-left: 40px;
     width: 100%;
     font-size: 30px;
     color: white;
 }
+/*titulo seção-um*/
 #dados-bloc{
-
     width: 40%;
 }
 
-/*TÓPICO EM BOLINHAS*/
+/*fundo dos icones seçao-um*/
 .sect-blocdois{
     display: flex;
     justify-content: space-evenly;
@@ -43,6 +49,7 @@
     width: 100%;
     margin-top: 20px;
 }
+/*icones da bolinha*/
 #icons-blocdois{
     display: flex;
     justify-content: center;
@@ -56,6 +63,7 @@
     font-size: 40px;
     color: white;
 }
+/*numeros da bolinha*/
 #dados-icons{
     display: flex;
     justify-content: center;
@@ -65,7 +73,7 @@
     margin-top: 40px;
 }
 
-/*TEXTO UM*/
+/*fundo dos texto da seção-um*/
 .sect-bloctres{
     display: flex;
     flex-wrap: wrap;
@@ -77,23 +85,26 @@
     margin-top: 50px;
 }
 
-/*CARROSSEL*/
+
+
+/*seção-um - lado dois*/
 .sectdois-bloc{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     width: 50%;
-
     padding-top: 40px;
-    
 }
+
+/*fundo segundo carrossel*/
 .fundo-blocdois{
     display: block;
     flex-wrap: wrap;
     width: 100%;
     height: 50%;
 }
+/*bloco das imagens*/
 #blocdois-planum, 
 #blocdois-plandois, 
 #blocdois-plantres{
@@ -127,12 +138,13 @@
     justify-content: center;
     align-items: center;
 }
+/*tamanho das imagens*/
 #img-plabloc{
     height: 300px;
     width: 300px;
 }
 
-/*SISTEMA DO CARROSSEL*/
+/*fundo configuração do carrossel*/
 .fundo-blocdoissistema{
     display: flex;
     justify-content:space-evenly;
@@ -141,14 +153,17 @@
     width: 100%;
     padding-top: 100px;
 }
-#icons-setblocodoisvoltar{
-    font-size: 50px;
-    color: white;
-}
+/*seta para ir*/
 #icons-setblocodoisir{
     font-size: 50px;
     color: white;
 }
+/*seta para voltar*/
+#icons-setblocodoisvoltar{
+    font-size: 50px;
+    color: white;
+}
+
 
 #fundo-sistemtitulo{
     display: flex;
@@ -175,7 +190,7 @@
 
 
 
-
+/*seção-dois*/
 .sect-dois{
     display: flex;
     flex-wrap: wrap;
@@ -185,6 +200,9 @@
     height: 600px;
 }
 
+
+
+/*seção-dois - lado decoração*/
 .back-sectdois{
     display: flex;
     flex-wrap: wrap;
@@ -193,7 +211,6 @@
     width: 100%;
     height: 600px;
 }
-
 .decor-tipoum{
     display: flex;
     justify-content: left;
@@ -203,7 +220,6 @@
     height: 5%;
     margin-top: 180px;
 }
-
 #decorumpequeno{
     width: 50%;
     height: 20%;
@@ -215,16 +231,12 @@
     height: 20%;
     background-color: #175ED4;
 }
-
-
 #decorumgrande{
     width: 80%;
     height: 20%;
     background-color: #175ED4;
 
 }
-
-
 .decor-tipodois{
     display: flex;
     justify-content: right;
@@ -234,7 +246,6 @@
     height: 5%;
     margin-top: 90px;
 }
-
 #decorumpequenoescuro{
     width: 50%;
     height: 20%;
@@ -246,13 +257,10 @@
     height: 20%;
     background-color: #0D3371;
 }
-
-
 #decorumgrandeescuro{
     width: 80%;
     height: 20%;
     background-color: #0D3371;
-
 }
 
 
@@ -265,7 +273,7 @@
 
 
 
-
+/*seção-dois - lado texto/formulario */
 .espaço-sectdois{
     display: flex;
     flex-wrap: wrap;
@@ -274,7 +282,9 @@
     position: absolute;
 }
 
-/*CONFIGURAÇÃO DO TEXTO*/
+
+
+/*seção-dois - lado texto */
 .fundo-textespaçodois{
     display: flex;
     flex-wrap: wrap;
@@ -293,7 +303,7 @@
 
 }
 
-/*CONFIGURAÇÃO DO FORMULARIO*/
+/*seção-dois - lado formulario */
 .fundo-formulariosectdois{
     display: flex;
     flex-wrap: wrap;
@@ -302,8 +312,6 @@
     width: 45%;
     height: 100%;
 }
-
-
 #back-form{
     display: flex;
     justify-content: space-evenly;
@@ -314,6 +322,31 @@
     flex-wrap: wrap;
     background-color: #175ED4;
     border-radius: 40px;
+}
+.fundo-tituloformulario{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    color: white;
+}
+#text-tituloformulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    font-weight: bold;
+    font-size: 23px;
+}
+#text-textformulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: -10px;
+    font-size: 20px;
 }
 
 
@@ -332,8 +365,6 @@
 #input-nome::placeholder{
     color: white;
 }
-
-
 #input-email{
     width: 40%;
     font-size:20px;
@@ -346,7 +377,6 @@
 #input-email::placeholder{
     color: white;
 }
-
 #input-number{
     width: 40%;
     font-size:20px;
@@ -368,7 +398,6 @@
     border-bottom: 2px solid white;
     padding:10px;
 }
-
 #input-serviço::placeholder{
     color: white;
 }
@@ -384,7 +413,6 @@
 #input-pessoas::placeholder{
     color: white;
 }
-
 #input-entrada{
     width: 40%;
     font-size:20px;
@@ -418,31 +446,7 @@
     padding:10px;
 }
 
-.fundo-tituloformulario{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
 
-    color: white;
-}
-#text-tituloformulario{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width:100%;
-    font-weight: bold;
-    font-size: 23px;
-}
-#text-textformulario{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-top: -10px;
-    font-size: 20px;
-}
 
 
 
@@ -825,6 +829,10 @@
     height: 580px;
     position:absolute;
     margin-left:700px;
+}
+iframe{
+    width: 100%;
+    height: 80%;
 }
 
 

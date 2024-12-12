@@ -1,3 +1,13 @@
+
+body,html{
+    padding: 0px;
+    margin:0px;
+    width:100%;
+    overflow-x: hidden;
+}
+
+
+
 #desk-textlogo,.desk-nav,.desk-contato{
     display: none;
 }
