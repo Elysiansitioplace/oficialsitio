@@ -30,6 +30,11 @@
            text-decoration: none;
        }
 
+       .ativar-scroll{
+            transition: 0.6s;
+            background-color: #0D3371;
+        }
+
        .ativar-menu{
        background-color: white;
        display: flex;
@@ -54,7 +59,7 @@
 
         </style>
    
-        <header class="headerpink">
+   <header class="headerpink">
 
     <article class="desk-logo">
         <img src="https://i.postimg.cc/pTC5dZDj/Ativo-9-8.png" alt="" id="logotipo-desk">
@@ -80,35 +85,33 @@
 
     </article>
 
-    <div id="fundo-menu">
+    
+    <div class="fundo-menu">
 
         <div id="section-inicialmenu">
             <p id="inicial-logo">Elysian Place</p>
             <i class="fa-solid fa-xmark" id="icon-fecharmenu"></i>
         </div>
 
-        <div class="rolagem-menumob">
+        <nav id="section-menumob">
+                <a href="index.html" id="mob-dadosnav">Inicio</a>
+                <a href="page/galery.html" id="mob-dadosnav">Galeria</a>
+                <a href="page/eventos.html" id="mob-dadosnav">Eventos</a>
+                <a href="page/localizaçao.html" id="mob-dadosnav">Localização</a>
+        </nav>
 
-            <div id="section-menumob">
-                <p id="redes-menumob"><i class="fa-brands fa-whatsapp" id="icon-mobmenu"></i>(11) 94290-3148</p>
-                <p id="redes-menumob"><i class="fa-brands fa-facebook" id="icon-mobmenu"></i> Elysian Place</p>
-                <p id="redes-menumob"><i class="fa-brands fa-instagram" id="icon-mobmenu"></i> Elysian Place</p>
-                <p id="redes-menumob"><i class="fa-solid fa-envelope" id="icon-mobmenu"></i>placeelysian@gmail.com</p>
-                <a href="https://api.whatsapp.com/send?phone=5511942903148" class="botao-menumob">Fale Conosco</a>  
-            </div>
-    
-
-        </div>
+        <a href="https://api.whatsapp.com/send?phone=5511942903148" id="btn-mobmenu">Fale Conosco</a>
 
     </div>
 
-    <script src="js/header.js"></script>
+    <script src="../js/header.js"></script>
 
-        </header>
+    </header>
 
         <main>
 
         <article class="desk-divum">
+            
         <div class="desk-fundogaleria">
             <p id="titulo-galeria">Bem Vindo(a) a nossa Galeria</p>
 
@@ -130,37 +133,47 @@
 
         <article class="desk-divum">
         <div class="fundo-blocdois">
+
             <div id="blocdois-planum">
                 <img src="https://i.postimg.cc/gj9cmL7h/90ya-X6j-U-t.jpg" alt="" id="img-plabloc">
             </div>
             <div id="blocdois-plandois">
                 <img src="https://i.postimg.cc/bJ8cgXs7/Atibaia-01-Rogerio-Pinheiro.jpg" alt="" id="img-plabloc">
             </div>
-            <div id="blocdois-plantres">
-                <img src="https://i.postimg.cc/pdKMKVXQ/ip-WZCBr5-t-2.jpg" alt="" id="img-plabloc">
-            </div>
-        </div>
-
-        <div class="fundo-blocdoissistema">
-            <i class="bi bi-arrow-left-short" id="icons-setblocodoisir"></i>
-
-            <div class="sistem-blocdois">
-                <div id="fundo-sistemtitulo">
-                    <p id="text-sistemtitulo">Cozinha</p>
-                </div>
-
-                <div id="fundo-sistembolinha">
-                    <i class="fa-solid fa-circle" id="bolinha-sistema"></i>
-                    <i class="fa-solid fa-circle" id="bolinha-sistema"></i>
-                    <i class="fa-solid fa-circle" id="bolinha-sistemabranca"></i>
-                    <i class="fa-solid fa-circle" id="bolinha-sistema"></i>
-                    <i class="fa-solid fa-circle" id="bolinha-sistema"></i>
-                    <i class="fa-solid fa-circle" id="bolinha-sistema"></i>
-                </div>
+            <div id="blocdois-plantres" >
+                <img src="https://i.postimg.cc/pdKMKVXQ/ip-WZCBr5-t-2.jpg" class="myslidegaleria" alt="" id="img-plabloc">
+                <img src="https://i.postimg.cc/8ch1Rghk/IMG-0416-Editar.jpg" class="myslidegaleria" alt="" id="img-plabloc">      
+                <img src="https://i.postimg.cc/26gdYTmx/oficial-fundo.jpg" class="myslidegaleria" alt="" id="img-plabloc">                    
+                <img src="https://i.postimg.cc/vHDm2T5k/IMG-20240311-WA0046.jpg" class="myslidegaleria" alt="" id="img-plabloc">      
+                <img src="https://i.postimg.cc/kgsqndNK/IMG-20240312-WA0060.jpg" class="myslidegaleria" alt="" id="img-plabloc">      
+                <img src="https://i.postimg.cc/d1mgsQvY/IMG-0348-Editar.jpg" class="myslidegaleria" alt="" id="img-plabloc">      
+                <img src="https://i.postimg.cc/vHDm2T5k/IMG-20240311-WA0046.jpg" class="myslidegaleria" alt="" id="img-plabloc">      
             </div>
 
-            <i class="bi bi-arrow-right-short" id="icons-setblocodoisvoltar"></i>
+            <script >
+
+                    var slideIndexdois = 0;
+
+                showSlidesdois();
+
+                function showSlidesdois() {
+                    var i;
+                    var slides = document.getElementsByClassName("myslidegaleria");
+                    for (i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "none";
+                                  }
+
+                    slideIndexdois++;
+                    if (slideIndexdois > slides.length) {slideIndexdois = 1}
+                    slides[slideIndexdois-1].style.display = "flex";
+                    setTimeout(showSlidesdois, 3000); // Change image every 2 seconds
+                    }
+
+            </script>
+            
         </div>
+
+
         </article>
 
         </main>
@@ -169,7 +182,7 @@
     
         <div class="sect-categoria">
         <p id="categoria-galeriageral">Todas as Fotos</p>
-        <p id="categoria-galeria">Espaço</p>
+        <p id="categoria-galeria">Casa</p>
         <p id="categoria-galeria">Garagem</p>
         <p id="categoria-galeria">Quartos</p>
         <p id="categoria-galeria">Banheiros</p>
@@ -178,6 +191,10 @@
         <p id="categoria-galeria">Jogos</p>
         <p id="categoria-galeria">Piscina</p>
 
+        </div>
+
+        <div class="fechar-categoria">
+            <i class="fa-solid fa-xmark" id="icon-fecharcategoria"></i>
         </div>
 
         <div class="sect-informaçao">
@@ -197,32 +214,270 @@
 
         <div class="sect-imagens">
 
-            <img src="https://i.postimg.cc/pdKMKVXQ/ip-WZCBr5-t-2.jpg" alt="" id="img-infor">
-            <img src="https://i.postimg.cc/DZY9Svm4/IMG-20240312-WA0038.jpg" alt="" id="img-infor">
-            <img src="https://i.postimg.cc/Vs2NT14N/IMG-20240312-WA0041.jpg" alt="" id="img-infor">
-            <img src="https://i.postimg.cc/52V243hd/IMG-20240312-WA0044.jpg" alt="" id="img-infor">
+            <div class="fundo-todas">
 
-            <img src="" alt="" id="img-infor">
-            <img src="" alt="" id="img-infor">
-            <img src="" alt="" id="img-infor">
-            <img src="" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/pdKMKVXQ/ip-WZCBr5-t-2.jpg" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/DZY9Svm4/IMG-20240312-WA0038.jpg" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/Vs2NT14N/IMG-20240312-WA0041.jpg" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/52V243hd/IMG-20240312-WA0044.jpg" alt="" id="img-infor">
+    
+                <img src="https://i.postimg.cc/bwk8th9Z/19.jpg" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/SK44LvgD/23.jpg" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/YSxHdzVk/25.jpg" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/sXDRqZdW/27.jpg" alt="" id="img-infor">
+    
+    
+                <img src="https://i.postimg.cc/d0QyH41j/IMG-0309-Editar.jpg" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/DzCbtL4k/IMG-0322-Editar.jpg" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/CM9bhGPw/IMG-0336-Editar.jpg" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/d1mgsQvY/IMG-0348-Editar.jpg" alt="" id="img-infor">
+    
+                <img src="https://i.postimg.cc/HjDgnZRG/IMG-0360-Editar.jpg" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/N0WQ9jW2/IMG-0355.jpg" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/fy0swnHj/IMG-0364-Editar.jpg" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/Y9D2rxtk/IMG-0371-Editar.jpg" alt="" id="img-infor">
+
+                    
+                <img src="https://i.postimg.cc/NfWQN4s2/piscina6.jpg" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/br5qf01M/piscina5.jpg" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/TYyRqS6X/piscina4.jpg" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/zD2zhN4j/piscina3.jpg" alt="" id="img-infor">
+
+                <img src="https://i.postimg.cc/KYsbMrHY/IMG-20240312-WA0062.jpg" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/zG8qZfhq/IMG-20240312-WA0058.jpg" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/WbMsHZh9/IMG-20240312-WA0057.jpg" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/y6310tBC/IMG-20240312-WA0055.jpg" alt="" id="img-infor">
+
+                <img src="https://i.postimg.cc/nzgn6Y4W/IMG-20240312-WA0053.jpg" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/JhTrQWGM/IMG-20240312-WA0048.jpg" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/KvXZffvk/IMG-20240312-WA0054.jpg" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/cJdyjkVC/IMG-20240312-WA0031.jpg" alt="" id="img-infor">
+    
+
+            </div>
+
+            <div class="fundo-casa">
+
+                <img src="https://i.postimg.cc/pdKMKVXQ/ip-WZCBr5-t-2.jpg" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/DZY9Svm4/IMG-20240312-WA0038.jpg" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/Vs2NT14N/IMG-20240312-WA0041.jpg" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/52V243hd/IMG-20240312-WA0044.jpg" alt="" id="img-infor">
+    
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+    
+    
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+    
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+    
+
+            </div>
+
+            <div class="fundo-garagem">
+
+                <img src="https://i.postimg.cc/pdKMKVXQ/ip-WZCBr5-t-2.jpg" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/DZY9Svm4/IMG-20240312-WA0038.jpg" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/Vs2NT14N/IMG-20240312-WA0041.jpg" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/52V243hd/IMG-20240312-WA0044.jpg" alt="" id="img-infor">
+    
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+    
+    
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+    
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+    
+
+            </div>
+
+            <div class="fundo-quartos">
+
+                <img src="https://i.postimg.cc/pdKMKVXQ/ip-WZCBr5-t-2.jpg" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/DZY9Svm4/IMG-20240312-WA0038.jpg" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/Vs2NT14N/IMG-20240312-WA0041.jpg" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/52V243hd/IMG-20240312-WA0044.jpg" alt="" id="img-infor">
+    
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+    
+    
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+    
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+    
+
+            </div>
+
+            
+            <div class="fundo-banheiros">
+
+                <img src="https://i.postimg.cc/pdKMKVXQ/ip-WZCBr5-t-2.jpg" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/DZY9Svm4/IMG-20240312-WA0038.jpg" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/Vs2NT14N/IMG-20240312-WA0041.jpg" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/52V243hd/IMG-20240312-WA0044.jpg" alt="" id="img-infor">
+    
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+    
+    
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+    
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+    
+
+            </div>
 
 
-            <img src="" alt="" id="img-infor">
-            <img src="" alt="" id="img-infor">
-            <img src="" alt="" id="img-infor">
-            <img src="" alt="" id="img-infor">
+            <div class="fundo-bairro">
 
-            <img src="" alt="" id="img-infor">
-            <img src="" alt="" id="img-infor">
-            <img src="" alt="" id="img-infor">
-            <img src="" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/pdKMKVXQ/ip-WZCBr5-t-2.jpg" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/DZY9Svm4/IMG-20240312-WA0038.jpg" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/Vs2NT14N/IMG-20240312-WA0041.jpg" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/52V243hd/IMG-20240312-WA0044.jpg" alt="" id="img-infor">
+    
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+    
+    
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+    
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+    
+
+            </div>
+
+
+            <div class="fundo-churrasco">
+
+                <img src="https://i.postimg.cc/pdKMKVXQ/ip-WZCBr5-t-2.jpg" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/DZY9Svm4/IMG-20240312-WA0038.jpg" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/Vs2NT14N/IMG-20240312-WA0041.jpg" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/52V243hd/IMG-20240312-WA0044.jpg" alt="" id="img-infor">
+    
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+    
+    
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+    
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+    
+
+            </div>
+
+
+            <div class="fundo-jogos">
+
+                <img src="https://i.postimg.cc/pdKMKVXQ/ip-WZCBr5-t-2.jpg" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/DZY9Svm4/IMG-20240312-WA0038.jpg" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/Vs2NT14N/IMG-20240312-WA0041.jpg" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/52V243hd/IMG-20240312-WA0044.jpg" alt="" id="img-infor">
+    
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+    
+    
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+    
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+    
+
+            </div>
+
+
+            <div class="fundo-piscina">
+
+                <img src="https://i.postimg.cc/pdKMKVXQ/ip-WZCBr5-t-2.jpg" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/DZY9Svm4/IMG-20240312-WA0038.jpg" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/Vs2NT14N/IMG-20240312-WA0041.jpg" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/52V243hd/IMG-20240312-WA0044.jpg" alt="" id="img-infor">
+    
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+    
+    
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+    
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+                <img src="" alt="" id="img-infor">
+    
+
+            </div>
+
 
         </div>
 
-        </div>
 
         </article>
+
+
+
+
 
         <footer class="back-footergaleria">
 
@@ -252,5 +507,9 @@
             
         </footer>
 
+        <script src="../js/script.js"></script>
+
+        <script src="https://kit.fontawesome.com/266015c250.js" crossorigin="anonymous"></script>
+    
     </body>
 </html>

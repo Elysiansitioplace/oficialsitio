@@ -1,4 +1,4 @@
-.desk-menumob,#fundo-menu,.desk-menumob{
+.desk-menumob,.fundo-menu{
     display: none;
 }
 header{
@@ -10,8 +10,6 @@ header{
     z-index: 4;
 
 }
-
-
 
 
 /*CONFIGURAÇÕES DA LOGO*/
@@ -58,6 +56,7 @@ header{
     width: 20%;
     padding: 10px;
 }
+
 #desk-contatonav{
     color: white;
     font-weight: bold;
@@ -65,11 +64,23 @@ header{
     padding: 10px;
     border-radius: 30px;
 }
+#desk-contatonav:hover{
+    background-color:#175ED4 ;
+    color: white;
+    border: 3px solid #0D3371;
+}
+
 
 #desk-contatonavpro{
     font-weight: bold;
-    border: 3px solid white;
+    border: 3px solid rgb(175, 175, 175);
     padding: 10px;
     border-radius: 30px;
     background-color: white;
+}
+
+#desk-contatonavpro:hover{
+    background-color:#175ED4 ;
+    color: white;
+    border: 3px solid #0D3371;
 }
