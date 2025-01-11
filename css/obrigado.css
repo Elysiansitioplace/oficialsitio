@@ -1,0 +1,103 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0D3371;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    width: 90%;
+    height: 100%;
+    color: white;
+}
+
+
+.fundo-blocoobrigado{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 700px;
+
+}
+
+
+
+.fundo-obrigadopartum{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 5%;
+    padding: 10px;
+}
+#img-logoobrigado{
+    width: 30px;
+    height: 30px;
+}
+#texto-logoobrigado{
+    font-size: 17px;
+    margin-left:15px;
+    color: white;
+}
+
+
+
+.fundo-obrigadopardois{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 15%;
+    height: 4%;
+    padding: 10px;
+}
+#icons-redesdesk{
+    font-size: 19px;
+    color: white;
+}
+
+
+
+.fundo-obrigado{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -280px;
+}
+
+#titulo-obrigado{
+    text-align: center;
+    font-size: 25px;
+    width: 100%;
+}
+
+#btn-obrigado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 5%;
+    padding: 15px;
+    border-radius: 20px;
+    color: white;
+    background-color: #175fd4;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#btn-obrigado:hover{
+    background-color: #0D3371;
+    border: 4px solid #175fd4;
+}
+
+#text-explicado{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: -110px;
+}
