@@ -1,0 +1,670 @@
+/*CONFIG MAIN PRINCIPAL*/
+main{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: 800px;
+    background-color: #0D3371;
+
+}
+
+
+/*CONFIG PARTE UM*/
+.desk-divum{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width:40%;
+    height: 80%;
+    padding: 10px;
+}
+/*parte um - fundo texto*/
+.desk-fundogaleria{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 20%;
+}
+/*parte um - titulo*/
+#titulo-galeria{
+    width: 100%;
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+
+}
+/*parte um - texto*/
+#texto-galeria{
+    width: 100%;
+    font-size: 19px;
+    color:white;
+}
+/*parte um - fundo menu*/
+.desk-selectiongaleria{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%; 
+    height: 70%;
+}
+/*parte dois - icones */
+#icon-selectgaleria{
+    display: flex;
+    justify-content:center;
+    font-size: 27px;
+    align-items: center;
+    width: 40%;
+    padding: 0px;
+    color: white;
+    border-radius: 20px;
+    background-color: #175ED4; 
+    cursor: pointer;
+    transition: 0.3s;
+}
+/*parte dois - animação icones */
+#icon-selectgaleria:hover{
+    background-color: #0D3371;
+    border: 3px solid #175ED4;
+}
+/*parte dois - texto */
+#text-select{
+    margin-left:20px ;
+    font-size: 18px;
+
+}
+
+
+
+
+
+/*CARROSSEL*/
+.fundo-blocdois{
+    display: block;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 50%;
+}
+/*bloco das imagens*/
+#blocdois-planum, 
+#blocdois-plandois, 
+#blocdois-plantres{
+    height: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 320px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+#blocdois-planum{
+    background-color:white;
+    transform: rotate(-30deg) translateY(40px) translateX(-20px);
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#blocdois-plandois{
+    background-color: #A6CCFA;
+    transform: translateY(-270px) rotate(30deg);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#blocdois-plantres{
+    background-color:#175ED4;
+    transform: translateY(-590px) ;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*tamanho das imagens*/
+#img-plabloc{
+    height: 300px;
+    width: 300px;
+}
+/*fundo configuração do carrossel*/
+.fundo-blocdoissistema{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-wrap: wrap; 
+    width: 100%;
+    padding-top: 100px;
+}
+/*seta para ir*/
+#icons-setblocodoisir{
+    font-size: 50px;
+    color: white;
+}
+/*seta para voltar*/
+#icons-setblocodoisvoltar{
+    font-size: 50px;
+    color: white;
+}
+
+
+
+
+
+/*SEÇAO GALERIA*/
+.sect-galeriaimagens{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color:#0D3371;
+    width: 100%;
+    height:1200px;
+    color: white;
+}
+/*Galeria - fundo menu*/
+.sect-categoria{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 90%;
+    height: 9%;
+    background-color: #175ED4;
+    padding-left: 10px;
+}
+/*Galeria - fundo opções de menu*/
+#categoria-galeriageral{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    background-color: #0D3371;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+
+
+/*Galeria - opções de menu*/
+#categoria-galeria{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    color: white;
+    background-color: #175ED4;
+    padding: 10px;
+    font-size: 20px;
+    border-left: 2px solid #0D3371;
+    cursor: pointer;
+}
+/*Galeria - opções de menu ao clicar*/
+#categoria-galeria:active{
+    background-color: #0D3371;
+}
+/*Galeria - opções de menu ao passar o mouse*/
+#categoria-galeria:hover{
+    background-color: #0D3371;
+}
+
+/*Galeria - opções de menu*/
+#categoria-casa{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    color: white;
+    background-color: #175ED4;
+    padding: 10px;
+    font-size: 20px;
+    border-left: 2px solid #0D3371;
+    cursor: pointer;
+}
+/*Galeria - opções de menu ao clicar*/
+#categoria-casa:active{
+    background-color: #0D3371;
+}
+/*Galeria - opções de menu ao passar o mouse*/
+#categoria-casa:hover{
+    background-color: #0D3371;
+}
+
+/*Galeria - opções de menu*/
+#categoria-garagem{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    color: white;
+    background-color: #175ED4;
+    padding: 10px;
+    font-size: 20px;
+    border-left: 2px solid #0D3371;
+    cursor: pointer;
+}
+/*Galeria - opções de menu ao clicar*/
+#categoria-garagem:active{
+    background-color: #0D3371;
+}
+/*Galeria - opções de menu ao passar o mouse*/
+#categoria-garagem:hover{
+    background-color: #0D3371;
+}
+
+/*Galeria - opções de menu*/
+#categoria-quartos{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    color: white;
+    background-color: #175ED4;
+    padding: 10px;
+    font-size: 20px;
+    border-left: 2px solid #0D3371;
+    cursor: pointer;
+}
+/*Galeria - opções de menu ao clicar*/
+#categoria-quartos:active{
+    background-color: #0D3371;
+}
+/*Galeria - opções de menu ao passar o mouse*/
+#categoria-quartos:hover{
+    background-color: #0D3371;
+}
+
+/*Galeria - opções de menu*/
+#categoria-banheiros{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    color: white;
+    background-color: #175ED4;
+    padding: 10px;
+    font-size: 20px;
+    border-left: 2px solid #0D3371;
+    cursor: pointer;
+}
+/*Galeria - opções de menu ao clicar*/
+#categoria-banheiros:active{
+    background-color: #0D3371;
+}
+/*Galeria - opções de menu ao passar o mouse*/
+#categoria-banheiros:hover{
+    background-color: #0D3371;
+}
+
+/*Galeria - opções de menu*/
+#categoria-bairro{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    color: white;
+    background-color: #175ED4;
+    padding: 10px;
+    font-size: 20px;
+    border-left: 2px solid #0D3371;
+    cursor: pointer;
+}
+/*Galeria - opções de menu ao clicar*/
+#categoria-bairro:active{
+    background-color: #0D3371;
+}
+/*Galeria - opções de menu ao passar o mouse*/
+#categoria-bairro:hover{
+    background-color: #0D3371;
+}
+
+/*Galeria - opções de menu*/
+#categoria-churrasco{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    color: white;
+    background-color: #175ED4;
+    padding: 10px;
+    font-size: 20px;
+    border-left: 2px solid #0D3371;
+    cursor: pointer;
+}
+/*Galeria - opções de menu ao clicar*/
+#categoria-churrasco:active{
+    background-color: #0D3371;
+}
+/*Galeria - opções de menu ao passar o mouse*/
+#categoria-churrasco:hover{
+    background-color: #0D3371;
+}
+
+/*Galeria - opções de menu*/
+#categoria-jogos{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    color: white;
+    background-color: #175ED4;
+    padding: 10px;
+    font-size: 20px;
+    border-left: 2px solid #0D3371;
+    cursor: pointer;
+}
+/*Galeria - opções de menu ao clicar*/
+#categoria-jogos:active{
+    background-color: #0D3371;
+}
+/*Galeria - opções de menu ao passar o mouse*/
+#categoria-jogos:hover{
+    background-color: #0D3371;
+}
+
+/*Galeria - opções de menu*/
+#categoria-piscina{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    color: white;
+    background-color: #175ED4;
+    padding: 10px;
+    font-size: 20px;
+    border-left: 2px solid #0D3371;
+    cursor: pointer;
+}
+/*Galeria - opções de menu ao clicar*/
+#categoria-piscina:active{
+    background-color: #0D3371;
+}
+/*Galeria - opções de menu ao passar o mouse*/
+#categoria-piscina:hover{
+    background-color: #0D3371;
+}
+
+
+
+
+
+
+
+
+
+/*Galeria - bloco da galeria*/
+.sect-informaçao{
+    display: flex;
+    width: 90%;
+    height: 60%;
+    margin-top: -250px;
+    padding: 5px;
+    border: 2px solid #175ED4;
+}
+
+
+/*Galeria - parte um*/
+#cabeçalho-informaçao{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 30%;
+    border-right: 1px solid #ffffff;
+}
+/*parte um - fundo texto da galeria*/
+#icon-selectgaleriaimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 10%;
+    background-color: #175ED4;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 5px;
+}
+/*parte um - fundo informações da galeria*/
+.sect-informaçoes{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%; 
+    margin-top: -170px;   
+}
+/*parte um - texto informações da galeria*/
+#list-informaçoes{
+    width: 100%;
+    margin-top: 30px;
+}
+
+/*Galeria - PARTE DOIS*/
+.sect-imagens{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+
+/*Galeria - todas imagens*/
+.fundo-todas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+/*Galeria - casa*/
+.fundo-casa{
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+/*Galeria - garagem*/
+.fundo-garagem{
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+/*Galeria - quartos*/
+.fundo-quartos{
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+/*Galeria - banheiro*/
+.fundo-banheiros{
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+/*Galeria - bairro*/
+.fundo-bairro{
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+/*Galeria - churrasco*/
+.fundo-churrasco{
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+/*Galeria - jogos*/
+.fundo-jogos{
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+/*Galeria - piscina*/
+.fundo-piscina{
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+/*Galeria - IMAGEM*/
+#img-infor{
+    width: 200px;
+    height: 200px;
+    margin-top: 14px;
+    margin-left: -6px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*APARECER IMAGEM - FUNDO APARECER IMAGEM*/
+.fundo-imagemdestaque{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:1000px;
+    position: fixed;
+    background-color:rgba(0, 0, 0, 0.636);
+    z-index: 4;
+    transform: translateY(-0%);
+    overflow-y:hidden;
+    overflow-x: hidden;
+    opacity: 0;
+    animation: fundoimagemdestaque 2s;
+    animation-fill-mode:forwards;
+}
+
+
+@keyframes fundoimagemdestaque {
+    100%{
+        opacity: 10;
+    }    
+}
+/*APARECER IMAGEM - centro do menu e as imagens*/
+.imagemdestaque-fundo{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 70%;
+    transform: translateY(-80px) ;
+}
+
+
+/*APARECER IMAGEM - centro do menu*/
+.imagemdestaque-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    height: 6%;
+    background-color: #175ED4;
+    transform: translateX(2000px);
+    animation: imagemdestaque-menu 0.6s;
+    animation-fill-mode:forwards;
+    animation-delay: 0.5s;
+}
+#imagemdestaque-textlogo{
+    font-size: 20px;
+    color: white;
+}
+
+/*APARECER IMAGEM - fechar todo processo*/
+.fundo-fechardestaque{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 20%;
+    padding: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+.fundo-fechardestaque:hover{
+    font-weight: bold;
+   
+}
+#texto-inforfechar{
+    font-size: 16px;
+    color: white;
+    letter-spacing: 1px;
+    transform: translateX(-10px);
+}
+#icon-fecharmenudestaque{
+    color: white;
+    font-size: 30px;
+    animation: iconefechar 3s ;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+@keyframes iconefechar {
+    100%{
+        transform: rotate(-180deg);
+    }
+}
+
+@keyframes imagemdestaque-menu {
+    100%{
+        transform: translateX(-0px);
+    }
+}
+
+/*APARECER IMAGEM - centro do menu*/
+.aparecer-imagemdestaque{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    height: 80%;
+    transform: translateX(-2000px);
+    animation: aparecer-imagemdestaque 0.6s;
+    animation-fill-mode:forwards;
+    animation-delay: 0.5s;
+
+}
+@keyframes aparecer-imagemdestaque {
+    100%{
+        transform: translateX(0px);
+    }
+}
+#imagem-destaque{
+    width: 100%;
+    height: 100%;
+}
+
+
+

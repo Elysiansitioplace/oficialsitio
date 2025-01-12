@@ -7,15 +7,16 @@
         <link rel="shortcut icon" href="https://i.postimg.cc/pTC5dZDj/Ativo-9-8.png">
         <script src="https://kit.fontawesome.com/266015c250.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="../css/headerdesk.css">
-        <link rel="stylesheet" href="../css/maingalery.css">
+        <link rel="stylesheet" href="../css/galeria.css">
         <link rel="stylesheet" href="../css/footerdesk.css">
         <link rel="stylesheet" media="screen and (max-width:700px)" href="../mob/mobheader.css">
-        <link rel="stylesheet" media="screen and (max-width:700px)" href="../mob/maingalery.css">
+        <link rel="stylesheet" media="screen and (max-width:700px)" href="../mob/galeriamob.css">
         <link rel="stylesheet" media="screen and (max-width:700px)" href="../mob/section.css">
         <link rel="stylesheet" media="screen and (max-width:700px)" href="../mob/footer.css">
         <title>Elysian Place</title>
     </head>
     <body>
+
 
     <style>
         body{
@@ -23,6 +24,7 @@
            box-sizing: 0px;
            padding: 0px;
            margin: 0px;
+           background-color: #175ED4;
            font-family: Arial, Helvetica, sans-serif;
        }
        a{
@@ -46,6 +48,12 @@
        transition: 0.5s;
        }
 
+       
+
+       .ativar-imagemdestaque{
+        display: flex;
+        }
+
        @media (max-width:700px){
            body,html{
            padding: 0px;
@@ -58,7 +66,8 @@
 
 
     </style>
-   
+
+
     <header class="headerpink">
 
     <article class="desk-logo">
@@ -108,8 +117,36 @@
 
     </header>
 
+    
+    <article class="fundo-imagemdestaque">
+
+        <div class="imagemdestaque-fundo">
+
+            <div class="imagemdestaque-menu">
+
+                <p id="imagemdestaque-textlogo">Elysian Place</p>
+                
+                <div class="fundo-fechardestaque" onclick="fecharimg()">
+                    <p id="texto-inforfechar"> Sair</p>
+                    <i class="fa-solid fa-xmark" id="icon-fecharmenudestaque"></i>
+                </div>
+               
+            </div>
+        
+            <div class="aparecer-imagemdestaque">
+                <img src="https://i.postimg.cc/pdKMKVXQ/ip-WZCBr5-t-2.jpg" alt="" id="imagem-destaque">
+            </div>
+
+        </div>
+        
+
+    
+    </article>
+
+
     <main>
 
+        <!--/*parte um - texto e opções*/-->   
         <article class="desk-divum">
             
         <div class="desk-fundogaleria">
@@ -119,7 +156,7 @@
         </div>
 
         <div class="desk-selectiongaleria">
-            <i class="fa-solid fa-house" id="icon-selectgaleria"><p id="text-select">Casa</p> </i>
+            <i class="fa-solid fa-house" id="icon-selectgaleria"><p id="text-select" onclick="casa()">Casa</p> </i>
             <i class="fa-solid fa-car" id="icon-selectgaleria"><p id="text-select">Garagem</p> </i>
             <i class="fa-solid fa-bed" id="icon-selectgaleria"><p id="text-select">Quartos</p></i>
             <i class="fa-solid fa-shower" id="icon-selectgaleria"><p id="text-select">Banheiros</p></i>
@@ -131,15 +168,19 @@
         </div>
         </article>
 
+        <!--/*parte dois - texto e opções*/-->
         <article class="desk-divum">
+
         <div class="fundo-blocdois">
 
             <div id="blocdois-planum">
                 <img src="https://i.postimg.cc/gj9cmL7h/90ya-X6j-U-t.jpg" alt="" id="img-plabloc">
             </div>
+
             <div id="blocdois-plandois">
                 <img src="https://i.postimg.cc/bJ8cgXs7/Atibaia-01-Rogerio-Pinheiro.jpg" alt="" id="img-plabloc">
             </div>
+
             <div id="blocdois-plantres" >
                 <img src="https://i.postimg.cc/pdKMKVXQ/ip-WZCBr5-t-2.jpg" class="myslidegaleria" alt="" id="img-plabloc">
                 <img src="https://i.postimg.cc/8ch1Rghk/IMG-0416-Editar.jpg" class="myslidegaleria" alt="" id="img-plabloc">      
@@ -177,27 +218,146 @@
         </article>
 
     </main>
+    
 
     <article class="sect-galeriaimagens">
-    
+
+        <!--/*galeria imagem - menu opções*/-->   
         <div class="sect-categoria">
-        <p id="categoria-galeriageral">Todas as Fotos</p>
-        <p id="categoria-galeria">Casa</p>
-        <p id="categoria-galeria">Garagem</p>
-        <p id="categoria-galeria">Quartos</p>
-        <p id="categoria-galeria">Banheiros</p>
-        <p id="categoria-galeria">Bairro</p>
-        <p id="categoria-galeria">Churrasco</p>
-        <p id="categoria-galeria">Jogos</p>
-        <p id="categoria-galeria">Piscina</p>
+        <p id="categoria-galeriageral" onclick="todas()">Todas as Fotos</p>
+        <p id="categoria-casa" onclick="casa()">Casa</p>
+        <p id="categoria-garagem" onclick="garagem()">Garagem</p>
+        <p id="categoria-quartos" onclick="quartos()">Quartos</p>
+        <p id="categoria-banheiros" onclick="banheiros()">Banheiros</p>
+        <p id="categoria-bairro" onclick="bairro()">Bairro</p>
+        <p id="categoria-churrasco" onclick="churrasco()">Churrasco</p>
+        <p id="categoria-jogos" onclick="jogos()">Jogos</p>
+        <p id="categoria-piscina" onclick="piscina()">Piscina</p>
+
+        <script>
+
+            function todas(){
+                document.querySelector('.fundo-casa').style.display = "none";
+                document.querySelector('.fundo-garagem').style.display = "none";
+                document.querySelector('.fundo-quartos').style.display = "none";
+                document.querySelector('.fundo-banheiros').style.display = "none";
+                document.querySelector('.fundo-bairro').style.display = "none";
+                document.querySelector('.fundo-jogos').style.display = "none";
+                document.querySelector('.fundo-piscina').style.display = "none";
+                
+                document.querySelector('.fundo-todas').style.display = "flex";
+
+            }
+            function casa(){
+                document.querySelector('.fundo-todas').style.display = "none";
+                document.querySelector('.fundo-garagem').style.display = "none";
+                document.querySelector('.fundo-quartos').style.display = "none";
+                document.querySelector('.fundo-banheiros').style.display = "none";
+                document.querySelector('.fundo-bairro').style.display = "none";
+                document.querySelector('.fundo-churrasco').style.display = "none";
+                document.querySelector('.fundo-jogos').style.display = "none";
+                document.querySelector('.fundo-piscina').style.display = "none";
+
+
+                document.querySelector('.fundo-casa').style.display = "flex";
+
+            }
+            function garagem(){
+                document.querySelector('.fundo-todas').style.display = "none";
+                document.querySelector('.fundo-casa').style.display = "none";
+                document.querySelector('.fundo-quartos').style.display = "none";
+                document.querySelector('.fundo-banheiros').style.display = "none";
+                document.querySelector('.fundo-bairro').style.display = "none";
+                document.querySelector('.fundo-churrasco').style.display = "none";
+                document.querySelector('.fundo-jogos').style.display = "none";
+                document.querySelector('.fundo-piscina').style.display = "none";
+
+                document.querySelector('.fundo-garagem').style.display = "flex";
+            }
+            function quartos(){
+                document.querySelector('.fundo-todas').style.display = "none";
+                document.querySelector('.fundo-casa').style.display = "none";
+                document.querySelector('.fundo-garagem').style.display = "none";
+                document.querySelector('.fundo-banheiros').style.display = "none";
+                document.querySelector('.fundo-bairro').style.display = "none";
+                document.querySelector('.fundo-churrasco').style.display = "none";
+                document.querySelector('.fundo-jogos').style.display = "none";
+                document.querySelector('.fundo-piscina').style.display = "none";
+                
+                document.querySelector('.fundo-quartos').style.display = "flex";
+            }
+
+            function banheiros(){
+                document.querySelector('.fundo-todas').style.display = "none";
+                document.querySelector('.fundo-casa').style.display = "none";
+                document.querySelector('.fundo-garagem').style.display = "none";
+                document.querySelector('.fundo-quartos').style.display = "none";
+                document.querySelector('.fundo-bairro').style.display = "none";
+                document.querySelector('.fundo-churrasco').style.display = "none";
+                document.querySelector('.fundo-jogos').style.display = "none";
+                document.querySelector('.fundo-piscina').style.display = "none";
+                
+                document.querySelector('.fundo-banheiros').style.display = "flex";
+            }
+
+            function bairro(){
+                document.querySelector('.fundo-todas').style.display = "none";
+                document.querySelector('.fundo-casa').style.display = "none";
+                document.querySelector('.fundo-garagem').style.display = "none";
+                document.querySelector('.fundo-quartos').style.display = "none";
+                document.querySelector('.fundo-banheiros').style.display = "none";
+                document.querySelector('.fundo-churrasco').style.display = "none";
+                document.querySelector('.fundo-jogos').style.display = "none";
+                document.querySelector('.fundo-piscina').style.display = "none";
+                
+                document.querySelector('.fundo-bairro').style.display = "flex";
+            }
+            
+            function churrasco(){
+                document.querySelector('.fundo-todas').style.display = "none";
+                document.querySelector('.fundo-casa').style.display = "none";
+                document.querySelector('.fundo-garagem').style.display = "none";
+                document.querySelector('.fundo-quartos').style.display = "none";
+                document.querySelector('.fundo-banheiros').style.display = "none";
+                document.querySelector('.fundo-bairro').style.display = "none";
+                document.querySelector('.fundo-jogos').style.display = "none";
+                document.querySelector('.fundo-piscina').style.display = "none";
+                
+                document.querySelector('.fundo-churrasco').style.display = "flex";
+            }
+
+            function jogos(){
+                document.querySelector('.fundo-todas').style.display = "none";
+                document.querySelector('.fundo-casa').style.display = "none";
+                document.querySelector('.fundo-garagem').style.display = "none";
+                document.querySelector('.fundo-quartos').style.display = "none";
+                document.querySelector('.fundo-banheiros').style.display = "none";
+                document.querySelector('.fundo-bairro').style.display = "none";
+                document.querySelector('.fundo-churrasco').style.display = "none";
+                document.querySelector('.fundo-piscina').style.display = "none";
+                
+                document.querySelector('.fundo-jogos').style.display = "flex";
+            }
+
+            function piscina(){
+                document.querySelector('.fundo-todas').style.display = "none";
+                document.querySelector('.fundo-casa').style.display = "none";
+                document.querySelector('.fundo-garagem').style.display = "none";
+                document.querySelector('.fundo-quartos').style.display = "none";
+                document.querySelector('.fundo-banheiros').style.display = "none";
+                document.querySelector('.fundo-bairro').style.display = "none";
+                document.querySelector('.fundo-jogos').style.display = "none";
+
+                
+                document.querySelector('.fundo-piscina').style.display = "flex";
+            }
+        </script>
 
         </div>
 
-        <div class="fechar-categoria">
-            <i class="fa-solid fa-xmark" id="icon-fecharcategoria"></i>
-        </div>
 
-        <div class="sect-informaçao">
+
+    <div class="sect-informaçao">
 
         <div id="cabeçalho-informaçao">
             <i class="fa-solid fa-house" id="icon-selectgaleriaimg"><p id="text-select">Veja Mais:</p></i>
@@ -210,48 +370,46 @@
         
         </div>
 
-
-
         <div class="sect-imagens">
 
             <div class="fundo-todas">
 
-                <img src="https://i.postimg.cc/pdKMKVXQ/ip-WZCBr5-t-2.jpg" alt="" id="img-infor">
-                <img src="https://i.postimg.cc/DZY9Svm4/IMG-20240312-WA0038.jpg" alt="" id="img-infor">
-                <img src="https://i.postimg.cc/Vs2NT14N/IMG-20240312-WA0041.jpg" alt="" id="img-infor">
-                <img src="https://i.postimg.cc/52V243hd/IMG-20240312-WA0044.jpg" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/pdKMKVXQ/ip-WZCBr5-t-2.jpg" onclick="img01()" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/DZY9Svm4/IMG-20240312-WA0038.jpg" onclick="img02()" onclick="img02()" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/Vs2NT14N/IMG-20240312-WA0041.jpg" onclick="img03()" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/52V243hd/IMG-20240312-WA0044.jpg" onclick="img04()" alt="" id="img-infor">
     
-                <img src="https://i.postimg.cc/bwk8th9Z/19.jpg" alt="" id="img-infor">
-                <img src="https://i.postimg.cc/SK44LvgD/23.jpg" alt="" id="img-infor">
-                <img src="https://i.postimg.cc/YSxHdzVk/25.jpg" alt="" id="img-infor">
-                <img src="https://i.postimg.cc/sXDRqZdW/27.jpg" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/bwk8th9Z/19.jpg" onclick="img05()" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/SK44LvgD/23.jpg" onclick="img06()" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/YSxHdzVk/25.jpg" onclick="img07()" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/sXDRqZdW/27.jpg" onclick="img08()" alt="" id="img-infor">
     
     
-                <img src="https://i.postimg.cc/d0QyH41j/IMG-0309-Editar.jpg" alt="" id="img-infor">
-                <img src="https://i.postimg.cc/DzCbtL4k/IMG-0322-Editar.jpg" alt="" id="img-infor">
-                <img src="https://i.postimg.cc/CM9bhGPw/IMG-0336-Editar.jpg" alt="" id="img-infor">
-                <img src="https://i.postimg.cc/d1mgsQvY/IMG-0348-Editar.jpg" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/d0QyH41j/IMG-0309-Editar.jpg" onclick="img09()" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/DzCbtL4k/IMG-0322-Editar.jpg" onclick="img10()" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/CM9bhGPw/IMG-0336-Editar.jpg" onclick="img11()" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/d1mgsQvY/IMG-0348-Editar.jpg" onclick="img12()" alt="" id="img-infor">
     
-                <img src="https://i.postimg.cc/HjDgnZRG/IMG-0360-Editar.jpg" alt="" id="img-infor">
-                <img src="https://i.postimg.cc/N0WQ9jW2/IMG-0355.jpg" alt="" id="img-infor">
-                <img src="https://i.postimg.cc/fy0swnHj/IMG-0364-Editar.jpg" alt="" id="img-infor">
-                <img src="https://i.postimg.cc/Y9D2rxtk/IMG-0371-Editar.jpg" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/HjDgnZRG/IMG-0360-Editar.jpg" onclick="img13()" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/N0WQ9jW2/IMG-0355.jpg" onclick="img14()" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/fy0swnHj/IMG-0364-Editar.jpg" onclick="img15()" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/Y9D2rxtk/IMG-0371-Editar.jpg" onclick="img16()" alt="" id="img-infor">
 
                     
-                <img src="https://i.postimg.cc/NfWQN4s2/piscina6.jpg" alt="" id="img-infor">
-                <img src="https://i.postimg.cc/br5qf01M/piscina5.jpg" alt="" id="img-infor">
-                <img src="https://i.postimg.cc/TYyRqS6X/piscina4.jpg" alt="" id="img-infor">
-                <img src="https://i.postimg.cc/zD2zhN4j/piscina3.jpg" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/NfWQN4s2/piscina6.jpg" onclick="img17()" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/br5qf01M/piscina5.jpg" onclick="img18()" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/TYyRqS6X/piscina4.jpg" onclick="img19()" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/zD2zhN4j/piscina3.jpg" onclick="img20()" alt="" id="img-infor">
 
-                <img src="https://i.postimg.cc/KYsbMrHY/IMG-20240312-WA0062.jpg" alt="" id="img-infor">
-                <img src="https://i.postimg.cc/zG8qZfhq/IMG-20240312-WA0058.jpg" alt="" id="img-infor">
-                <img src="https://i.postimg.cc/WbMsHZh9/IMG-20240312-WA0057.jpg" alt="" id="img-infor">
-                <img src="https://i.postimg.cc/y6310tBC/IMG-20240312-WA0055.jpg" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/KYsbMrHY/IMG-20240312-WA0062.jpg" onclick="img21()" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/zG8qZfhq/IMG-20240312-WA0058.jpg" onclick="img22()" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/WbMsHZh9/IMG-20240312-WA0057.jpg" onclick="img23()" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/y6310tBC/IMG-20240312-WA0055.jpg" onclick="img24()" alt="" id="img-infor">
 
-                <img src="https://i.postimg.cc/nzgn6Y4W/IMG-20240312-WA0053.jpg" alt="" id="img-infor">
-                <img src="https://i.postimg.cc/JhTrQWGM/IMG-20240312-WA0048.jpg" alt="" id="img-infor">
-                <img src="https://i.postimg.cc/KvXZffvk/IMG-20240312-WA0054.jpg" alt="" id="img-infor">
-                <img src="https://i.postimg.cc/cJdyjkVC/IMG-20240312-WA0031.jpg" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/nzgn6Y4W/IMG-20240312-WA0053.jpg" onclick="img25()" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/JhTrQWGM/IMG-20240312-WA0048.jpg" onclick="img26()" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/KvXZffvk/IMG-20240312-WA0054.jpg" onclick="img27()" alt="" id="img-infor">
+                <img src="https://i.postimg.cc/cJdyjkVC/IMG-20240312-WA0031.jpg" onclick="img28()" alt="" id="img-infor">
     
 
             </div>
@@ -287,7 +445,7 @@
                 <img src="https://i.postimg.cc/pdKMKVXQ/ip-WZCBr5-t-2.jpg" alt="" id="img-infor">
                 <img src="https://i.postimg.cc/DZY9Svm4/IMG-20240312-WA0038.jpg" alt="" id="img-infor">
                 <img src="https://i.postimg.cc/Vs2NT14N/IMG-20240312-WA0041.jpg" alt="" id="img-infor">
-                <img src="https://i.postimg.cc/52V243hd/IMG-20240312-WA0044.jpg" alt="" id="img-infor">
+               
     
                 <img src="" alt="" id="img-infor">
                 <img src="" alt="" id="img-infor">
@@ -334,7 +492,6 @@
 
             </div>
 
-            
             <div class="fundo-banheiros">
 
                 <img src="https://i.postimg.cc/pdKMKVXQ/ip-WZCBr5-t-2.jpg" alt="" id="img-infor">
@@ -360,7 +517,6 @@
     
 
             </div>
-
 
             <div class="fundo-bairro">
 
@@ -388,7 +544,6 @@
 
             </div>
 
-
             <div class="fundo-churrasco">
 
                 <img src="https://i.postimg.cc/pdKMKVXQ/ip-WZCBr5-t-2.jpg" alt="" id="img-infor">
@@ -414,7 +569,6 @@
     
 
             </div>
-
 
             <div class="fundo-jogos">
 
@@ -442,7 +596,6 @@
 
             </div>
 
-
             <div class="fundo-piscina">
 
                 <img src="https://i.postimg.cc/pdKMKVXQ/ip-WZCBr5-t-2.jpg" alt="" id="img-infor">
@@ -469,11 +622,12 @@
 
             </div>
 
-
         </div>
 
+    </div>
 
     </article>
+
 
     <footer class="back-footergaleria">
 
@@ -503,8 +657,12 @@
             
     </footer>
 
+
+
+    <script src="../js/galeria.js"></script>
     <script src="../js/script.js"></script>
     <script src="https://kit.fontawesome.com/266015c250.js" crossorigin="anonymous"></script>
     
+
     </body>
 </html>
