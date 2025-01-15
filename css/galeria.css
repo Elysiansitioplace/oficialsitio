@@ -546,7 +546,7 @@ main{
 
 /*APARECER IMAGEM - FUNDO APARECER IMAGEM*/
 .fundo-imagemdestaque{
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;

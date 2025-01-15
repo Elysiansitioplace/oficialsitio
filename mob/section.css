@@ -250,19 +250,38 @@
 
 .sect-tres{
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
-    height: 1450px;
     padding: 10px;
 }
-#secttres-titulo{
-    font-size: 22px;
-
+.fundo-menucomentario{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    margin-left: -20px;
 }
+.fundo-titulocomentario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    border-bottom: 2px solid #175ED4;
+}
+.fundo-colocarcomentario{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+}
+
 /*Configuração de rolagem do bloco de comentarios*/
 .post-comentario{
     display: flex;
-    width: 95%;
-    height:600px;
+    width: 100%;
     padding: 0;
     margin-left: -20px;
 }
@@ -270,14 +289,31 @@
 #bloco-comentario{
     display: flex;
     width: 100%;
-    height: 500px;
 }
 /*Bloco comentarios- parte um*/
 #bloco-partum{
-    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
 }
 
-
+.bloco-fundoicone{
+    display: flex;
+    align-items: center;
+    width: 10%;
+    padding: 10px;
+}
+#img-users{
+    width: 100%;
+    font-size: 40px;
+}
+#partun-bloco{
+    width: 80%;
+}
+#bloco-partdois{
+    height:125px;
+}
 
 #bloco-partres{
     display: flex;
@@ -286,20 +322,26 @@
     padding: 0;
     margin: 0;
     width: 100%;
-    height:40%;
+
     overflow-x: scroll;
 }
 #img-sitio{
     height:160px;
     width: 130px;
 }
+
 /*Configuração do bloco de inserir comentario*/
-.add-comentario{
-    width: 100%;
-    height: 600px;
+
+.fundo-addcomentarios{
     display: flex;
+    justify-content: center;
     align-items: center;
-    margin-left: -20px;
+}
+.add-comentario{
+    width: 90%;
+    height: 600px;
+    display:flex;
+    align-items: center;
     z-index: 4;
     padding: 20px;
 
@@ -334,6 +376,17 @@
     margin-top: -80px;
     padding: 10px;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 

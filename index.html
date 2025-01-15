@@ -102,6 +102,32 @@
 
     </header>
 
+    <article class="fundo-addcomentarios">
+
+
+        <form method="POST" class="add-comentario" action="https://formsubmit.co/placeelysian@gmail.com " enctype="multipart/form-data">
+
+            <div class="fundo-textocomentarios">
+                <p id="titulo-comentario">Faça um Comentario:</p>
+                <p id="texto-fecharcomentario" onclick="fecharcoment()">Sair<i class="fa-solid fa-xmark" id="icon-fecharcomentario"></i></p>
+            </div>
+
+
+            <div class="fundo-adicionarcomentario">
+                <input type="text" name="name" placeholder="Nome" id="input-nomecomentario">
+                <input type="number" name="avaliaçao" placeholder="Avaliação" id="input-avaliaçaocomentario">
+                <textarea name="message" id="texto-comentario" placeholder="Clique aqui e escreva o seu Comentario..." ></textarea>
+            </div>
+
+            <input type="hidden" name="_captcha" value="false">
+            <input type="oculto" nome="_next" valor="https://elysianplace.net/page/obrformulario.html">
+            <button type="submit" id="btn-enviarcomentario">Enviar Comentario</button>
+
+        </form>
+
+                
+    </article>
+
     <main>
 
         <!--config frase de efeito-->
@@ -428,8 +454,19 @@
 
     <section class="sect-tres">
 
-        <!--/*seção-tres - titulo comentario*/-->
-        <p id="secttres-titulo">Ver Comentários:</p>
+
+        <article class="fundo-menucomentario">
+            
+            <div class="fundo-titulocomentario">
+                <p>Veja o nossos Comentários:</p>
+            </div>
+
+            <div class="fundo-colocarcomentario">
+                <p id="btn-colocarcomentario" onclick="comentario()">Adicionar um Comentario</p>
+            </div>
+
+        </article>
+
         
         <!--/*seção-tres - postagem dos comentarios*/-->
         <article class="post-comentario">
@@ -438,8 +475,15 @@
 
                     <!--/*bloco-comentarios - nome e avaliação*/-->
                     <div id="bloco-partum">
-    
+
+                        <div class="bloco-fundoicone">
+
                         <i class="fa-solid fa-circle-user" id="img-users"></i>
+
+                        </div>
+    
+                    
+                        
                         <div id="partun-bloco">
                             <p id="nomecomentario-users">Leonardo Alvarenga</p>
                             <p id="avaliaçao-user">Avaliação: <span id="user-nota">10/10</span></p>
@@ -458,109 +502,213 @@
                     </div>
     
                     <!--/*bloco-comentarios - Imagem*/-->
-                    <div id="bloco-partres">
-                        <img src="https://i.postimg.cc/6pkTvK2S/IMG-20240311-WA0032.jpg" alt="" id="img-sitio">
-                        <img src="https://i.postimg.cc/CKb5C2bK/IMG-20240311-WA0030.jpg" alt="" id="img-sitio">
-                        <img src="https://i.postimg.cc/gj20WkQw/IMG-20240311-WA0037.jpg" alt="" id="img-sitio">
-                    </div>
-    
+
                 </div>
 
                 <div id="bloco-comentario">
 
+                    <!--/*bloco-comentarios - nome e avaliação*/-->
                     <div id="bloco-partum">
-    
+
+                        <div class="bloco-fundoicone">
+
                         <i class="fa-solid fa-circle-user" id="img-users"></i>
+
+                        </div>
+    
+                    
+                        
                         <div id="partun-bloco">
-                            <p id="nomecomentario-users">Leonardo Alvarenga</p>
+                            <p id="nomecomentario-users">Laura</p>
                             <p id="avaliaçao-user">Avaliação: <span id="user-nota">10/10</span></p>
                         </div>
                        
                     </div>
     
+                    <!--/*bloco-comentarios - Texto*/-->
                     <div id="bloco-partdois">
     
                         <p id="comentario-user">
-                            Sítio muito bem conservado, com uma bela piscina enorme e com uma linda estrutura da casa tanto por dentro e por fora. 
-                            Atendeu todas as minhas expectativas e pretendo voltar mais vezes!!<br> Ameeeeeeeeeei ❤️❤️❤️❤️❤️ 
+                            Casa muito boa , muito acolhedora votarei mais vezes
                         </p>
                         
                     </div>
     
-                    <div id="bloco-partres">
-                        <img src="https://i.postimg.cc/6pkTvK2S/IMG-20240311-WA0032.jpg" alt="" id="img-sitio">
-                        <img src="https://i.postimg.cc/CKb5C2bK/IMG-20240311-WA0030.jpg" alt="" id="img-sitio">
-                        <img src="https://i.postimg.cc/gj20WkQw/IMG-20240311-WA0037.jpg" alt="" id="img-sitio">
-                    </div>
-    
+                    <!--/*bloco-comentarios - Imagem*/-->
+
                 </div>
 
                 <div id="bloco-comentario">
 
+                    <!--/*bloco-comentarios - nome e avaliação*/-->
                     <div id="bloco-partum">
-    
+
+                        <div class="bloco-fundoicone">
+
                         <i class="fa-solid fa-circle-user" id="img-users"></i>
+
+                        </div>
+    
+                    
+                        
                         <div id="partun-bloco">
-                            <p id="nomecomentario-users">Leonardo Alvarenga</p>
+                            <p id="nomecomentario-users">Pessoa Anônima</p>
                             <p id="avaliaçao-user">Avaliação: <span id="user-nota">10/10</span></p>
                         </div>
                        
                     </div>
     
+                    <!--/*bloco-comentarios - Texto*/-->
                     <div id="bloco-partdois">
     
                         <p id="comentario-user">
-                            Sítio muito bem conservado, com uma bela piscina enorme e com uma linda estrutura da casa tanto por dentro e por fora. 
-                            Atendeu todas as minhas expectativas e pretendo voltar mais vezes!!<br> Ameeeeeeeeeei ❤️❤️❤️❤️❤️ 
+                            Muito bem localizado, esse sítio é um lugar encantador, rodeado pela natureza, com paisagens lindas e um clima agradável. É o refúgio perfeito para quem busca paz
                         </p>
                         
                     </div>
     
-                    <div id="bloco-partres">
-                        <img src="https://i.postimg.cc/6pkTvK2S/IMG-20240311-WA0032.jpg" alt="" id="img-sitio">
-                        <img src="https://i.postimg.cc/CKb5C2bK/IMG-20240311-WA0030.jpg" alt="" id="img-sitio">
-                        <img src="https://i.postimg.cc/gj20WkQw/IMG-20240311-WA0037.jpg" alt="" id="img-sitio">
+                    <!--/*bloco-comentarios - Imagem*/-->
+
+                </div>
+
+                <div id="bloco-comentario">
+
+                    <!--/*bloco-comentarios - nome e avaliação*/-->
+                    <div id="bloco-partum">
+
+                        <div class="bloco-fundoicone">
+
+                        <i class="fa-solid fa-circle-user" id="img-users"></i>
+
+                        </div>
+    
+                    
+                        
+                        <div id="partun-bloco">
+                            <p id="nomecomentario-users">Ewerton de Almeida Pugliesi</p>
+                            <p id="avaliaçao-user">Avaliação: <span id="user-nota">10/10</span></p>
+                        </div>
+                       
                     </div>
     
-                </div>
+                    <!--/*bloco-comentarios - Texto*/-->
+                    <div id="bloco-partdois">
     
+                        <p id="comentario-user">
+                            Sítio bem localizado,organizado com grande espaço para diversão e preço rasuavel.
+                        </p>
+                        
+                    </div>
+    
+                    <!--/*bloco-comentarios - Imagem*/-->
+
+                </div>
+
+                <div id="bloco-comentario">
+
+                    <!--/*bloco-comentarios - nome e avaliação*/-->
+                    <div id="bloco-partum">
+
+                        <div class="bloco-fundoicone">
+
+                        <i class="fa-solid fa-circle-user" id="img-users"></i>
+
+                        </div>
+    
+                    
+                        
+                        <div id="partun-bloco">
+                            <p id="nomecomentario-users">Solange</p>
+                            <p id="avaliaçao-user">Avaliação: <span id="user-nota">10/10</span></p>
+                        </div>
+                       
+                    </div>
+    
+                    <!--/*bloco-comentarios - Texto*/-->
+                    <div id="bloco-partdois">
+    
+                        <p id="comentario-user">
+                            Amei estar neste local! Tudo limpo,organizado! Tranquilo! Próprio para quem quer algo privado para família!
+                        </p>
+                        
+                    </div>
+    
+                    <!--/*bloco-comentarios - Imagem*/-->
+
+                </div>
+
+                <div id="bloco-comentario">
+
+                    <!--/*bloco-comentarios - nome e avaliação*/-->
+                    <div id="bloco-partum">
+
+                        <div class="bloco-fundoicone">
+
+                        <i class="fa-solid fa-circle-user" id="img-users"></i>
+
+                        </div>
+    
+                    
+                        
+                        <div id="partun-bloco">
+                            <p id="nomecomentario-users">Ana Clara Coelho Santiago Toledo</p>
+                            <p id="avaliaçao-user">Avaliação: <span id="user-nota">10/10</span></p>
+                        </div>
+                       
+                    </div>
+    
+                    <!--/*bloco-comentarios - Texto*/-->
+                    <div id="bloco-partdois">
+    
+                        <p id="comentario-user">
+                            O lugar é bem espaçoso, tudo bem limpinho e arrumadinho.
+                            Super indico para passar o final de semana com família e amigos!
+                        </p>
+                        
+                    </div>
+    
+                    <!--/*bloco-comentarios - Imagem*/-->
+
+                </div>
+
+                <div id="bloco-comentario">
+
+                    <!--/*bloco-comentarios - nome e avaliação*/-->
+                    <div id="bloco-partum">
+
+                        <div class="bloco-fundoicone">
+
+                        <i class="fa-solid fa-circle-user" id="img-users"></i>
+
+                        </div>
+    
+                    
+                        
+                        <div id="partun-bloco">
+                            <p id="nomecomentario-users">Luara</p>
+                            <p id="avaliaçao-user">Avaliação: <span id="user-nota">10/10</span></p>
+                        </div>
+                       
+                    </div>
+    
+                    <!--/*bloco-comentarios - Texto*/-->
+                    <div id="bloco-partdois">
+    
+                        <p id="comentario-user">
+                            Casa muito boa , muito acolhedora votarei mais vezes.
+                        </p>
+                        
+                    </div>
+    
+                    <!--/*bloco-comentarios - Imagem*/-->
+
+                </div>
+
         </article>
 
-        <form method="POST" class="add-comentario" action="https://formsubmit.co/placeelysian@gmail.com " enctype="multipart/form-data">
 
 
-            <p id="titulo-comentario">Adicionar Comentario</p>
 
-            <div class="fundo-adicionarcomentario">
-                <input type="text" name="name" placeholder="Nome" id="input-nomecomentario">
-                <input type="number" name="avaliaçao" placeholder="Avaliação" id="input-avaliaçaocomentario">
-                <textarea name="message" id="texto-comentario" placeholder="Clique aqui e escreva o seu Comentario..." ></textarea>
-            </div>
-
-            <div  class="img-adicionarcomentario">
-                <label for="adicionarimg-comentario" class="adicionarimg-comentario">
-                    Enviar Imagem 1
-                    <input type="file" name="attachment" accept="image/png, image/jpeg" id="adicionarimg-comentario">
-                </label>
-                
-                <label for="adicionarimg-comentario" class="adicionarimg-comentario">
-                    Enviar Imagem 2
-                    <input type="file" name="attachment" accept="image/png, image/jpeg" id="adicionarimg-comentario">            
-                </label>
-                
-                <label for="adicionarimg-comentario" class="adicionarimg-comentario">
-                    Enviar Imagem 3
-                    <input type="file" name="attachment" accept="image/png, image/jpeg" id="adicionarimg-comentario">
-                </label>
-            
-            </div>
-            
-            <input type="hidden" name="_captcha" value="false">
-            <button type="submit" id="btn-enviarcomentario">Enviar Comentario</button>
-
-            
-
-        </form>
 
     </section>
 
@@ -637,6 +785,7 @@
         
     </footer>
 
+    <script src="js/comentario.js"></script>
     <script src="js/script.js"></script>
     <script src="https://kit.fontawesome.com/266015c250.js" crossorigin="anonymous"></script>
 

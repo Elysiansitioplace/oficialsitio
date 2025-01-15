@@ -461,38 +461,60 @@
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    height: 600px;
     padding: 10px;
     overflow-y: hidden;
 }
-#secttres-titulo{
+
+/*menu comentarios*/
+.fundo-menucomentario{
     display: flex;
     align-items: center;
-    width: 95%;
-    height: 10%;
-    padding-left:0px ;
-    font-size: 21px;
-    font-weight: bold;
+    justify-content: space-between;
 
+    width: 90%;
+    height: 2%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.fundo-titulocomentario{
+    width:75% ;
+    height: 100%;
+    font-size: 22px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+
+
+/*menu comentarios - lado "adicionar comentario"*/
+.fundo-colocarcomentario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 100%;
+    font-size: 19px;
+    padding-left: 40px;
+}
+#btn-colocarcomentario{
+    background-color: #175ED4;
+    color: white;
+    padding: 15px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+#btn-colocarcomentario:hover{
+    background-color: #0D3371;
 }
 
 /*Configuração de rolagem do bloco de comentarios*/
 .post-comentario{
     display: flex;
     flex-wrap: wrap;
-    height: 500px;
-    overflow-y:auto;
-    width: 60%;
-    padding: 20px;
+    width: 90%;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
-.post-comentario::-webkit-scrollbar {
-    width: 12px;
-    background-color: #0D3371               /* width of the entire scrollbar */
-}
-.post-comentario::-webkit-scrollbar-thumb {
-    background-color: #175ED4;   
-}
+
 
 
 /*Configuração do bloco de comentarios*/
@@ -502,7 +524,6 @@
     overflow-x: hidden;
     overflow-y: hidden;
     width: 100%;
-    height: 380px;
     border: 1px solid rgba(0, 0, 0, 0.41);
 }
 
@@ -512,25 +533,27 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    padding: 10px;
     width: 100%;
-    height: 15%;
-    background-color: #175ED4;
+    height: 30%;
+    background-color: #0d3371d4;
     color: white;
+    padding: 10px;
     overflow-x: hidden;
     overflow-y: hidden;
 }
-/*parte um - icone de imagem*/
-#img-users{
+.bloco-fundoicone{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 5%;
     height: 100%;
-    font-size: 40px;
-    color: white;
     overflow-x: hidden;
     overflow-y: hidden;
+}
+/*parte um - icone de imagem*/
+#img-users{
+    font-size: 40px;
+    color: white;
 }
 
 /*parte um - espaço informação pessoal*/
@@ -564,7 +587,7 @@
     flex-wrap: wrap;
     word-break:break-all;
     width: 100%;
-    height: 20%;
+    height: 70px ;
     padding: 10px;
     overflow-y:visible;
     position: relative;
@@ -578,20 +601,28 @@
 }
 
 
-/*Bloco comentarios- parte tres*/
-#bloco-partres{
-    display: flex;
+
+
+.fundo-addcomentarios{
+    display: none;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 100%;
-    margin-top: -0px;
+    height: 800px;
+    position: fixed;
+    background-color:#0d33716f;
+    z-index: 10;
+    overflow-y:hidden;
+    overflow-x: hidden;
+    opacity: 0;
+    animation: fundoimagemdestaque 2s;
+    animation-fill-mode:forwards;
 }
-/*parte tres - tamanho da imagem*/
-#img-sitio{
-    width: 150px;
-    height: 150px;
-    cursor: pointer;
-    margin-left: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.41);
+
+@keyframes fundoimagemdestaque {
+    100%{
+        opacity: 10;
+    }    
 }
 
 
@@ -601,38 +632,61 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 30%;
+    align-items: center;
+    width: 80%;
     height: 500px;
-    padding: 0px;
+    padding: 10px;
     background-color: #0D3371;
+    padding: 10px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 /*inserir comentario - titulo comentario*/
+.fundo-textocomentarios{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 90%;
+    height: 5%;
+
+}
 #titulo-comentario{
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+
+#texto-fecharcomentario{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 22px;
-    width: 100%;
-    height: 5%;
+    font-size: 18px;
+    cursor: pointer;
     color: white;
-    font-weight: bold;
+}
+#texto-fecharcomentario:hover{
+color: #175ED4;
+}
+#icon-fecharcomentario{
+    margin-left: 10px;
+    font-size: 30px;
 }
 /*inserir comentario - fundo nome,avaliação e mensagem*/
 .fundo-adicionarcomentario{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
 }
 
 /*inserir comentario -  nome */
 #input-nomecomentario{
-    width: 40%;
+    width: 100%;
     height: 15%;
     padding:5px;
-    font-size:18px;
+    font-size:26px;
     border:0px;
     padding: 2px;
     background-color: #0D3371;
@@ -654,10 +708,11 @@
 
 /*inserir comentario -  avaliação */
 #input-avaliaçaocomentario{
-    width: 40%;
+    width: 100%;
     height: 15%;
     padding:5px;
-    font-size:18px;
+    margin-top: 40px;
+    font-size:26px;
     border:0px;
     padding: 2px;
     transition: 0.3s;
@@ -680,10 +735,13 @@
 
 /*inserir comentario -  texto */
 #texto-comentario{
-    width: 90%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
     height: 150px;
+    margin-top: 40px;
     overflow-y: auto;
-    font-size: 18px;
+    font-size: 25px;
     background-color: #0D3371;
     color: white;
     border: 0px;
@@ -702,30 +760,7 @@
     border: 4px solid #0D3371;
 }
 
-/*inserir comentario -  imagem */
-.img-adicionarcomentario{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    
-}
-input[type="file"]{
-    display: none;
-}
-.adicionarimg-comentario{
-    border: 1px solid #ccc;
-    display: flex;
-    cursor: pointer;
-    background-color: #175ED4;
-    color: white;
-    padding: 10px;
-    width: 20%;
 
-}
-.adicionarimg-comentario:hover{
-    background-color:#0D3371;
-}
 
 /*inserir comentario -  enviar */
 #btn-enviarcomentario{
@@ -740,7 +775,7 @@ input[type="file"]{
     color: white;
     border: 0;
     border-radius: 40px;
-    margin-top: 20px;
+    margin-top: 0px;
     transition: 0.2s;
 }
 #btn-enviarcomentario:hover{

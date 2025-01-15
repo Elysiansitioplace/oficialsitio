@@ -1,0 +1,21 @@
+.fundo-obrigadopardois{
+    width: 40%;
+}
+
+.fundo-obrigado{
+    padding: 10px;
+    line-height: 35px;
+}
+#titulo-obrigado{
+    font-size: 25px;
+}
+
+#btn-obrigado{
+    width: 100%;
+    margin-top: -90px;
+}
+
+#text-explicado{
+    text-align: center;
+    font-size: 25px;
+}
