@@ -629,3 +629,193 @@ function img94(){
     const imagem01 = document.getElementById('imagem-destaque');
     imagem01.src = "https://i.postimg.cc/hGGk9wvc/IMG-0565.jpg"; //trocar imagem
 }
+
+function img95(){
+    document.querySelector('.fundo-imagemdestaque').style.display = "flex";
+    const imagem01 = document.getElementById('imagem-destaque');
+    imagem01.src = "https://i.postimg.cc/9FdZG1Vz/IMG-0495-Editar.jpg"; //trocar imagem
+}
+
+function img96(){
+    document.querySelector('.fundo-imagemdestaque').style.display = "flex";
+    const imagem01 = document.getElementById('imagem-destaque');
+    imagem01.src = "https://i.postimg.cc/Gts9h33H/IMG-20240312-WA0062.jpg"; //trocar imagem
+}
+
+function img97(){
+    document.querySelector('.fundo-imagemdestaque').style.display = "flex";
+    const imagem01 = document.getElementById('imagem-destaque');
+    imagem01.src = "https://i.postimg.cc/W3yhvqvB/IMG-20240312-WA0056.jpg"; //trocar imagem
+}
+
+function img98(){
+    document.querySelector('.fundo-imagemdestaque').style.display = "flex";
+    const imagem01 = document.getElementById('imagem-destaque');
+    imagem01.src = "https://i.postimg.cc/KzjRwrd7/IMG-20240312-WA0044.jpg"; //trocar imagem
+}
+
+
+function img99(){
+    document.querySelector('.fundo-imagemdestaque').style.display = "flex";
+    const imagem01 = document.getElementById('imagem-destaque');
+    imagem01.src = "https://i.postimg.cc/T3Hs6Tsz/IMG-20240312-WA0046.jpg"; //trocar imagem
+}
+
+function img100(){
+    document.querySelector('.fundo-imagemdestaque').style.display = "flex";
+    const imagem01 = document.getElementById('imagem-destaque');
+    imagem01.src = "https://i.postimg.cc/1znjRLhf/IMG-20240312-WA0048.jpg"; //trocar imagem
+}
+
+function img101(){
+    document.querySelector('.fundo-imagemdestaque').style.display = "flex";
+    const imagem01 = document.getElementById('imagem-destaque');
+    imagem01.src = "https://i.postimg.cc/508KLLtJ/IMG-20240312-WA0052.jpg"; //trocar imagem
+}
+
+function img102(){
+    document.querySelector('.fundo-imagemdestaque').style.display = "flex";
+    const imagem01 = document.getElementById('imagem-destaque');
+    imagem01.src = "https://i.postimg.cc/BQS7P8fW/IMG-0512-Editar.jpg"; //trocar imagem
+}
+
+
+function img103(){
+    document.querySelector('.fundo-imagemdestaque').style.display = "flex";
+    const imagem01 = document.getElementById('imagem-destaque');
+    imagem01.src = "https://i.postimg.cc/zGfQ6yxw/IMG-20240311-WA0044.jpg"; //trocar imagem
+}
+
+function img104(){
+    document.querySelector('.fundo-imagemdestaque').style.display = "flex";
+    const imagem01 = document.getElementById('imagem-destaque');
+    imagem01.src = "https://i.postimg.cc/vHhj0rtH/IMG-20240311-WA0042.jpg"; //trocar imagem
+}
+
+
+function img105(){
+    document.querySelector('.fundo-imagemdestaque').style.display = "flex";
+    const imagem01 = document.getElementById('imagem-destaque');
+    imagem01.src = "https://i.postimg.cc/brjMBL5d/IMG-20240311-WA0027.jpg"; //trocar imagem
+}
+
+function img106(){
+    document.querySelector('.fundo-imagemdestaque').style.display = "flex";
+    const imagem01 = document.getElementById('imagem-destaque');
+    imagem01.src = "https://i.postimg.cc/DZGH6RBt/Imagem-do-Whats-App-de-2024-11-29-s-13-04-37-d3976863.jpg"; //trocar imagem
+}
+
+
+function img107(){
+    document.querySelector('.fundo-imagemdestaque').style.display = "flex";
+    const imagem01 = document.getElementById('imagem-destaque');
+    imagem01.src = "https://i.postimg.cc/brjMBL5d/IMG-20240311-WA0027.jpg"; //trocar imagem
+}
+
+function img108(){
+    document.querySelector('.fundo-imagemdestaque').style.display = "flex";
+    const imagem01 = document.getElementById('imagem-destaque');
+    imagem01.src = "https://i.postimg.cc/65B67hQ9/IMG-20240312-WA0050.jpg"; //trocar imagem
+}
+
+
+function img109(){
+    document.querySelector('.fundo-imagemdestaque').style.display = "flex";
+    const imagem01 = document.getElementById('imagem-destaque');
+    imagem01.src = "https://i.postimg.cc/1547DDKt/IMG-0309-Editar.jpg"; //trocar imagem
+}
+
+function img110(){
+    document.querySelector('.fundo-imagemdestaque').style.display = "flex";
+    const imagem01 = document.getElementById('imagem-destaque');
+    imagem01.src = "https://i.postimg.cc/XJVQq5Jn/IMG-0322-Editar.jpg"; //trocar imagem
+}
+
+function img111(){
+    document.querySelector('.fundo-imagemdestaque').style.display = "flex";
+    const imagem01 = document.getElementById('imagem-destaque');
+    imagem01.src = "https://i.postimg.cc/WpqX3spF/IMG-0426-Editar.jpg"; //trocar imagem
+}
+
+function img112(){
+    document.querySelector('.fundo-imagemdestaque').style.display = "flex";
+    const imagem01 = document.getElementById('imagem-destaque');
+    imagem01.src = "https://i.postimg.cc/QxLSKvV6/IMG-0431-Editar.jpg"; //trocar imagem
+}
+
+
+function img113(){
+    document.querySelector('.fundo-imagemdestaque').style.display = "flex";
+    const imagem01 = document.getElementById('imagem-destaque');
+    imagem01.src = "https://i.postimg.cc/CLj7GJqw/IMG-20240312-WA0021.jpg"; //trocar imagem
+}
+
+function img114(){
+    document.querySelector('.fundo-imagemdestaque').style.display = "flex";
+    const imagem01 = document.getElementById('imagem-destaque');
+    imagem01.src = "https://i.postimg.cc/htYB9SxF/IMG-20240312-WA0041.jpg"; //trocar imagem
+}
+
+function img115(){
+    document.querySelector('.fundo-imagemdestaque').style.display = "flex";
+    const imagem01 = document.getElementById('imagem-destaque');
+    imagem01.src = "https://i.postimg.cc/tC2y4d44/21.jpg"; //trocar imagem
+}
+
+function img116(){
+    document.querySelector('.fundo-imagemdestaque').style.display = "flex";
+    const imagem01 = document.getElementById('imagem-destaque');
+    imagem01.src = "https://i.postimg.cc/s2J4k2Jq/IMG-0381.jpg"; //trocar imagem
+}
+
+
+function img117(){
+    document.querySelector('.fundo-imagemdestaque').style.display = "flex";
+    const imagem01 = document.getElementById('imagem-destaque');
+    imagem01.src = "https://i.postimg.cc/0jSfH0Xd/IMG-0454-Editar.jpg"; //trocar imagem
+}
+
+function img118(){
+    document.querySelector('.fundo-imagemdestaque').style.display = "flex";
+    const imagem01 = document.getElementById('imagem-destaque');
+    imagem01.src = "https://i.postimg.cc/jj8ZW5JN/IMG-0449-Editar.jpg"; //trocar imagem
+}
+
+
+function img119(){
+    document.querySelector('.fundo-imagemdestaque').style.display = "flex";
+    const imagem01 = document.getElementById('imagem-destaque');
+    imagem01.src = "https://i.postimg.cc/tTCNpHST/IMG-0383.jpg"; //trocar imagem
+}
+
+function img120(){
+    document.querySelector('.fundo-imagemdestaque').style.display = "flex";
+    const imagem01 = document.getElementById('imagem-destaque');
+    imagem01.src = "https://i.postimg.cc/2SGxJ6GJ/IMG-0521.jpg"; //trocar imagem
+}
+
+
+function img121(){
+    document.querySelector('.fundo-imagemdestaque').style.display = "flex";
+    const imagem01 = document.getElementById('imagem-destaque');
+    imagem01.src = "https://i.postimg.cc/JzZqQxH1/IMG-0342-Editar.jpg"; //trocar imagem
+}
+
+function img122(){
+    document.querySelector('.fundo-imagemdestaque').style.display = "flex";
+    const imagem01 = document.getElementById('imagem-destaque');
+    imagem01.src = "https://i.postimg.cc/brLXd88B/IMG-0336-Editar.jpg"; //trocar imagem
+}
+
+
+function img123(){
+    document.querySelector('.fundo-imagemdestaque').style.display = "flex";
+    const imagem01 = document.getElementById('imagem-destaque');
+    imagem01.src = "https://i.postimg.cc/rsqX8z64/IMG-0335.jpg"; //trocar imagem
+}
+
+function img124(){
+    document.querySelector('.fundo-imagemdestaque').style.display = "flex";
+    const imagem01 = document.getElementById('imagem-destaque');
+    imagem01.src = "https://i.postimg.cc/s2J4k2Jq/IMG-0381.jpg"; //trocar imagem
+}
